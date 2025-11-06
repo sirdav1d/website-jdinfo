@@ -1,6 +1,6 @@
 import type React from "react"
 import "./globals.css"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import FloatingChat from "@/components/floating-chat"
@@ -54,8 +54,6 @@ export const metadata: Metadata = {
   authors: [{ name: "JDINFO", url: "https://jdinfoblog.jdinformatica.com.br" }],
   creator: "JDINFO",
   publisher: "JDINFO",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#0f1e40",
   verification: {
     google: "wpEc8PTNxWKIrlh-0Wy4hQxmpITPcvTyH4S0j_kdITk",
   },
