@@ -1,0 +1,35 @@
+# Robots.txt para JDINFO - Assistência Técnica Niterói
+# https://jdinfoblog.jdinformatica.com.br
+
+User-agent: *
+Allow: /
+
+# Permitir acesso a recursos importantes
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /_next/static/
+Allow: /favicon.ico
+
+# Bloquear páginas administrativas e de teste
+Disallow: /admin/
+Disallow: /test/
+Disallow: /temp/
+Disallow: /_next/
+Disallow: /api/
+
+# Permitir bots específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap
+Sitemap: https://jdinfoblog.jdinformatica.com.br/sitemap.xml
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1
