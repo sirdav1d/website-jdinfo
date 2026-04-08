@@ -260,7 +260,7 @@ export default function VideoGamesPage() {
                       Todos os nossos serviços incluem garantia de 90 dias para sua tranquilidade.
                     </p>
                   </div>
-                  <Link href="/faq" className="text-sm text-blue-100 hover:text-white underline inline-block mt-2">
+                  <Link href="/#faq" className="text-sm text-blue-100 hover:text-white underline inline-block mt-2">
                     Ver todas as perguntas frequentes
                   </Link>
                 </div>

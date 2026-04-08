@@ -27,7 +27,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold mb-6 text-jdblue">Nossa História</h2>
                 <p className="text-gray-600 mb-4">
                   Fundada em 2005, a JDINFO nasceu da paixão por tecnologia e do desejo de oferecer serviços de
-                  assistência técnica de qualidade em Niterói. O que começou como uma pequena loja no Centro da cidade,
+                  assistência técnica de qualidade em Niterói. O que começou como uma operação local,
                   rapidamente se transformou em referência no mercado de reparos eletrônicos.
                 </p>
                 <p className="text-gray-600 mb-4">
@@ -191,18 +191,18 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-4">Venha conhecer a JDINFO</h2>
                 <p className="mb-6 text-gray-200">
-                  Estamos prontos para atender você em nossas duas unidades em Niterói. Entre em contato ou visite-nos
-                  para conhecer nossos serviços e receber um diagnóstico gratuito.
+                  Estamos prontos para atender você em Niterói. Entre em contato ou visite-nos em Icaraí para
+                  conhecer nossos serviços e receber um diagnóstico gratuito.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a href="https://wa.me/5521971386634">
                     <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                      <span className="mr-2">Falar com Centro</span>
+                      <span className="mr-2">WhatsApp 97138-6634</span>
                     </Button>
                   </a>
                   <a href="https://wa.me/5521996643987">
                     <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                      <span className="mr-2">Falar com Icaraí</span>
+                      <span className="mr-2">WhatsApp 99664-3987</span>
                     </Button>
                   </a>
                 </div>

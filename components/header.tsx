@@ -1,29 +1,29 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
+const navigationItems = [
+  { href: "/", label: "HOME" },
+  { href: "/sobre", label: "SOBRE NÓS" },
+  { href: "/servicos", label: "SERVIÇOS" },
+  { href: "/contato", label: "CONTATOS" },
+  { href: "/blog", label: "BLOG" },
+  { href: "/localizacao", label: "LOCALIZAÇÃO" },
+  { href: "/rastreamento", label: "RASTREAMENTO" },
+  { href: "/#faq", label: "FAQ" },
+]
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
-
-  const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
-
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = "unset"
-    }
+    document.body.style.overflow = isMenuOpen ? "hidden" : "unset"
+
     return () => {
       document.body.style.overflow = "unset"
     }
@@ -31,11 +31,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
+      setIsScrolled(window.scrollY > 10)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -46,9 +42,11 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full border-b border-jdblue/20 bg-jdblue backdrop-blur-md transition-all duration-300 ${isScrolled ? "shadow-md" : ""}`}
+      className={`sticky top-0 z-50 w-full border-b border-border/30 bg-primary text-primary-foreground backdrop-blur-md transition-all duration-300 ${
+        isScrolled ? "shadow-[0_16px_48px_rgba(8,17,34,0.18)]" : ""
+      }`}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 bg-jdblue text-white">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center space-x-2">
           <div className="relative h-10 w-32">
             <Image
@@ -61,76 +59,35 @@ export default function Header() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="text-sm font-medium text-white transition-colors hover:text-jdred">
-            HOME
-          </Link>
-          <Link href="/sobre" className="text-sm font-medium text-white/80 transition-colors hover:text-jdred">
-            SOBRE NÓS
-          </Link>
-          <Link href="/servicos" className="text-sm font-medium text-white/80 transition-colors hover:text-jdred">
-            SERVIÇOS
-          </Link>
-          <Link href="/contato" className="text-sm font-medium text-white/80 transition-colors hover:text-jdred">
-            CONTATOS
-          </Link>
-          <Link href="/blog" className="text-sm font-medium text-white/80 transition-colors hover:text-jdred">
-            BLOG
-          </Link>
-          <Link href="/localizacao" className="text-sm font-medium text-white/80 transition-colors hover:text-jdred">
-            LOCALIZAÇÃO
-          </Link>
-          <Link href="/rastreamento" className="text-sm font-medium text-white/80 transition-colors hover:text-jdred">
-            RASTREAMENTO
-          </Link>
-          <Link href="/faq" className="text-sm font-medium text-white/80 transition-colors hover:text-jdred">
-            FAQ
-          </Link>
+        <nav className="hidden items-center space-x-6 md:flex">
+          {navigationItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-sm font-medium text-primary-foreground/80 transition-colors hover:text-accent"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
-        <div className="hidden md:flex items-center space-x-4">
-          <Button
-            variant="outline"
-            size="sm"
-            className="text-jdblue hover:text-jdblue border-white hover:border-white hover:bg-white/90"
-          >
-            Orçamento Grátis
+        <div className="hidden items-center space-x-4 md:flex">
+          <Button variant="outline" size="sm" className="border-primary-foreground/20 bg-primary-foreground text-primary hover:bg-secondary">
+            Orçamento grátis
           </Button>
-          <div className="flex flex-col text-xs">
-            <a href="https://wa.me/5521971386634" className="flex items-center hover:text-jdred">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="mr-1"
-                aria-hidden="true"
-              >
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-              </svg>
-              <span>Centro: (21) 97138-6634</span>
+          <div className="flex flex-col text-xs text-primary-foreground/80">
+            <a href="https://wa.me/5521971386634" className="flex items-center transition-colors hover:text-accent">
+              <span>(21) 97138-6634</span>
             </a>
-            <a href="https://wa.me/5521996643987" className="flex items-center hover:text-jdred">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="mr-1"
-                aria-hidden="true"
-              >
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-              </svg>
-              <span>Icaraí: (21) 99664-3987</span>
+            <a href="https://wa.me/5521996643987" className="flex items-center transition-colors hover:text-accent">
+              <span>(21) 99664-3987</span>
             </a>
           </div>
         </div>
 
         <button
-          className="md:hidden focus:outline-none"
-          onClick={toggleMenu}
+          className="text-primary-foreground md:hidden"
+          onClick={() => setIsMenuOpen((value) => !value)}
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
@@ -139,81 +96,37 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div
           id="mobile-menu"
           role="navigation"
           aria-label="Menu mobile"
-          className={`md:hidden fixed inset-0 top-16 z-50 bg-white p-4 overflow-y-auto transition-transform duration-300 ease-in-out ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          className="fixed inset-0 top-16 z-50 overflow-y-auto border-t border-border bg-card p-4 text-foreground md:hidden"
         >
           <nav className="flex flex-col space-y-4">
-            <Link href="/" className="text-lg font-medium" onClick={closeMenu}>
-              HOME
-            </Link>
-            <Link href="/sobre" className="text-lg font-medium text-gray-500" onClick={closeMenu}>
-              SOBRE NÓS
-            </Link>
-            <Link href="/servicos" className="text-lg font-medium text-gray-500" onClick={closeMenu}>
-              SERVIÇOS
-            </Link>
-            <Link href="/contato" className="text-lg font-medium text-gray-500" onClick={closeMenu}>
-              CONTATOS
-            </Link>
-            <Link href="/blog" className="text-lg font-medium text-gray-500" onClick={closeMenu}>
-              BLOG
-            </Link>
-            <Link href="/localizacao" className="text-lg font-medium text-gray-500" onClick={closeMenu}>
-              LOCALIZAÇÃO
-            </Link>
-            <Link href="/rastreamento" className="text-lg font-medium text-gray-500" onClick={closeMenu}>
-              RASTREAMENTO
-            </Link>
-            <Link href="/faq" className="text-lg font-medium text-gray-500" onClick={closeMenu}>
-              FAQ
-            </Link>
-            <div className="pt-4 flex flex-col space-y-2">
+            {navigationItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-lg font-medium transition-colors hover:text-accent"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+
+            <div className="flex flex-col space-y-2 pt-4">
               <Button variant="outline" className="w-full justify-center">
-                Orçamento Grátis
+                Orçamento grátis
               </Button>
               <a href="https://wa.me/5521971386634" className="w-full">
-                <Button
-                  variant="default"
-                  className="w-full justify-center flex items-center bg-jdred hover:bg-jdred/90"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="mr-2"
-                    aria-hidden="true"
-                  >
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                  </svg>
-                  Centro: (21) 97138-6634
+                <Button className="w-full justify-center bg-accent text-accent-foreground hover:bg-accent/92">
+                  WhatsApp 97138-6634
                 </Button>
               </a>
               <a href="https://wa.me/5521996643987" className="w-full">
-                <Button
-                  variant="default"
-                  className="w-full justify-center flex items-center bg-jdred hover:bg-jdred/90"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="mr-2"
-                    aria-hidden="true"
-                  >
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                  </svg>
-                  Icaraí: (21) 99664-3987
+                <Button className="w-full justify-center bg-accent text-accent-foreground hover:bg-accent/92">
+                  WhatsApp 99664-3987
                 </Button>
               </a>
             </div>

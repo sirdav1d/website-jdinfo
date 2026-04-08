@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
               <ul>
                 <li>E-mail: contato@jdinfo.com.br</li>
                 <li>Telefone: (21) 97138-6634 / (21) 99664-3987</li>
-                <li>Endereço: Av. Ernani do Amaral Peixoto, 436 - loja 07 e 09 - Centro, Niterói - RJ, 24020-077</li>
+                <li>Endereço: R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ, 24220-031</li>
               </ul>
             </div>
 

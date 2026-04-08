@@ -1,23 +1,24 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 export default function CtaSection() {
   return (
-    <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-jdblue text-white">
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+    <section className="bg-primary py-12 text-primary-foreground md:py-16">
+      <div className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+        <div className="grid items-center gap-6 md:grid-cols-2 md:gap-8">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Precisa de assistência técnica?</h2>
-            <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">
+            <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl">Precisa de assistência técnica?</h2>
+            <p className="mb-4 text-sm text-primary-foreground/75 md:mb-6 md:text-base">
               Entre em contato conosco para um diagnóstico gratuito. Nossa equipe está pronta para ajudar com qualquer
               problema técnico.
             </p>
             <div className="space-y-3 md:space-y-4">
               <div className="flex items-center">
-                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center mr-3 md:mr-4">
+                <div className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground/10 md:mr-4 md:h-10 md:w-10">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 md:h-5 md:w-5 text-jdred"
+                    className="h-4 w-4 text-accent md:h-5 md:w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -25,18 +26,18 @@ export default function CtaSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-xs md:text-sm text-gray-300">WhatsApp</p>
+                  <p className="text-xs text-primary-foreground/65 md:text-sm">WhatsApp</p>
                   <div>
-                    <p className="font-medium text-sm md:text-base">Centro: (21) 97138-6634</p>
-                    <p className="font-medium text-sm md:text-base">Icaraí: (21) 99664-3987</p>
+                    <p className="text-sm font-medium md:text-base">(21) 97138-6634</p>
+                    <p className="text-sm font-medium md:text-base">(21) 99664-3987</p>
                   </div>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-4">
+                <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/10">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-jdred"
+                    className="h-5 w-5 text-accent"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -50,15 +51,15 @@ export default function CtaSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-300">Email</p>
+                  <p className="text-sm text-primary-foreground/65">Email</p>
                   <p className="font-medium">contato@jdinfo.com.br</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-4">
+                <div className="mr-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/10">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-jdred"
+                    className="h-5 w-5 text-accent"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -78,56 +79,46 @@ export default function CtaSection() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-300">Endereço</p>
-                  <p className="font-medium">Rua Exemplo, 123 - Icaraí, Niterói - RJ</p>
+                  <p className="text-sm text-primary-foreground/65">Endereço</p>
+                  <p className="font-medium">R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm text-gray-800">
-            <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-jdblue">Solicite um orçamento</h3>
+
+          <div className="rounded-[var(--radius)] border border-border/60 bg-card p-4 text-foreground shadow-[0_18px_40px_rgba(8,17,34,0.14)] md:p-6">
+            <h3 className="mb-3 text-lg font-semibold text-jdblue md:mb-4 md:text-xl">Solicite um orçamento</h3>
             <form className="space-y-3 md:space-y-4">
-              <div>
-                <Input type="text" placeholder="Nome completo" className="h-10 md:h-auto text-sm md:text-base" />
-              </div>
-              <div>
-                <Input type="email" placeholder="E-mail" className="h-10 md:h-auto text-sm md:text-base" />
-              </div>
-              <div>
-                <Input type="tel" placeholder="Telefone" className="h-10 md:h-auto text-sm md:text-base" />
-              </div>
-              <div>
-                <select className="w-full px-3 py-2 h-10 md:h-auto text-sm md:text-base border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-jdred focus:border-jdred">
-                  <option value="">Selecione o serviço</option>
-                  <option value="playstation">Conserto de PlayStation (PS4/PS5)</option>
-                  <option value="controle-ps">Conserto de Controle PS5</option>
-                  <option value="xbox">Conserto de Xbox (One/Series)</option>
-                  <option value="controle-xbox">Conserto de Controle Xbox</option>
-                  <option value="nintendo">Conserto de Nintendo</option>
-                  <option value="apple">Conserto de Linha APPLE</option>
-                  <option value="macbook">Conserto de MacBook</option>
-                  <option value="imac">Conserto de iMac</option>
-                  <option value="ipad">Conserto de iPad</option>
-                  <option value="notebook">Conserto de Notebook/Ultrabook</option>
-                  <option value="pc-gamer">Conserto de PC Gamer</option>
-                  <option value="gopro">Conserto de GoPro</option>
-                  <option value="jbl">Conserto de Caixas JBL</option>
-                  <option value="smartphone">Conserto de Smartphone</option>
-                  <option value="upgrade">Upgrade de Hardware</option>
-                  <option value="outro">Outro</option>
-                </select>
-              </div>
-              <div>
-                <textarea
-                  className="w-full px-3 py-2 text-sm md:text-base border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-jdred focus:border-jdred"
-                  rows={3}
-                  placeholder="Descreva o problema"
-                ></textarea>
-              </div>
-              <Button className="w-full bg-jdred hover:bg-jdred/90 h-10 md:h-auto text-sm md:text-base">
+              <Input type="text" placeholder="Nome completo" className="h-10 text-sm md:h-auto md:text-base" />
+              <Input type="email" placeholder="E-mail" className="h-10 text-sm md:h-auto md:text-base" />
+              <Input type="tel" placeholder="Telefone" className="h-10 text-sm md:h-auto md:text-base" />
+
+              <select className="h-10 w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground shadow-xs outline-none transition-[color,box-shadow] focus:border-ring focus:ring-[3px] focus:ring-ring/20 md:h-auto md:text-base">
+                <option value="">Selecione o serviço</option>
+                <option value="playstation">Conserto de PlayStation (PS4/PS5)</option>
+                <option value="controle-ps">Conserto de Controle PS5</option>
+                <option value="xbox">Conserto de Xbox (One/Series)</option>
+                <option value="controle-xbox">Conserto de Controle Xbox</option>
+                <option value="nintendo">Conserto de Nintendo</option>
+                <option value="apple">Conserto de Linha APPLE</option>
+                <option value="macbook">Conserto de MacBook</option>
+                <option value="imac">Conserto de iMac</option>
+                <option value="ipad">Conserto de iPad</option>
+                <option value="notebook">Conserto de Notebook/Ultrabook</option>
+                <option value="pc-gamer">Conserto de PC Gamer</option>
+                <option value="gopro">Conserto de GoPro</option>
+                <option value="jbl">Conserto de Caixas JBL</option>
+                <option value="smartphone">Conserto de Smartphone</option>
+                <option value="upgrade">Upgrade de Hardware</option>
+                <option value="outro">Outro</option>
+              </select>
+
+              <Textarea rows={3} className="text-sm md:text-base" placeholder="Descreva o problema" />
+
+              <Button className="h-10 w-full bg-accent text-accent-foreground hover:bg-accent/92 md:h-auto md:text-base">
                 Enviar solicitação
               </Button>
-              <p className="text-xs text-gray-500 text-center">
+              <p className="text-center text-xs text-muted-foreground">
                 Ao enviar, você concorda com nossa política de privacidade.
               </p>
             </form>

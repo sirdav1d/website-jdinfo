@@ -177,7 +177,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-gray-300 hover:text-jdred text-sm">
+                <Link href="/#faq" className="text-gray-300 hover:text-jdred text-sm">
                   FAQ
                 </Link>
               </li>
@@ -215,9 +215,9 @@ export default function Footer() {
                   />
                 </svg>
                 <div>
-                  <p className="text-gray-300 text-sm font-medium">Centro:</p>
+                  <p className="text-gray-300 text-sm font-medium">Endereço:</p>
                   <p className="text-gray-300 text-sm">
-                    Av. Ernani do Amaral Peixoto, 436 - loja 07 e 09 - Centro, Niterói - RJ, 24020-077
+                    R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ, 24220-031
                   </p>
                 </div>
               </li>
@@ -244,9 +244,9 @@ export default function Footer() {
                   />
                 </svg>
                 <div>
-                  <p className="text-gray-300 text-sm font-medium">Icaraí:</p>
+                  <p className="text-gray-300 text-sm font-medium">Referência:</p>
                   <p className="text-gray-300 text-sm">
-                    R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ, 24220-031
+                    Atendimento presencial em Icaraí, com fácil acesso pela região da Rua Gavião Peixoto.
                   </p>
                 </div>
               </li>
@@ -262,8 +262,8 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="text-gray-300 text-sm">WhatsApp:</p>
-                  <p className="text-gray-300 text-sm">Centro: (21) 97138-6634</p>
-                  <p className="text-gray-300 text-sm">Icaraí: (21) 99664-3987</p>
+                  <p className="text-gray-300 text-sm">(21) 97138-6634</p>
+                  <p className="text-gray-300 text-sm">(21) 99664-3987</p>
                 </div>
               </li>
               <li className="flex items-start">

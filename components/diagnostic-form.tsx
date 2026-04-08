@@ -96,20 +96,8 @@ export default function DiagnosticForm() {
               placeholder="Conte-nos o que está acontecendo com seu equipamento"
             ></textarea>
           </div>
-          <div>
-            <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
-              Unidade de preferência
-            </label>
-            <div className="flex space-x-4">
-              <label className="flex items-center">
-                <input type="radio" name="location" value="centro" className="mr-2" defaultChecked />
-                <span>Centro</span>
-              </label>
-              <label className="flex items-center">
-                <input type="radio" name="location" value="icarai" className="mr-2" />
-                <span>Icaraí</span>
-              </label>
-            </div>
+          <div className="rounded-md bg-gray-50 p-3 text-sm text-gray-600">
+            Atendimento presencial em Icaraí: R. Gen. Pereira da Silva, 146 - Loja 107 - Niterói - RJ.
           </div>
           <Button type="submit" className="w-full bg-jdred hover:bg-jdred/90 h-12 text-base">
             Solicitar Diagnóstico Gratuito

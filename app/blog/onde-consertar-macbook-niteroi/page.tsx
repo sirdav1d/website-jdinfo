@@ -107,7 +107,7 @@ export default function MacBookRepairBlogPost() {
 							dos reparos)
 						</li>
 						<li>
-							Duas unidades em Niterói para sua comodidade (Centro e Icaraí)
+							Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais
 						</li>
 					</ul>
 
@@ -282,7 +282,7 @@ export default function MacBookRepairBlogPost() {
 								<Button
 									size='lg'
 									className='bg-jdred hover:bg-jdred/90 w-full sm:w-auto'>
-									<span className='mr-2'>Falar com Centro</span>
+									<span className='mr-2'>WhatsApp 97138-6634</span>
 									<ArrowRight className='h-4 w-4' />
 								</Button>
 							</a>
@@ -290,7 +290,7 @@ export default function MacBookRepairBlogPost() {
 								<Button
 									size='lg'
 									className='bg-jdred hover:bg-jdred/90 w-full sm:w-auto'>
-									<span className='mr-2'>Falar com Icaraí</span>
+									<span className='mr-2'>WhatsApp 99664-3987</span>
 									<ArrowRight className='h-4 w-4' />
 								</Button>
 							</a>

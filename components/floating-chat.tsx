@@ -228,7 +228,7 @@ export default function FloatingChat() {
                             className="text-xs bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md transition-colors flex items-center justify-center"
                           >
                             <MessageSquare className="h-3 w-3 mr-1" />
-                            Centro: (21) 97138-6634
+                            WhatsApp (21) 97138-6634
                           </a>
                           <a
                             href="https://wa.me/5521996643987"
@@ -237,7 +237,7 @@ export default function FloatingChat() {
                             className="text-xs bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md transition-colors flex items-center justify-center"
                           >
                             <MessageSquare className="h-3 w-3 mr-1" />
-                            Icaraí: (21) 99664-3987
+                            WhatsApp (21) 99664-3987
                           </a>
                         </div>
 

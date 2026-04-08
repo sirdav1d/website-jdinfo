@@ -125,18 +125,18 @@ export default function ServicesPage() {
                 Serviços de Assistência Técnica Especializada em Niterói
               </h1>
               <p className="text-gray-200 mb-6">
-                Conheça a JDINFO, agora com uma nova filial em Icaraí, oferecendo soluções rápidas e confiáveis para
-                conserto de eletrônicos com atendimento especializado e peças originais.
+                Conheça a JDINFO, com atendimento presencial em Icaraí e soluções rápidas e confiáveis para conserto
+                de eletrônicos com atendimento especializado e peças originais.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="https://wa.me/5521971386634">
                   <Button size="lg" className="bg-jdred hover:bg-jdred/90">
-                    Centro: (21) 97138-6634
+                    WhatsApp 97138-6634
                   </Button>
                 </a>
                 <a href="https://wa.me/5521996643987">
                   <Button size="lg" className="bg-jdred hover:bg-jdred/90">
-                    Icaraí: (21) 99664-3987
+                    WhatsApp 99664-3987
                   </Button>
                 </a>
               </div>
@@ -303,12 +303,12 @@ export default function ServicesPage() {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a href="https://wa.me/5521971386634">
                     <Button size="lg" className="bg-jdred hover:bg-jdred/90">
-                      Centro: (21) 97138-6634
+                      WhatsApp 97138-6634
                     </Button>
                   </a>
                   <a href="https://wa.me/5521996643987">
                     <Button size="lg" className="bg-jdred hover:bg-jdred/90">
-                      Icaraí: (21) 99664-3987
+                      WhatsApp 99664-3987
                     </Button>
                   </a>
                 </div>
@@ -380,7 +380,7 @@ export default function ServicesPage() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Duas unidades para melhor atendê-lo</span>
+                    <span>Endereço em Icaraí com suporte por múltiplos canais</span>
                   </li>
                 </ul>
               </div>

@@ -189,7 +189,7 @@ export default function PlayStationRepairPage() {
                 Localização e Contato
               </h3>
               <p className="mb-4">
-                <strong>Endereço:</strong> Rua da Conceição, 123 - Centro, Niterói - RJ
+                <strong>Endereço:</strong> R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ
               </p>
               <p className="mb-4">
                 <strong>Horário de Funcionamento:</strong>

@@ -83,7 +83,7 @@ export default function PCGamerRepairBlogPost() {
             <li>Garantia de 90 dias em todos os serviços</li>
             <li>Equipamentos de teste de última geração</li>
             <li>Conhecimento em overclock seguro e otimização</li>
-            <li>Duas unidades em Niterói para sua comodidade (Centro e Icaraí)</li>
+            <li>Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais</li>
           </ul>
 
           <h2>Serviços para PC Gamer oferecidos pela JDINFO</h2>
@@ -195,13 +195,13 @@ export default function PCGamerRepairBlogPost() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://wa.me/5521971386634">
                 <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Centro</span>
+                  <span className="mr-2">WhatsApp 97138-6634</span>
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </a>
               <a href="https://wa.me/5521996643987">
                 <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Icaraí</span>
+                  <span className="mr-2">WhatsApp 99664-3987</span>
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </a>

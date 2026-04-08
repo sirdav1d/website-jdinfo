@@ -25,11 +25,11 @@ export default function SEOSchema({
 					url: baseUrl,
 					logo: `${baseUrl}/images/logo-full.png`,
 					image: `${baseUrl}/images/store-image.png`,
-					telephone: '+55-21-99999-9999',
+					telephone: '+55-21-99664-3987',
 					email: 'contato@jdinformatica.com.br',
 					address: {
 						'@type': 'PostalAddress',
-						streetAddress: 'Rua da Conceição, 123',
+						streetAddress: 'R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí',
 						addressLocality: 'Niterói',
 						addressRegion: 'RJ',
 						postalCode: '24020-000',
