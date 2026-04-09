@@ -1,25 +1,37 @@
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants.js"
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const sharedConfig = {
   trailingSlash: true,
   images: {
-    unoptimized: true,
-    domains: ['images.unsplash.com', 'jdinfoblog.jdinformatica.com.br'],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "hebbkx1anhila5yf.public.blob.vercel-storage.com",
+      },
+      {
+        protocol: "https",
+        hostname: "jdinfoblog.jdinformatica.com.br",
+      },
+    ],
+    formats: ["image/avif", "image/webp"],
   },
-  // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://jdinfoblog.jdinformatica.com.br' : '',
-  basePath: '',
   compress: true,
   poweredByHeader: false,
-  generateEtags: false,
   httpAgentOptions: {
     keepAlive: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  // Removido experimental.optimizeCss que estava causando o erro do 'critters'
 }
 
-export default nextConfig
+export default function nextConfig(phase) {
+  return {
+    ...sharedConfig,
+    // Keep dev and production outputs isolated so `next dev` does not reuse
+    // or collide with artifacts produced by `next build` / `next start`.
+    distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next",
+  }
+}

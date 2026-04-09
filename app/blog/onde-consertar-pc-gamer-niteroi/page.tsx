@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -5,6 +6,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar PC Gamer em Niterói: Assistência Especializada",
+  description:
+    "Seu PC Gamer está com problemas? Descubra onde encontrar assistência técnica especializada em Niterói para reparo, manutenção e upgrades.",
+  path: "/blog/onde-consertar-pc-gamer-niteroi",
+  image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=2070&auto=format&fit=crop",
+  type: "article",
+})
 
 export default function PCGamerRepairBlogPost() {
   return (
@@ -71,7 +82,7 @@ export default function PCGamerRepairBlogPost() {
           <h2>JDINFO: A melhor opção para consertar PC Gamer em Niterói</h2>
           <p>
             A JDINFO se destaca como a principal assistência técnica especializada em PCs Gamers em Niterói, com mais de
-            18 anos de experiência no mercado. Nossa equipe é formada por técnicos que também são gamers, entendendo na
+            20 anos de experiência no mercado. Nossa equipe é formada por técnicos que também são gamers, entendendo na
             prática as necessidades e exigências desse tipo de equipamento.
           </p>
 

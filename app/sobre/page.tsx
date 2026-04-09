@@ -1,8 +1,18 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Image from "next/image"
 import { Check, Clock, Award, Shield, Users, PenToolIcon as Tool } from "lucide-react"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Sobre a JDINFO",
+  description:
+    "Conheça a história, a missão e os diferenciais da JDINFO, assistência técnica especializada com atendimento em Niterói e base presencial em Icaraí.",
+  path: "/sobre",
+  keywords: ["sobre a jdinfo", "assistência técnica niterói", "história jdinfo"],
+})
 
 export default function AboutPage() {
   return (
@@ -41,7 +51,7 @@ export default function AboutPage() {
                   nossa capacidade de atendimento e aproximando nossos serviços de ainda mais clientes em Niterói.
                 </p>
                 <p className="text-gray-600">
-                  Hoje, com mais de 18 anos de experiência, a JDINFO se consolida como a principal assistência técnica
+                  Hoje, com mais de 20 anos de experiência, a JDINFO se consolida como a principal assistência técnica
                   especializada da região, combinando conhecimento técnico, atendimento personalizado e compromisso com
                   a qualidade.
                 </p>
@@ -87,23 +97,23 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-4 text-jdblue">Valores</h3>
                 <ul className="text-gray-600 space-y-2">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 shrink-0" />
                     <span>Ética e transparência em todas as relações</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 shrink-0" />
                     <span>Compromisso com a qualidade dos serviços</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 shrink-0" />
                     <span>Respeito e valorização dos clientes</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 shrink-0" />
                     <span>Inovação e aperfeiçoamento constante</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-jdred mr-2 mt-0.5 shrink-0" />
                     <span>Responsabilidade socioambiental</span>
                   </li>
                 </ul>
@@ -126,7 +136,7 @@ export default function AboutPage() {
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
                   <Clock className="h-8 w-8 text-jdred" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-jdblue">+18 Anos de Experiência</h3>
+                <h3 className="text-xl font-semibold mb-2 text-jdblue">+20 Anos de Experiência</h3>
                 <p className="text-gray-600">
                   Quase duas décadas de atuação no mercado, acumulando conhecimento técnico e aperfeiçoando nossos
                   processos.
@@ -210,11 +220,11 @@ export default function AboutPage() {
               <div className="bg-jdblue/80 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Horário de Funcionamento</h3>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center border-b border-white/10 pb-2">
+                  <div className="flex justify-between items-center border-b border-white/40 pb-2">
                     <span>Segunda a Sexta</span>
                     <span className="font-medium">9h às 18h</span>
                   </div>
-                  <div className="flex justify-between items-center border-b border-white/10 pb-2">
+                  <div className="flex justify-between items-center border-b border-white/40 pb-2">
                     <span>Sábado</span>
                     <span className="font-medium">9h às 13h</span>
                   </div>
@@ -232,3 +242,4 @@ export default function AboutPage() {
     </div>
   )
 }
+

@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -5,6 +6,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar Notebook em Niterói: Solução Rápida e Garantida",
+  description:
+    "Seu notebook apresentou problemas? Veja onde encontrar o melhor serviço de reparo de notebooks em Niterói com assistência técnica especializada.",
+  path: "/blog/onde-consertar-notebook-niteroi",
+  image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop",
+  type: "article",
+})
 
 export default function NotebookRepairBlogPost() {
   return (
@@ -69,7 +80,7 @@ export default function NotebookRepairBlogPost() {
           <h2>JDINFO: A melhor opção para consertar notebook em Niterói</h2>
           <p>
             A JDINFO se destaca como a principal assistência técnica especializada em notebooks em Niterói, com mais de
-            18 anos de experiência no mercado. Nossa equipe é especializada em reparos de notebooks de todas as marcas,
+            20 anos de experiência no mercado. Nossa equipe é especializada em reparos de notebooks de todas as marcas,
             oferecendo diagnóstico preciso e soluções eficientes para qualquer problema.
           </p>
 

@@ -1,6 +1,8 @@
 // Base de conhecimento do chatbot
 // Esta é a fonte de informações que o chatbot usará para responder às perguntas
 
+import { siteConfig } from '@/lib/site-config'
+
 export type ServiceInfo = {
   id: string
   name: string
@@ -254,7 +256,7 @@ export const locations: LocationInfo[] = [
       saturday: "9h às 13h",
       sunday: "Fechado",
     },
-    mapUrl: "https://maps.google.com/?q=JDINFO+Icarai+Niteroi",
+    mapUrl: siteConfig.maps.directionsUrl,
   },
 ]
 
@@ -353,7 +355,7 @@ export const companyInfo = {
   foundedYear: 2005,
   experience: "18 anos",
   email: "contato@jdinfo.com.br",
-  website: "https://jdinfo.com.br",
+  website: "https://jdinfoblog.jdinformatica.com.br",
   specialties: [
     "Conserto de PlayStation, Xbox e Nintendo",
     "Reparo de produtos Apple (iPhone, iPad, MacBook)",
@@ -362,7 +364,7 @@ export const companyInfo = {
     "Reparo de tablets de todas as marcas",
   ],
   differentials: [
-    "Mais de 18 anos de experiência em Niterói",
+    "Mais de 20 anos de experiência em Niterói",
     "Técnicos certificados e especializados",
     "Garantia de 90 dias em todos os serviços",
     "Diagnóstico gratuito",

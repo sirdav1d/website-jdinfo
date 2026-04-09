@@ -1,6 +1,16 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import OrderTracking from "@/components/order-tracking"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Rastreamento de Ordem de Serviço",
+  description:
+    "Acompanhe o status do reparo do seu equipamento na JDINFO em Niterói com a página de rastreamento da ordem de serviço.",
+  path: "/rastreamento",
+  keywords: ["rastreamento de ordem de serviço", "status do reparo", "ordem de serviço jdinfo"],
+})
 
 export default function TrackingPage() {
   return (

@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useCallback } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { MessageCircle, X, Send, MessageSquare } from "lucide-react"
@@ -33,12 +33,55 @@ export default function FloatingChat() {
   const chatContainerRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  // Gera um ID único para cada mensagem
+  const generateId = () => {
+    return typeof crypto !== "undefined" && "randomUUID" in crypto
+      ? crypto.randomUUID()
+      : `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`
+  }
+
+  // Adiciona uma mensagem do usuário ao histórico
+  const addUserMessage = useCallback((text: string) => {
+    const newMessage: Message = {
+      id: generateId(),
+      type: "user",
+      text,
+      timestamp: new Date(),
+    }
+
+    setChatHistory((prev) => [...prev, newMessage])
+  }, [])
+
+  // Adiciona uma mensagem do bot ao histórico
+  const addBotMessage = useCallback((text: string) => {
+    const newMessage: Message = {
+      id: generateId(),
+      type: "bot",
+      text,
+      timestamp: new Date(),
+    }
+
+    setChatHistory((prev) => [...prev, newMessage])
+  }, [])
+
+  // Adiciona opções de contato
+  const addContactOptions = useCallback(() => {
+    const newMessage: Message = {
+      id: generateId(),
+      type: "contact",
+      text: "Para um atendimento mais personalizado, você pode falar diretamente com nossa equipe:",
+      timestamp: new Date(),
+    }
+
+    setChatHistory((prev) => [...prev, newMessage])
+  }, [])
+
   // Inicializa o chat quando aberto pela primeira vez
   useEffect(() => {
     if (isOpen && chatHistory.length === 0) {
       addBotMessage("Olá! Sou o assistente virtual da JDINFO. Como posso ajudar você hoje?")
     }
-  }, [isOpen])
+  }, [addBotMessage, chatHistory.length, isOpen])
 
   // Rola para a última mensagem quando o histórico é atualizado
   useEffect(() => {
@@ -55,48 +98,7 @@ export default function FloatingChat() {
   }, [isOpen])
 
   const toggleChat = () => {
-    setIsOpen(!isOpen)
-  }
-
-  // Gera um ID único para cada mensagem
-  const generateId = () => {
-    return Date.now().toString(36) + Math.random().toString(36).substr(2)
-  }
-
-  // Adiciona uma mensagem do usuário ao histórico
-  const addUserMessage = (text: string) => {
-    const newMessage: Message = {
-      id: generateId(),
-      type: "user",
-      text,
-      timestamp: new Date(),
-    }
-
-    setChatHistory((prev) => [...prev, newMessage])
-  }
-
-  // Adiciona uma mensagem do bot ao histórico
-  const addBotMessage = (text: string) => {
-    const newMessage: Message = {
-      id: generateId(),
-      type: "bot",
-      text,
-      timestamp: new Date(),
-    }
-
-    setChatHistory((prev) => [...prev, newMessage])
-  }
-
-  // Adiciona opções de contato
-  const addContactOptions = () => {
-    const newMessage: Message = {
-      id: generateId(),
-      type: "contact",
-      text: "Para um atendimento mais personalizado, você pode falar diretamente com nossa equipe:",
-      timestamp: new Date(),
-    }
-
-    setChatHistory((prev) => [...prev, newMessage])
+    setIsOpen((prev) => !prev)
   }
 
   // Envia a mensagem para o webhook e processa a resposta
@@ -286,7 +288,7 @@ export default function FloatingChat() {
               <input
                 type="text"
                 placeholder="Digite sua mensagem..."
-                className="flex-grow px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-jdblue text-base h-10"
+                className="flex-grow px-3 py-2 border border-gray-300/40 rounded-md focus:outline-none focus:ring-1 focus:ring-jdblue text-base h-10"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 ref={inputRef}
@@ -309,3 +311,4 @@ export default function FloatingChat() {
     </div>
   )
 }
+

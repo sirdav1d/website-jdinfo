@@ -19,7 +19,8 @@ test("homepage exposes the FAQ section and points navigation to the home anchor"
   ).toBeVisible()
 
   const faqLinks = page.locator('a[href="/#faq"]')
-  await expect(faqLinks).toHaveCount(2)
+  await expect(faqLinks).toHaveCount(1)
+  await expect(page.locator("header").getByRole("link", { name: /FAQ/i })).toHaveCount(0)
 })
 
 test("faq route no longer exists", async ({ page }) => {

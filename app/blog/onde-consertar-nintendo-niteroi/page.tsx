@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -5,6 +6,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar Nintendo em Niterói: Serviço Especializado",
+  description:
+    "Problemas com seu Nintendo Switch? Veja onde encontrar o melhor serviço de reparo em Niterói com assistência técnica especializada.",
+  path: "/blog/onde-consertar-nintendo-niteroi",
+  image: "https://images.unsplash.com/photo-1642009189725-3b4d3b3e1a35?q=80&w=2070&auto=format&fit=crop",
+  type: "article",
+})
 
 export default function NintendoRepairBlogPost() {
   return (
@@ -68,7 +79,7 @@ export default function NintendoRepairBlogPost() {
           <h2>JDINFO: A melhor opção para consertar Nintendo em Niterói</h2>
           <p>
             A JDINFO se destaca como a principal assistência técnica especializada em consoles em Niterói, com mais de
-            18 anos de experiência no mercado. Nossa equipe é especializada em reparos de Nintendo Switch e outros
+            20 anos de experiência no mercado. Nossa equipe é especializada em reparos de Nintendo Switch e outros
             produtos Nintendo, oferecendo diagnóstico preciso e soluções eficientes para qualquer problema.
           </p>
 

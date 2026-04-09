@@ -1,6 +1,6 @@
 # Conserto de Notebook, MacBook e PC Gamer em Niterói - JDINFO Assistência Técnica
 
-A JDINFO é referência em assistência técnica de informática em Niterói, com mais de 18 anos de experiência em conserto de notebooks, MacBook e PCs Gamer. Atendemos clientes de Icaraí, Centro, São Francisco, São Gonçalo e de toda a região com serviços rápidos, garantia e peças de qualidade.
+A JDINFO é referência em assistência técnica de informática em Niterói, com mais de 20 anos de experiência em conserto de notebooks, MacBook e PCs Gamer. Atendemos clientes de Icaraí, Centro, São Francisco, São Gonçalo e de toda a região com serviços rápidos, garantia e peças de qualidade.
 
 ## Assistência Técnica Especializada em Niterói e São Gonçalo
 
@@ -123,7 +123,7 @@ A JDINFO é uma das empresas de informática mais bem avaliadas da região, com 
 
 Nossos diferenciais:
 
-- Mais de 18 anos de experiência em Niterói e região
+- Mais de 20 anos de experiência em Niterói e região
 - Laboratório próprio com equipamentos modernos
 - Equipe técnica especializada em notebook, MacBook e PC Gamer
 - Estoque de peças para agilizar o conserto

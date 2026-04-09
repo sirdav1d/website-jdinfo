@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Loader2 } from "lucide-react"
+import { siteConfig } from "@/lib/site-config"
 
 export default function Loading() {
   return (
@@ -8,7 +9,7 @@ export default function Loading() {
         <CardContent className="p-8">
           <div className="mb-6">
             <Loader2 className="w-16 h-16 text-blue-600 mx-auto mb-4 animate-spin" />
-            <h1 className="text-2xl font-semibold text-gray-800 mb-2">Carregando...</h1>
+            <h1 className="text-2xl font-semibold text-gray-800 mb-2">Carregando…</h1>
             <p className="text-gray-600">Por favor, aguarde enquanto carregamos o conteúdo.</p>
           </div>
 
@@ -16,11 +17,12 @@ export default function Loading() {
             <div className="bg-blue-600 h-2 rounded-full animate-pulse" style={{ width: "60%" }}></div>
           </div>
 
-          <div className="mt-6 pt-6 border-t border-gray-200">
-            <p className="text-sm text-gray-500">JDINFO - Assistência Técnica Especializada</p>
+          <div className="mt-6 pt-6 border-t border-gray-200/40">
+            <p className="text-sm text-gray-500">{siteConfig.name}</p>
           </div>
         </CardContent>
       </Card>
     </div>
   )
 }
+

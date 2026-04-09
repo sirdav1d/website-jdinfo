@@ -1,5 +1,6 @@
 /** @format */
 
+import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
@@ -7,6 +8,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import BlogArticleLayout from '@/components/blog-article-layout';
+import { buildPageMetadata } from '@/lib/metadata';
+
+export const metadata: Metadata = buildPageMetadata({
+	title: 'Onde Consertar MacBook em Niterói: Assistência Apple',
+	description:
+		'MacBook com problemas? Descubra a melhor assistência técnica especializada em produtos Apple em Niterói.',
+	path: '/blog/onde-consertar-macbook-niteroi',
+	image:
+		'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2026&auto=format&fit=crop',
+	type: 'article',
+});
 
 export default function MacBookRepairBlogPost() {
 	return (

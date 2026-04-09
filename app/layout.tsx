@@ -4,11 +4,10 @@ import type React from 'react';
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
 import { Geist } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
 import FloatingChat from '@/components/floating-chat';
-import MobileOptimization from '@/components/mobile-optimization';
 import SEOSchema from '@/components/seo-schema';
 import Script from 'next/script';
+import { siteConfig, toAbsoluteUrl } from '@/lib/site-config';
 
 const geist = Geist({
 	subsets: ['latin'],
@@ -18,49 +17,35 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://jdinfoblog.jdinformatica.com.br'),
+	metadataBase: new URL(siteConfig.url),
 	title: {
-		default: 'JDINFO - AssistÃªncia TÃ©cnica Especializada em NiterÃ³i',
-		template: '%s | JDINFO - AssistÃªncia TÃ©cnica NiterÃ³i',
+		default: `${siteConfig.name} em Niterói`,
+		template: `%s | ${siteConfig.name}`,
 	},
-	description:
-		'AssistÃªncia tÃ©cnica especializada em conserto de PlayStation, Xbox, Nintendo, Apple, Notebooks, PC Gamer, GoPro, JBL e Smartphones em NiterÃ³i. Mais de 18 anos de experiÃªncia.',
+	description: `${siteConfig.description} Mais de 20 anos de experiência.`,
 	keywords: [
-		'assistÃªncia tÃ©cnica',
-		'conserto',
-		'reparo',
-		'NiterÃ³i',
-		'PlayStation',
-		'Xbox',
-		'Nintendo',
-		'Apple',
-		'MacBook',
-		'iPhone',
-		'notebook',
-		'PC Gamer',
-		'GoPro',
-		'JBL',
-		'smartphone',
-		'assistÃªncia tÃ©cnica NiterÃ³i',
-		'conserto PlayStation NiterÃ³i',
-		'conserto Xbox NiterÃ³i',
-		'conserto Nintendo NiterÃ³i',
-		'conserto MacBook NiterÃ³i',
-		'conserto iPhone NiterÃ³i',
-		'conserto notebook NiterÃ³i',
-		'conserto PC Gamer NiterÃ³i',
-		'conserto GoPro NiterÃ³i',
-		'conserto JBL NiterÃ³i',
-		'conserto tablet NiterÃ³i',
+		...siteConfig.defaultKeywords,
+		'assistência técnica Niterói',
+		'conserto PlayStation Niterói',
+		'conserto Xbox Niterói',
+		'conserto Nintendo Niterói',
+		'conserto MacBook Niterói',
+		'conserto iPhone Niterói',
+		'conserto notebook Niterói',
+		'conserto PC Gamer Niterói',
+		'conserto GoPro Niterói',
+		'conserto JBL Niterói',
+		'conserto tablet Niterói',
 	],
-	authors: [{ name: 'JDINFO', url: 'https://jdinfoblog.jdinformatica.com.br' }],
-	creator: 'JDINFO',
-	publisher: 'JDINFO',
+	authors: [{ name: siteConfig.brandName, url: siteConfig.url }],
+	creator: siteConfig.brandName,
+	publisher: siteConfig.brandName,
+	manifest: '/manifest.webmanifest',
 	verification: {
 		google: 'wpEc8PTNxWKIrlh-0Wy4hQxmpITPcvTyH4S0j_kdITk',
 	},
 	alternates: {
-		canonical: 'https://jdinfoblog.jdinformatica.com.br',
+		canonical: siteConfig.url,
 	},
 	formatDetection: {
 		email: false,
@@ -69,27 +54,25 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: 'website',
-		locale: 'pt_BR',
-		url: 'https://jdinfoblog.jdinformatica.com.br',
-		siteName: 'JDINFO',
-		title: 'JDINFO - AssistÃªncia TÃ©cnica Especializada em NiterÃ³i',
-		description:
-			'AssistÃªncia tÃ©cnica especializada em conserto de PlayStation, Xbox, Nintendo, Apple, Notebooks, PC Gamer, GoPro, JBL e Smartphones em NiterÃ³i.',
+		locale: siteConfig.locale,
+		url: siteConfig.url,
+		siteName: siteConfig.brandName,
+		title: `${siteConfig.name} em Niterói`,
+		description: siteConfig.description,
 		images: [
 			{
-				url: 'https://jdinfoblog.jdinformatica.com.br/images/logo-full.png',
+				url: toAbsoluteUrl(siteConfig.ogImage),
 				width: 1200,
 				height: 630,
-				alt: 'JDINFO - AssistÃªncia TÃ©cnica Especializada',
+				alt: siteConfig.name,
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'JDINFO - AssistÃªncia TÃ©cnica Especializada em NiterÃ³i',
-		description:
-			'AssistÃªncia tÃ©cnica especializada em conserto de PlayStation, Xbox, Nintendo, Apple, Notebooks, PC Gamer, GoPro, JBL e Smartphones em NiterÃ³i.',
-		images: ['https://jdinfoblog.jdinformatica.com.br/images/logo-full.png'],
+		title: `${siteConfig.name} em Niterói`,
+		description: siteConfig.description,
+		images: [toAbsoluteUrl(siteConfig.ogImage)],
 	},
 	robots: {
 		index: true,
@@ -104,15 +87,14 @@ export const metadata: Metadata = {
 			'max-snippet': -1,
 		},
 	},
-	category: 'AssistÃªncia TÃ©cnica',
-	generator: 'v0.app',
+	category: 'Assistência Técnica',
 };
 
 export const viewport: Viewport = {
 	width: 'device-width',
 	initialScale: 1,
 	maximumScale: 5,
-	themeColor: '#081122',
+	themeColor: siteConfig.themeColor,
 };
 
 export default function RootLayout({
@@ -123,10 +105,8 @@ export default function RootLayout({
 	return (
 		<html
 			lang='pt-BR'
-			className={geist.variable}
-			suppressHydrationWarning>
+			className={geist.variable}>
 			<head>
-				{/* Google Tag Manager */}
 				<Script
 					id='gtm-script'
 					strategy='afterInteractive'
@@ -136,63 +116,27 @@ export default function RootLayout({
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-KN4QFMP2');
+              })(window,document,'script','dataLayer','${siteConfig.gtmId}');
             `,
 					}}
 				/>
-				{/* End Google Tag Manager */}
-
-				{/* Preload critical resources */}
-				{/* <link
-					rel='preload'
-					href='/images/logo-full.png'
-					as='image'
-				/>
-				<link
-					rel='preload'
-					href='/images/store-image.png'
-					as='image'
-				/> */}
-
-				{/* DNS Prefetch */}
-				{/* <link
-					rel='dns-prefetch'
-					href='//fonts.googleapis.com'
-				/>
-				<link
-					rel='dns-prefetch'
-					href='//images.unsplash.com'
-				/> */}
 				<link
 					rel='dns-prefetch'
 					href='//www.googletagmanager.com'
 				/>
 			</head>
-			<body
-				className={geist.className}
-				suppressHydrationWarning>
-				{/* Google Tag Manager (noscript) */}
+			<body className={geist.className}>
 				<noscript>
 					<iframe
-						src='https://www.googletagmanager.com/ns.html?id=GTM-KN4QFMP2'
+						src={`https://www.googletagmanager.com/ns.html?id=${siteConfig.gtmId}`}
 						height='0'
 						width='0'
 						style={{ display: 'none', visibility: 'hidden' }}
 					/>
 				</noscript>
-				{/* End Google Tag Manager (noscript) */}
-
-				{/* Organization Schema */}
 				<SEOSchema type='organization' />
-
-				<ThemeProvider
-					attribute='class'
-					defaultTheme='system'
-					enableSystem>
-					<MobileOptimization />
-					{children}
-					<FloatingChat />
-				</ThemeProvider>
+				{children}
+				<FloatingChat />
 			</body>
 		</html>
 	);

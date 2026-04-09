@@ -7,55 +7,23 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, MapPin, Clock, Phone, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { buildPageMetadata } from "@/lib/metadata"
+import { toAbsoluteUrl } from "@/lib/site-config"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Onde Consertar PlayStation em Niterói? Guia Completo 2025",
   description:
     "Descubra os melhores lugares para consertar seu PlayStation em Niterói. Guia completo com dicas, preços e onde encontrar assistência técnica especializada com garantia.",
+  path: "/blog/onde-consertar-playstation-niteroi",
+  image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop",
   keywords: [
-    "conserto PlayStation Niterói",
-    "assistência técnica PlayStation",
-    "reparo PlayStation Niterói",
-    "onde consertar PlayStation",
-    "PlayStation não liga",
-    "PlayStation superaquecimento",
-    "conserto controle PlayStation",
-    "assistência PlayStation Niterói",
-    "reparo PS4 Niterói",
-    "reparo PS5 Niterói",
-    "JDINFO PlayStation",
+    "conserto playstation niterói",
+    "assistência técnica playstation",
+    "reparo ps4 niterói",
+    "reparo ps5 niterói",
   ],
-  alternates: {
-    canonical: "https://jdinfo.com.br/blog/onde-consertar-playstation-niteroi",
-  },
-  openGraph: {
-    title: "Onde Consertar PlayStation em Niterói? Guia Completo 2025",
-    description:
-      "Descubra os melhores lugares para consertar seu PlayStation em Niterói. Guia completo com dicas, preços e onde encontrar assistência técnica especializada.",
-    url: "https://jdinfo.com.br/blog/onde-consertar-playstation-niteroi",
-    type: "article",
-    publishedTime: "2025-01-15T10:00:00.000Z",
-    modifiedTime: "2025-01-15T10:00:00.000Z",
-    authors: ["JDINFO"],
-    section: "Consoles",
-    tags: ["PlayStation", "Conserto", "Niterói", "Assistência Técnica"],
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop",
-        width: 1200,
-        height: 630,
-        alt: "Conserto de PlayStation em Niterói",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Onde Consertar PlayStation em Niterói? Guia Completo 2025",
-    description:
-      "Descubra os melhores lugares para consertar seu PlayStation em Niterói. Guia completo com assistência técnica especializada.",
-    images: ["https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop"],
-  },
-}
+  type: "article",
+})
 
 const articleData = {
   title: "Onde Consertar PlayStation em Niterói? Guia Completo 2025",
@@ -64,14 +32,14 @@ const articleData = {
   image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop",
   datePublished: "2025-01-15T10:00:00.000Z",
   dateModified: "2025-01-15T10:00:00.000Z",
-  url: "https://jdinfo.com.br/blog/onde-consertar-playstation-niteroi",
+  url: toAbsoluteUrl("/blog/onde-consertar-playstation-niteroi"),
 }
 
 const breadcrumbData = {
   breadcrumbs: [
-    { name: "Início", url: "https://jdinfo.com.br" },
-    { name: "Blog", url: "https://jdinfo.com.br/blog" },
-    { name: "Conserto PlayStation Niterói", url: "https://jdinfo.com.br/blog/onde-consertar-playstation-niteroi" },
+    { name: "Início", url: toAbsoluteUrl("/") },
+    { name: "Blog", url: toAbsoluteUrl("/blog") },
+    { name: "Conserto PlayStation Niterói", url: toAbsoluteUrl("/blog/onde-consertar-playstation-niteroi") },
   ],
 }
 
@@ -158,7 +126,7 @@ export default function PlayStationRepairPage() {
             <h2>JDINFO: Referência em Conserto de PlayStation em Niterói</h2>
             <p>
               A <strong>JDINFO</strong> é reconhecida como uma das principais assistências técnicas especializadas em
-              consoles em Niterói, com mais de 18 anos de experiência no mercado.
+              consoles em Niterói, com mais de 20 anos de experiência no mercado.
             </p>
 
             <h3>Por que Escolher a JDINFO?</h3>
@@ -203,7 +171,7 @@ export default function PlayStationRepairPage() {
                   <Phone className="mr-2 h-4 w-4" />
                   Ligar Agora
                 </Button>
-                <Button variant="outline" className="border-green-500 text-green-600 hover:bg-green-50 bg-transparent">
+                <Button variant="outline" className="border-green-500/40 text-green-600 hover:bg-green-50 bg-transparent">
                   <MessageCircle className="mr-2 h-4 w-4" />
                   WhatsApp
                 </Button>
@@ -289,7 +257,7 @@ export default function PlayStationRepairPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button className="bg-jdred hover:bg-jdred/90">Solicitar Orçamento</Button>
-                <Button variant="outline" className="border-jdred text-jdred hover:bg-jdred/10 bg-transparent">
+                <Button variant="outline" className="border-jdred/40 text-jdred hover:bg-jdred/10 bg-transparent">
                   Falar no WhatsApp
                 </Button>
               </div>
@@ -301,3 +269,4 @@ export default function PlayStationRepairPage() {
     </>
   )
 }
+

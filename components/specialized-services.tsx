@@ -1,112 +1,158 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
+/** @format */
+
+import Image from 'next/image';
+import Link from 'next/link';
+import {
+	ArrowRight,
+	Cpu,
+	Gamepad2,
+	HardDrive,
+	Laptop,
+	Speaker,
+	TabletSmartphone,
+} from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const featuredService = {
+	title: 'Notebook, MacBook, Consoles, e PC Gamer',
+	description:
+		'O núcleo da operação da JDINFO está em diagnóstico de placa, recuperação de desempenho, upgrades e reparos para quem depende do equipamento funcionando de verdade.',
+	image: '/images/tablet-repair.png',
+	url: '/blog/onde-consertar-notebook-niteroi',
+	bullets: [
+		'Diagnóstico de hardware com leitura clara',
+		'Upgrade, manutenção e reparo com garantia',
+		'Atendimento para uso profissional, criativo e gamer',
+	],
+};
+
+const services = [
+	{
+		title: 'Conserto de PlayStation',
+		description:
+			'PS4, PS5 e controles com foco em reparo confiável e orientação objetiva.',
+		url: '/blog/onde-consertar-playstation-niteroi',
+		icon: Gamepad2,
+	},
+	{
+		title: 'Conserto de Xbox',
+		description:
+			'Xbox One e Series com triagem técnica e suporte para controles e acessórios.',
+		url: '/blog/onde-consertar-xbox-niteroi',
+		icon: Cpu,
+	},
+	{
+		title: 'Linha Apple',
+		description:
+			'iPhone, iPad, MacBook e outros dispositivos Apple com atendimento especializado.',
+		url: '/blog/onde-consertar-iphone-niteroi',
+		icon: Laptop,
+	},
+	{
+		title: 'Nintendo e portáteis',
+		description:
+			'Nintendo Switch, tablets e eletrônicos compactos com foco em recuperação funcional.',
+		url: '/blog/onde-consertar-nintendo-niteroi',
+		icon: TabletSmartphone,
+	},
+	{
+		title: 'GoPro e eletrônicos técnicos',
+		description:
+			'Câmeras de ação, acessórios e outros equipamentos de uso intenso.',
+		url: '/blog/onde-consertar-gopro-niteroi',
+		icon: HardDrive,
+	},
+	{
+		title: 'Áudio e caixas JBL',
+		description:
+			'Reparo de áudio portátil com avaliação objetiva de custo x benefício.',
+		url: '/blog/onde-consertar-caixas-jbl-niteroi',
+		icon: Speaker,
+	},
+];
 
 export default function SpecializedServices() {
-  const services = [
-    {
-      title: "Conserto de PlayStation",
-      description: "Reparos em PlayStation 4, PlayStation 5 e controles com garantia e peças originais.",
-      image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop",
-      url: "/blog/onde-consertar-playstation-niteroi",
-    },
-    {
-      title: "Conserto de Linha APPLE",
-      description: "Especialistas em reparo de iPhone, iPad, MacBook, iMac e outros dispositivos Apple.",
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop",
-      url: "/blog/onde-consertar-iphone-niteroi",
-    },
-    {
-      title: "Conserto de Notebook",
-      description: "Soluções para problemas de hardware e software em notebooks e ultrabooks de todas as marcas.",
-      image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop",
-      url: "/blog/onde-consertar-notebook-niteroi",
-    },
-    {
-      title: "Conserto de PC Gamer",
-      description: "Manutenção especializada para computadores de alto desempenho, upgrades e placas de vídeo.",
-      image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=2070&auto=format&fit=crop",
-      url: "/blog/onde-consertar-pc-gamer-niteroi",
-    },
-    {
-      title: "Conserto de Xbox",
-      description: "Reparos em Xbox One, Xbox Series S/X e controles com técnicos especializados.",
-      image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1932&auto=format&fit=crop",
-      url: "/blog/onde-consertar-xbox-niteroi",
-    },
-    {
-      title: "Conserto de Nintendo",
-      description: "Assistência técnica para Nintendo Switch e outros consoles Nintendo.",
-      image: "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop",
-      url: "/blog/onde-consertar-nintendo-niteroi",
-    },
-    {
-      title: "Conserto de GoPro",
-      description: "Reparos em câmeras de ação GoPro e acessórios com técnicos certificados.",
-      image: "/images/gopro-underwater.png",
-      url: "/blog/onde-consertar-gopro-niteroi",
-    },
-    {
-      title: "Conserto de Caixas JBL",
-      description: "Reparos especializados em caixas de som JBL e outros equipamentos de áudio.",
-      image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop",
-      url: "/blog/onde-consertar-caixas-jbl-niteroi",
-    },
-    {
-      title: "Conserto de Tablets",
-      description: "Reparos em tablets de todas as marcas, troca de tela, bateria e mais.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-BEIx1nwyWVThXV199n71YMjHef4ITG.png",
-      url: "/blog/onde-consertar-tablet-niteroi",
-    },
-  ]
+	return (
+		<section className='relative overflow-hidden px-4 py-18 md:px-6 lg:px-8 lg:py-24'>
+			<div className='absolute inset-0 bg-[linear-gradient(180deg,rgba(250,250,250,1),rgba(238,242,247,0.55))]' />
 
-  return (
-    <section className="py-16 px-4 md:px-6 lg:px-8">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-jdblue">Serviços Especializados</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Oferecemos assistência técnica especializada para diversos equipamentos eletrônicos, com diagnóstico preciso
-            e soluções eficientes.
-          </p>
-        </div>
+			<div className='container relative z-10 mx-auto max-w-6xl'>
+				<div className='mb-12 max-w-3xl'>
+					<h2 className='text-balance text-3xl font-semibold tracking-[-0.04em] text-jdblue md:text-4xl'>
+						Atuação especializada para os equipamentos que exigem diagnóstico e
+						reparo confiável.
+					</h2>
+				</div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-all duration-300 h-full">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={service.image || "/placeholder.svg"}
-                  alt={service.title}
-                  fill
-                  className="object-cover transition-transform duration-300 hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-70"></div>
-                <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-white">{service.title}</h3>
-              </div>
-              <CardContent className="p-6">
-                <p className="text-gray-600">{service.description}</p>
-              </CardContent>
-              <CardFooter className="px-6 pb-6 pt-0">
-                <Link href={service.url} className="group inline-flex items-center text-jdred font-medium">
-                  Saiba mais
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+				<div className='grid gap-6 lg:grid-cols-[minmax(0,1.04fr)_minmax(0,0.96fr)]'>
+					<div className='relative overflow-hidden rounded-[2.2rem] border border-border/40 bg-primary text-primary-foreground shadow-[0_32px_90px_rgba(8,17,34,0.18)]'>
+						<Image
+							src={featuredService.image}
+							alt={featuredService.title}
+							fill
+							className='object-cover object-left brightness-[0.9] saturate-[0.92]'
+							sizes='(max-width: 1024px) 100vw, 52vw'
+							priority={false}
+						/>
+						<div className='absolute inset-0 bg-[linear-gradient(180deg,rgba(8,17,34,0.12)_0%,rgba(8,17,34,0.28)_30%,rgba(8,17,34,0.64)_68%,rgba(8,17,34,0.95)_100%)]' />
+						<div className='absolute inset-0 bg-[radial-gradient(circle_at_22%_76%,rgba(8,17,34,0.88),transparent_38%),radial-gradient(circle_at_78%_18%,rgba(8,17,34,0.24),transparent_28%)]' />
+						<div className='absolute inset-x-0 bottom-0 h-52 bg-linear-to-t from-[#081122] via-[#081122]/72 to-transparent' />
 
-        <div className="mt-12 text-center">
-          <Link href="/servicos">
-            <Button variant="outline" size="lg" className="hover:text-jdred hover:border-jdred bg-transparent">
-              Ver todos os serviços
-            </Button>
-          </Link>
-        </div>
-      </div>
-    </section>
-  )
+						<div className='relative z-10 flex h-full min-h-[430px] flex-col justify-end p-8 md:p-10'>
+							<div className='max-w-xl'>
+								<h3 className='max-w-lg text-balance text-3xl font-semibold tracking-[-0.04em] text-white [text-shadow:0_10px_35px_rgba(0,0,0,0.35)] md:text-4xl 2xl:text-6xl'>
+									{featuredService.title}
+								</h3>
+							</div>
+
+							<Link
+								href={featuredService.url}
+								className='mt-10 flex items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-accent group'>
+								Saiba mais
+								<ArrowRight className='h-4 w-4 transition-transform duration-300 group-hover:translate-x-1' />
+							</Link>
+						</div>
+					</div>
+
+					<div className='grid gap-4 sm:grid-cols-2'>
+						{services.map(({ title, description, url, icon: Icon }) => (
+							<Link
+								key={title}
+								href={url}
+								className='group rounded-[1.7rem] border border-border/40 bg-card/96 p-6 shadow-[0_22px_60px_rgba(8,17,34,0.08)] transition-transform duration-300 hover:-translate-y-1 hover:border-jdblue/40 hover:shadow-[0_28px_70px_rgba(8,17,34,0.12)]'>
+								<div className='flex h-full flex-col'>
+									<div className='flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-accent'>
+										<Icon
+											className='h-5 w-5'
+											aria-hidden='true'
+										/>
+									</div>
+									<h3 className='mt-5 text-xl font-semibold tracking-[-0.03em] text-jdblue'>
+										{title}
+									</h3>
+									<p className='mt-3 flex-1 text-sm leading-7 text-muted-foreground'>
+										{description}
+									</p>
+									<div className='mt-5 inline-flex items-center gap-2 text-sm font-semibold text-jdblue transition-colors group-hover:text-accent'>
+										Ver detalhes
+										<ArrowRight className='h-4 w-4 transition-transform duration-300 group-hover:translate-x-1' />
+									</div>
+								</div>
+							</Link>
+						))}
+					</div>
+				</div>
+
+				<div className='mt-10 text-center'>
+					<Button
+						asChild
+						variant='outline'
+						size='lg'
+						className='rounded-full border-jdblue/40 bg-card px-7 shadow-[0_16px_40px_rgba(8,17,34,0.06)] hover:border-jdblue/40 hover:text-jdblue'>
+						<Link href='/servicos'>Ver todos os serviços</Link>
+					</Button>
+				</div>
+			</div>
+		</section>
+	);
 }

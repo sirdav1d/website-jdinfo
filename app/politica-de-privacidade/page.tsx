@@ -1,7 +1,17 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Política de Privacidade",
+  description:
+    "Saiba como a JDINFO coleta, utiliza e protege seus dados pessoais em conformidade com a LGPD.",
+  path: "/politica-de-privacidade",
+  keywords: ["política de privacidade jdinfo", "lgpd jdinfo", "privacidade assistência técnica"],
+})
 
 export default function PrivacyPolicyPage() {
   return (

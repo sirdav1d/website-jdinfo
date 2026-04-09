@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -5,6 +6,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar iPhone em Niterói: Assistência Técnica Especializada",
+  description:
+    "Problemas com seu iPhone? Conheça a melhor assistência técnica especializada em reparo de iPhones em Niterói.",
+  path: "/blog/onde-consertar-iphone-niteroi",
+  image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=2329&auto=format&fit=crop",
+  type: "article",
+})
 
 export default function IPhoneRepairBlogPost() {
   return (
@@ -68,7 +79,7 @@ export default function IPhoneRepairBlogPost() {
           <h2>JDINFO: A melhor opção para consertar iPhone em Niterói</h2>
           <p>
             A JDINFO se destaca como a principal assistência técnica especializada em produtos Apple em Niterói, com
-            mais de 18 anos de experiência no mercado. Nossa equipe é especializada em reparos de iPhone, oferecendo
+            mais de 20 anos de experiência no mercado. Nossa equipe é especializada em reparos de iPhone, oferecendo
             diagnóstico preciso e soluções eficientes para qualquer problema.
           </p>
 

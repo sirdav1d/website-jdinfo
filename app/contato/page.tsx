@@ -1,10 +1,21 @@
 /** @format */
 
+import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { MapPin, Phone, Mail, Clock, MessageSquare } from 'lucide-react';
+import { buildPageMetadata } from '@/lib/metadata';
+import { siteConfig } from '@/lib/site-config';
+
+export const metadata: Metadata = buildPageMetadata({
+	title: 'Contato',
+	description:
+		'Entre em contato com a JDINFO para solicitar orçamento, tirar dúvidas e falar com a equipe técnica em Niterói.',
+	path: '/contato',
+	keywords: ['contato jdinfo', 'whatsapp assistência técnica', 'endereço jdinfo'],
+});
 
 export default function ContactPage() {
 	return (
@@ -40,7 +51,7 @@ export default function ContactPage() {
 										</h3>
 										<div className='space-y-4'>
 											<div className='flex items-start'>
-												<MapPin className='h-5 w-5 text-jdred mr-3 mt-0.5 flex-shrink-0' />
+												<MapPin className='h-5 w-5 text-jdred mr-3 mt-0.5 shrink-0' />
 												<p className='text-gray-600'>
 													R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí,
 													Niterói - RJ, 24220-031
@@ -55,7 +66,7 @@ export default function ContactPage() {
 										</h3>
 										<div className='space-y-4'>
 											<div className='flex items-center'>
-												<Phone className='h-5 w-5 text-jdred mr-3 flex-shrink-0' />
+												<Phone className='h-5 w-5 text-jdred mr-3 shrink-0' />
 												<p className='text-gray-600'>
 													<a
 														href='https://wa.me/5521971386634'
@@ -65,7 +76,7 @@ export default function ContactPage() {
 												</p>
 											</div>
 											<div className='flex items-center'>
-												<Phone className='h-5 w-5 text-jdred mr-3 flex-shrink-0' />
+												<Phone className='h-5 w-5 text-jdred mr-3 shrink-0' />
 												<p className='text-gray-600'>
 													<a
 														href='https://wa.me/5521996643987'
@@ -79,7 +90,7 @@ export default function ContactPage() {
 
 									<div className='space-y-4'>
 										<div className='flex items-center'>
-											<Mail className='h-5 w-5 text-jdred mr-3 flex-shrink-0' />
+											<Mail className='h-5 w-5 text-jdred mr-3 shrink-0' />
 											<p className='text-gray-600'>
 												<a
 													href='mailto:contato@jdinfo.com.br'
@@ -89,7 +100,7 @@ export default function ContactPage() {
 											</p>
 										</div>
 										<div className='flex items-start'>
-											<Clock className='h-5 w-5 text-jdred mr-3 mt-0.5 flex-shrink-0' />
+											<Clock className='h-5 w-5 text-jdred mr-3 mt-0.5 shrink-0' />
 											<div>
 												<p className='text-gray-600'>
 													Segunda a Sexta: 9h às 18h
@@ -185,7 +196,7 @@ export default function ContactPage() {
 										</label>
 										<select
 											id='service'
-											className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-jdred focus:border-jdred'>
+											className='w-full px-3 py-2 border border-gray-300/40 rounded-md shadow-sm focus:outline-none focus:ring-jdred focus:border-jdred/40'>
 											<option value=''>Selecione o serviço</option>
 											<option value='playstation'>
 												Conserto de PlayStation (PS4/PS5)
@@ -211,7 +222,7 @@ export default function ContactPage() {
 											id='message'
 											rows={5}
 											placeholder='Descreva seu problema ou dúvida'
-											className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-jdred focus:border-jdred'></textarea>
+											className='w-full px-3 py-2 border border-gray-300/40 rounded-md shadow-sm focus:outline-none focus:ring-jdred focus:border-jdred/40'></textarea>
 									</div>
 									<div>
 										<Button
@@ -237,7 +248,7 @@ export default function ContactPage() {
 						<div className='bg-white rounded-lg overflow-hidden shadow-sm'>
 							<div className='relative h-72'>
 								<iframe
-									src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.814225258417!2d-43.12042455745302!3d-22.898350117043968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983f69271bcbf%3A0x66148c0240e8fac0!2sJD%20INFO%20%7C%20Gamer%20%26%20Tecnologia%20%7C%20Assist%C3%AAncia%20Apple%20%2C%20Conserto%20notebook%20e%20PC%20gamer%2C%20Niter%C3%B3i%20T%C3%A9cnica!5e0!3m2!1spt-BR!2sbr!4v1743910127396!5m2!1spt-BR!2sbr'
+									src={siteConfig.maps.embedUrl}
 									width='100%'
 									height='100%'
 									style={{ border: 0 }}
@@ -260,7 +271,7 @@ export default function ContactPage() {
 										className='w-full sm:w-auto'>
 										<Button
 											variant='outline'
-											className='w-full hover:text-jdred hover:border-jdred'>
+											className='w-full hover:text-jdred hover:border-jdred/40'>
 											WhatsApp 97138-6634
 										</Button>
 									</a>
@@ -269,12 +280,12 @@ export default function ContactPage() {
 										className='w-full sm:w-auto'>
 										<Button
 											variant='outline'
-											className='w-full hover:text-jdred hover:border-jdred'>
+											className='w-full hover:text-jdred hover:border-jdred/40'>
 											WhatsApp 99664-3987
 										</Button>
 									</a>
 									<a
-										href='https://maps.google.com/?q=JDINFO+Icarai+Niteroi'
+										href={siteConfig.maps.directionsUrl}
 										target='_blank'
 										rel='noopener noreferrer'
 										className='w-full sm:w-auto'>
@@ -323,3 +334,5 @@ export default function ContactPage() {
 		</div>
 	);
 }
+
+

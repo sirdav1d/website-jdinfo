@@ -137,10 +137,11 @@ export default function BlogPage() {
       </div>
 
       <div className="mt-12 text-center">
-        <Button variant="outline" size="lg" className="hover:text-jdred hover:border-jdred">
+        <Button variant="outline" size="lg" className="hover:text-jdred hover:border-jdred/40">
           <Link href="/">Voltar para a página inicial</Link>
         </Button>
       </div>
     </div>
   )
 }
+

@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -5,6 +6,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar Tablet em Niterói: Assistência Técnica Especializada",
+  description:
+    "Tablet com problemas? Conheça a melhor assistência técnica para tablets em Niterói com diagnóstico, reparo e suporte especializado.",
+  path: "/blog/onde-consertar-tablet-niteroi",
+  image: "/images/tablet-repair.png",
+  type: "article",
+})
 
 export default function TabletRepairBlogPost() {
   return (
