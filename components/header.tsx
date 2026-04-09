@@ -68,7 +68,7 @@ export default function Header() {
 							<Link
 								key={item.href}
 								href={item.href}
-								className='text-sm font-medium text-foreground/88 transition-colors hover:text-white'>
+								className='text-sm font-medium text-foreground/88 transition-colors hover:text-accent'>
 								{item.label}
 							</Link>
 						))}
@@ -79,12 +79,12 @@ export default function Header() {
 					<div className='flex flex-col text-right text-xs text-foreground/86'>
 						<a
 							href='https://wa.me/5521971386634'
-							className='transition-colors hover:text-white'>
+							className='transition-colors hover:text-accent'>
 							(21) 97138-6634
 						</a>
 						<a
 							href='https://wa.me/5521996643987'
-							className='transition-colors hover:text-white'>
+							className='transition-colors hover:text-accent'>
 							(21) 99664-3987
 						</a>
 					</div>

@@ -125,7 +125,7 @@ export default function VerifiedReviews() {
 							target='_blank'
 							rel='noopener noreferrer'
 							className='inline-flex items-center gap-2 px-1 text-sm font-semibold text-jdblue transition-colors hover:text-accent'>
-							Ver reputação completa no Google
+							Ver avaliações completas no Google
 							<ArrowUpRight className='h-4 w-4' />
 						</a>
 					</div>
