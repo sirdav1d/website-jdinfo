@@ -1,13 +1,13 @@
 /** @format */
 
 import Link from 'next/link';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { HeroVideoDialog } from '@/components/ui/hero-video-dialog';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 
-const HERO_VIDEO_SRC =
-	'https://drive.google.com/file/d/1VogucP--s4Mazkd2itWN15k6rj3b7uzP/preview';
+const HERO_VIDEO_SRC = '/video/hero-video.mp4';
 
 const heroStats = [
 	{ value: '20+', label: 'anos de mercado' },
@@ -40,16 +40,11 @@ export default function HeroSection() {
 								<ArrowRight className='h-4 w-4' />
 							</Link>
 						</Button>
-						<Button
-							asChild
-							size='lg'
-							variant='outline'
-							className='h-auto rounded-full border-border/40 bg-card/80 px-7 py-4 text-base shadow-[0_18px_40px_rgba(8,17,34,0.08)] backdrop-blur'>
-							<a href='https://wa.me/5521971386634'>
-								<MessageCircle className='h-4 w-4' />
-								Falar com especialista
-							</a>
-						</Button>
+						<WhatsAppButton
+							href='https://wa.me/5521971386634'
+							className='h-auto rounded-full px-7 py-4 text-base shadow-[0_18px_40px_rgba(37,211,102,0.22)] hover:shadow-[0_24px_52px_rgba(37,211,102,0.3)]'>
+							Falar com especialista
+						</WhatsAppButton>
 					</div>
 
 					<HeroVideoDialog

@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import BlogArticleLayout from "@/components/blog-article-layout"
 import SEOSchema from "@/components/seo-schema"
 import Image from "next/image"
@@ -47,10 +45,7 @@ export default function PlayStationRepairPage() {
   return (
     <>
       <SEOSchema type="article" data={articleData} />
-      <SEOSchema type="breadcrumb" data={breadcrumbData} />
-
-      <Header />
-      <BlogArticleLayout>
+      <SEOSchema type="breadcrumb" data={breadcrumbData} />      <BlogArticleLayout>
         <div className="mb-6">
           <Link href="/blog" className="inline-flex items-center text-jdred hover:text-jdred/80 transition-colors mb-4">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -264,9 +259,7 @@ export default function PlayStationRepairPage() {
             </div>
           </div>
         </article>
-      </BlogArticleLayout>
-      <Footer />
-    </>
+      </BlogArticleLayout>    </>
   )
 }
 

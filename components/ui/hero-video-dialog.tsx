@@ -79,6 +79,7 @@ export function HeroVideoDialog({
 }: HeroVideoProps) {
 	const [isVideoOpen, setIsVideoOpen] = useState(false);
 	const selectedAnimation = animationVariants[animationStyle];
+	const isDirectVideoFile = /\.(mp4|webm|ogg)(?:$|[?#])/i.test(videoSrc);
 
 	return (
 		<div className={cn('relative', className)}>
@@ -132,12 +133,24 @@ export function HeroVideoDialog({
 								<XIcon className='size-5' />
 							</motion.button>
 							<div className='relative isolate z-1 size-full overflow-hidden rounded-2xl border-2 border-white'>
-								<iframe
-									src={videoSrc}
-									title='Hero Video player'
-									className='mt-0 size-full rounded-2xl'
-									allowFullScreen
-									allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'></iframe>
+								{isDirectVideoFile ? (
+									<video
+										src={videoSrc}
+										poster={thumbnailSrc}
+										className='size-full rounded-2xl bg-black object-contain'
+										controls
+										autoPlay
+										playsInline
+										preload='metadata'
+									/>
+								) : (
+									<iframe
+										src={videoSrc}
+										title='Hero Video player'
+										className='mt-0 size-full rounded-2xl'
+										allowFullScreen
+										allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'></iframe>
+								)}
 							</div>
 						</motion.div>
 					</motion.div>

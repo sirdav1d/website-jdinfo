@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import { Check, Gamepad2 } from "lucide-react"
@@ -42,8 +40,6 @@ export default function VideoGamesPage() {
   ]
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <section className="py-12 md:py-16 bg-blue-50">
           <div className="container mx-auto px-4 md:px-6">
@@ -279,8 +275,6 @@ export default function VideoGamesPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
   )
 }
 

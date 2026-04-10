@@ -1,10 +1,8 @@
 import type { Metadata } from "next"
-import { Button } from "@/components/ui/button"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import Image from "next/image"
 import { Check, Clock, Award, Shield, Users, PenToolIcon as Tool } from "lucide-react"
 import { buildPageMetadata } from "@/lib/metadata"
+import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Sobre a JDINFO",
@@ -16,8 +14,6 @@ export const metadata: Metadata = buildPageMetadata({
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <section className="py-12 md:py-16 bg-jdblue text-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -204,18 +200,7 @@ export default function AboutPage() {
                   Estamos prontos para atender você em Niterói. Entre em contato ou visite-nos em Icaraí para
                   conhecer nossos serviços e receber um diagnóstico gratuito.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="https://wa.me/5521971386634">
-                    <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                      <span className="mr-2">WhatsApp 97138-6634</span>
-                    </Button>
-                  </a>
-                  <a href="https://wa.me/5521996643987">
-                    <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                      <span className="mr-2">WhatsApp 99664-3987</span>
-                    </Button>
-                  </a>
-                </div>
+                <WhatsAppButtonsRow />
               </div>
               <div className="bg-jdblue/80 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4">Horário de Funcionamento</h3>
@@ -238,8 +223,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
   )
 }
 

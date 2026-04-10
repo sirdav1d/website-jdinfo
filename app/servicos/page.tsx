@@ -1,10 +1,7 @@
 /** @format */
 
 import type { Metadata } from 'next';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
 import {
 	ArrowRight,
 	Gamepad2,
@@ -19,6 +16,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import { buildPageMetadata } from '@/lib/metadata';
+import { WhatsAppButtonsRow } from '@/components/whatsapp-button';
 
 export const metadata: Metadata = buildPageMetadata({
 	title: 'Serviços de Assistência Técnica',
@@ -192,8 +190,6 @@ export default function ServicesPage() {
 	];
 
 	return (
-		<div className='min-h-screen flex flex-col bg-white'>
-			<Header />
 			<main className='flex-1'>
 				<section className='py-12 md:py-16 bg-jdblue text-white'>
 					<div className='container mx-auto px-4 md:px-6'>
@@ -206,22 +202,10 @@ export default function ServicesPage() {
 								soluções rápidas e confiáveis para conserto de eletrônicos com
 								atendimento especializado e peças originais.
 							</p>
-							<div className='flex flex-col sm:flex-row gap-3 justify-center'>
-								<a href='https://wa.me/5521971386634'>
-									<Button
-										size='lg'
-										className='bg-jdred hover:bg-jdred/90'>
-										WhatsApp 97138-6634
-									</Button>
-								</a>
-								<a href='https://wa.me/5521996643987'>
-									<Button
-										size='lg'
-										className='bg-jdred hover:bg-jdred/90'>
-										WhatsApp 99664-3987
-									</Button>
-								</a>
-							</div>
+							<WhatsAppButtonsRow
+								className='justify-center gap-3'
+								buttonClassName='sm:w-auto'
+							/>
 						</div>
 					</div>
 				</section>
@@ -390,7 +374,7 @@ export default function ServicesPage() {
 
 							<div className='relative h-[500px] rounded-xl overflow-hidden'>
 								<Image
-									src='https://images.unsplash.com/photo-1581092921461-39b9d08a9b21?q=80&w=2070&auto=format&fit=crop'
+									src='/images/image-servicos.png'
 									alt='Técnico da JDINFO realizando reparo em equipamento eletrônico'
 									fill
 									className='object-cover'
@@ -412,22 +396,10 @@ export default function ServicesPage() {
 									gratuito e descubra como podemos ajudar a recuperar seu
 									equipamento com rapidez e qualidade.
 								</p>
-								<div className='flex flex-col sm:flex-row gap-3'>
-									<a href='https://wa.me/5521971386634'>
-										<Button
-											size='lg'
-											className='bg-jdred hover:bg-jdred/90'>
-											WhatsApp 97138-6634
-										</Button>
-									</a>
-									<a href='https://wa.me/5521996643987'>
-										<Button
-											size='lg'
-											className='bg-jdred hover:bg-jdred/90'>
-											WhatsApp 99664-3987
-										</Button>
-									</a>
-								</div>
+								<WhatsAppButtonsRow
+									className='gap-3'
+									buttonClassName='sm:w-auto'
+								/>
 							</div>
 							<div className='bg-jdblue/80 p-6 rounded-lg'>
 								<h3 className='text-xl font-semibold mb-4'>
@@ -532,7 +504,5 @@ export default function ServicesPage() {
 					</div>
 				</section>
 			</main>
-			<Footer />
-		</div>
 	);
 }

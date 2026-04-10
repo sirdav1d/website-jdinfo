@@ -2,16 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-	ArrowRight,
-	Cpu,
-	Gamepad2,
-	HardDrive,
-	Laptop,
-	Speaker,
-	TabletSmartphone,
-} from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 const featuredService = {
 	title: 'Notebook, MacBook, Consoles, e PC Gamer',
@@ -32,42 +25,56 @@ const services = [
 		description:
 			'PS4, PS5 e controles com foco em reparo confiável e orientação objetiva.',
 		url: '/blog/onde-consertar-playstation-niteroi',
-		icon: Gamepad2,
+		logoSrc: '/brands/playstation.png',
+		logoAlt: 'Logo da PlayStation',
+		logoClassName: 'w-7',
 	},
 	{
 		title: 'Conserto de Xbox',
 		description:
 			'Xbox One e Series com triagem técnica e suporte para controles e acessórios.',
 		url: '/blog/onde-consertar-xbox-niteroi',
-		icon: Cpu,
+		logoSrc: '/brands/xbox.png',
+		logoAlt: 'Logo da Xbox',
+		logoClassName: 'w-6',
 	},
 	{
 		title: 'Linha Apple',
 		description:
 			'iPhone, iPad, MacBook e outros dispositivos Apple com atendimento especializado.',
 		url: '/blog/onde-consertar-iphone-niteroi',
-		icon: Laptop,
+		logoSrc: '/brands/apple.png',
+		logoAlt: 'Logo da Apple',
+		logoClassName: 'w-6',
 	},
 	{
 		title: 'Nintendo e portáteis',
 		description:
 			'Nintendo Switch, tablets e eletrônicos compactos com foco em recuperação funcional.',
 		url: '/blog/onde-consertar-nintendo-niteroi',
-		icon: TabletSmartphone,
+		logoSrc: '/brands/nintendo.png',
+		logoAlt: 'Logo da Nintendo',
+		logoWrapClassName: 'px-2.5',
+		logoClassName: 'w-12',
 	},
 	{
 		title: 'GoPro e eletrônicos técnicos',
 		description:
 			'Câmeras de ação, acessórios e outros equipamentos de uso intenso.',
 		url: '/blog/onde-consertar-gopro-niteroi',
-		icon: HardDrive,
+		logoSrc: '/brands/gopro.jpg',
+		logoAlt: 'Logo da GoPro',
+		logoWrapClassName: 'px-2.5',
+		logoClassName: 'w-12',
 	},
 	{
 		title: 'Áudio e caixas JBL',
 		description:
 			'Reparo de áudio portátil com avaliação objetiva de custo x benefício.',
 		url: '/blog/onde-consertar-caixas-jbl-niteroi',
-		icon: Speaker,
+		logoSrc: '/brands/jbl.jpg',
+		logoAlt: 'Logo da JBL',
+		logoClassName: 'w-6',
 	},
 ];
 
@@ -115,16 +122,35 @@ export default function SpecializedServices() {
 					</div>
 
 					<div className='grid gap-4 sm:grid-cols-2'>
-						{services.map(({ title, description, url, icon: Icon }) => (
+						{services.map(
+							({
+								title,
+								description,
+								url,
+								logoSrc,
+								logoAlt,
+								logoWrapClassName,
+								logoClassName,
+							}) => (
 							<Link
 								key={title}
 								href={url}
 								className='group rounded-[1.7rem] border border-border/40 bg-card/96 p-6 shadow-[0_22px_60px_rgba(8,17,34,0.08)] transition-transform duration-300 hover:-translate-y-1 hover:border-jdblue/40 hover:shadow-[0_28px_70px_rgba(8,17,34,0.12)]'>
 								<div className='flex h-full flex-col'>
-									<div className='flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-accent'>
-										<Icon
-											className='h-5 w-5'
-											aria-hidden='true'
+									<div
+										className={cn(
+											'flex h-12 w-fit min-w-12 items-center justify-center rounded-2xl bg-secondary px-3',
+											logoWrapClassName,
+										)}>
+										<Image
+											src={logoSrc}
+											alt={logoAlt}
+											width={96}
+											height={40}
+											className={cn(
+												'h-auto max-h-7 w-auto object-contain',
+												logoClassName,
+											)}
 										/>
 									</div>
 									<h3 className='mt-5 text-xl font-semibold tracking-[-0.03em] text-jdblue'>

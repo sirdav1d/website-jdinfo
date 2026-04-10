@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { buildPageMetadata } from "@/lib/metadata"
@@ -15,8 +13,6 @@ export const metadata: Metadata = buildPageMetadata({
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <section className="py-12 md:py-16 bg-jdblue text-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -139,7 +135,5 @@ export default function PrivacyPolicyPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
   )
 }

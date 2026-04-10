@@ -3,11 +3,10 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import { MapPin, Phone, Mail, Clock, MessageSquare } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { buildPageMetadata } from '@/lib/metadata';
 import { siteConfig } from '@/lib/site-config';
+import { WhatsAppButton, WhatsAppButtonsRow } from '@/components/whatsapp-button';
 
 export const metadata: Metadata = buildPageMetadata({
 	title: 'Contato',
@@ -19,8 +18,6 @@ export const metadata: Metadata = buildPageMetadata({
 
 export default function ContactPage() {
 	return (
-		<div className='min-h-screen flex flex-col bg-white'>
-			<Header />
 			<main className='flex-1'>
 				<section className='py-12 md:py-16 bg-jdblue text-white'>
 					<div className='container mx-auto px-4 md:px-6'>
@@ -122,24 +119,7 @@ export default function ContactPage() {
 											conosco diretamente pelo WhatsApp. Basta clicar em um dos
 											botões abaixo:
 										</p>
-										<div className='flex flex-col sm:flex-row gap-4'>
-											<a
-												href='https://wa.me/5521971386634'
-												className='w-full sm:w-auto'>
-												<Button className='w-full bg-jdred hover:bg-jdred/90'>
-													<MessageSquare className='mr-2 h-4 w-4' />
-													WhatsApp 97138-6634
-												</Button>
-											</a>
-											<a
-												href='https://wa.me/5521996643987'
-												className='w-full sm:w-auto'>
-												<Button className='w-full bg-jdred hover:bg-jdred/90'>
-													<MessageSquare className='mr-2 h-4 w-4' />
-													WhatsApp 99664-3987
-												</Button>
-											</a>
-										</div>
+										<WhatsAppButtonsRow size='default' />
 									</div>
 								</div>
 							</div>
@@ -266,24 +246,18 @@ export default function ContactPage() {
 									RJ, 24220-031
 								</p>
 								<div className='flex flex-col sm:flex-row gap-3'>
-									<a
+									<WhatsAppButton
 										href='https://wa.me/5521971386634'
+										size='default'
 										className='w-full sm:w-auto'>
-										<Button
-											variant='outline'
-											className='w-full hover:text-jdred hover:border-jdred/40'>
-											WhatsApp 97138-6634
-										</Button>
-									</a>
-									<a
+										WhatsApp 97138-6634
+									</WhatsAppButton>
+									<WhatsAppButton
 										href='https://wa.me/5521996643987'
+										size='default'
 										className='w-full sm:w-auto'>
-										<Button
-											variant='outline'
-											className='w-full hover:text-jdred hover:border-jdred/40'>
-											WhatsApp 99664-3987
-										</Button>
-									</a>
+										WhatsApp 99664-3987
+									</WhatsAppButton>
 									<a
 										href={siteConfig.maps.directionsUrl}
 										target='_blank'
@@ -310,28 +284,11 @@ export default function ContactPage() {
 								e descubra como podemos ajudar a recuperar seu equipamento com
 								rapidez e qualidade.
 							</p>
-							<div className='flex flex-col sm:flex-row gap-4 justify-center'>
-								<a href='https://wa.me/5521971386634'>
-									<Button
-										size='lg'
-										className='bg-jdred hover:bg-jdred/90 w-full sm:w-auto'>
-										<span className='mr-2'>WhatsApp 97138-6634</span>
-									</Button>
-								</a>
-								<a href='https://wa.me/5521996643987'>
-									<Button
-										size='lg'
-										className='bg-jdred hover:bg-jdred/90 w-full sm:w-auto'>
-										<span className='mr-2'>WhatsApp 99664-3987</span>
-									</Button>
-								</a>
-							</div>
+							<WhatsAppButtonsRow className='justify-center' />
 						</div>
 					</div>
 				</section>
 			</main>
-			<Footer />
-		</div>
 	);
 }
 

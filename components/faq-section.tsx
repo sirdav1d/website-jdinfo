@@ -1,14 +1,14 @@
 /** @format */
 
-import { Clock, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { Clock, MapPin, Phone } from 'lucide-react';
 import {
 	Accordion,
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
 import { homepageFaqItems } from '@/lib/homepage-faq';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 
 const supportPoints = [
 	{
@@ -44,8 +44,8 @@ export default function FAQSection() {
 				<div className='grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)]'>
 					<div className='rounded-4xl border border-border/40 bg-card/96 p-6 shadow-[0_24px_60px_rgba(8,17,34,0.08)] md:p-8'>
 						<Accordion
+							defaultValue='item-0'
 							type='single'
-							collapsible
 							className='w-full'>
 							{homepageFaqItems.map((faq, index) => (
 								<AccordionItem
@@ -63,27 +63,27 @@ export default function FAQSection() {
 						</Accordion>
 					</div>
 
-					<div className='flex h-full flex-col justify-between rounded-4xl bg-primary p-8 text-primary-foreground shadow-[0_30px_80px_rgba(8,17,34,0.2)]'>
+					<div className='flex h-full flex-col rounded-4xl bg-primary p-8 text-primary-foreground shadow-[0_30px_80px_rgba(8,17,34,0.2)] md:p-10'>
 						<div>
-							<h3 className='text-2xl font-semibold tracking-[-0.04em] text-white md:text-3xl'>
-								Fale com a equipe e confirme o melhor próximo passo para o seu
-								equipamento.
+							<h3 className='max-w-md text-balance text-3xl leading-[1.06] font-semibold tracking-[-0.05em] text-white md:text-[2.5rem]'>
+								Fale com a equipe e tire suas dúvidas presencialmente, ou pelo
+								whatsapp.
 							</h3>
 						</div>
 
-						<div className='mt-8'>
+						<div className='mt-10'>
 							{supportPoints.map(({ label, value, icon: Icon }) => (
 								<div
 									key={label}
-									className='border-b border-white/40 py-5 first:pt-0 last:border-b-0 last:pb-0'>
-									<div className='mb-2 flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-white/60'>
+									className='border-b border-white/40 py-6 first:pt-0 last:border-b-0 last:pb-0'>
+									<div className='mb-3 flex items-center gap-2.5 text-base font-semibold uppercase tracking-[0.18em] text-white/62'>
 										<Icon
-											className='h-4 w-4 text-accent'
+											className='h-4.5 w-4.5 text-accent'
 											aria-hidden='true'
 										/>
 										{label}
 									</div>
-									<div className='space-y-1 text-sm leading-7 text-white/82'>
+									<div className='space-y-2 text-base leading-8 text-white/84 text-balance'>
 										{value.map((line) => (
 											<p key={line}>{line}</p>
 										))}
@@ -92,17 +92,13 @@ export default function FAQSection() {
 							))}
 						</div>
 
-						<div className='mt-8 flex flex-col gap-3'>
-							<Button
-								asChild
+						<div className='mt-10 flex flex-col gap-3'>
+							<WhatsAppButton
+								href='https://wa.me/5521971386634'
 								size='lg'
-								variant='accent'
-								className='rounded-full'>
-								<a href='https://wa.me/5521971386634'>
-									<MessageCircle className='h-5 w-5' />
-									Falar pelo WhatsApp
-								</a>
-							</Button>
+								className='h-14 rounded-full px-8 text-base font-semibold shadow-[0_16px_36px_rgba(37,211,102,0.24)]'>
+								Falar pelo WhatsApp
+							</WhatsAppButton>
 						</div>
 					</div>
 				</div>

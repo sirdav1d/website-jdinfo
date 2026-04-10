@@ -1,6 +1,5 @@
 import type React from "react"
 import type { Metadata } from "next"
-import BackToTop from "@/components/back-to-top"
 import SEOSchema from "@/components/seo-schema"
 import { buildPageMetadata } from "@/lib/metadata"
 import { siteConfig } from "@/lib/site-config"
@@ -33,10 +32,9 @@ export default function BlogLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white">
       <SEOSchema type="breadcrumb" data={breadcrumbData} />
       {children}
-      <BackToTop />
     </div>
   )
 }

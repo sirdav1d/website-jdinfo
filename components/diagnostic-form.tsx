@@ -10,7 +10,6 @@ import {
 	ArrowRight,
 	BadgeCheck,
 	CheckCircle2,
-	MessageCircle,
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -26,6 +25,7 @@ import {
 	SelectValue,
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 
 export default function DiagnosticForm() {
 	const [submitted, setSubmitted] = useState(false);
@@ -87,15 +87,11 @@ export default function DiagnosticForm() {
 					</div>
 
 					<div className='mt-6 flex flex-col gap-3 sm:flex-row'>
-						<Button
-							asChild
-							variant='accent'
+						<WhatsAppButton
+							href='https://wa.me/5521971386634'
 							className='h-auto rounded-full px-6 py-4'>
-							<a href='https://wa.me/5521971386634'>
-								<MessageCircle className='h-4 w-4' />
-								Falar no WhatsApp
-							</a>
-						</Button>
+							Falar no WhatsApp
+						</WhatsAppButton>
 						<Button
 							asChild
 							variant='outline'

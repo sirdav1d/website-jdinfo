@@ -4,6 +4,8 @@ import type React from 'react';
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
 import { Geist } from 'next/font/google';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 import FloatingChat from '@/components/floating-chat';
 import SEOSchema from '@/components/seo-schema';
 import Script from 'next/script';
@@ -41,6 +43,10 @@ export const metadata: Metadata = {
 	creator: siteConfig.brandName,
 	publisher: siteConfig.brandName,
 	manifest: '/manifest.webmanifest',
+	icons: {
+		icon: [{ url: '/favicon.webp', type: 'image/webp' }],
+		shortcut: [{ url: '/favicon.webp', type: 'image/webp' }],
+	},
 	verification: {
 		google: 'wpEc8PTNxWKIrlh-0Wy4hQxmpITPcvTyH4S0j_kdITk',
 	},
@@ -135,7 +141,9 @@ export default function RootLayout({
 					/>
 				</noscript>
 				<SEOSchema type='organization' />
+				<Header />
 				{children}
+				<Footer />
 				<FloatingChat />
 			</body>
 		</html>

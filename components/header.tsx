@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 
 const navigationItems = [
 	{ href: '/', label: 'HOME' },
@@ -75,8 +76,8 @@ export default function Header() {
 					</div>
 				</nav>
 
-				<div className='hidden items-center gap-4 md:flex'>
-					<div className='flex flex-col text-right text-xs text-foreground/86'>
+				<div className='hidden min-w-[280px] items-center justify-center md:flex'>
+					<div className='flex items-center justify-center gap-5 text-sm font-medium text-foreground/86'>
 						<a
 							href='https://wa.me/5521971386634'
 							className='transition-colors hover:text-accent'>
@@ -88,14 +89,6 @@ export default function Header() {
 							(21) 99664-3987
 						</a>
 					</div>
-
-					<Button
-						asChild
-						variant='outline'
-						size='sm'
-						className='rounded-full border-white/14 bg-white/96 text-primary shadow-[0_12px_30px_rgba(8,17,34,0.12)] hover:bg-white'>
-						<Link href='/#diagnostico'>Orçamento grátis</Link>
-					</Button>
 				</div>
 
 				<button
@@ -140,24 +133,18 @@ export default function Header() {
 									Orçamento grátis
 								</Link>
 							</Button>
-							<a
+							<WhatsAppButton
 								href='https://wa.me/5521971386634'
-								className='w-full'>
-								<Button
-									variant='accent'
-									className='w-full justify-center'>
-									WhatsApp 97138-6634
-								</Button>
-							</a>
-							<a
+								size='default'
+								className='w-full justify-center'>
+								WhatsApp 97138-6634
+							</WhatsAppButton>
+							<WhatsAppButton
 								href='https://wa.me/5521996643987'
-								className='w-full'>
-								<Button
-									variant='accent'
-									className='w-full justify-center'>
-									WhatsApp 99664-3987
-								</Button>
-							</a>
+								size='default'
+								className='w-full justify-center'>
+								WhatsApp 99664-3987
+							</WhatsAppButton>
 						</div>
 					</nav>
 				</div>
