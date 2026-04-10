@@ -1,8 +1,10 @@
 "use client"
 
+import { useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { AlertTriangle, RefreshCw } from "lucide-react"
+import { siteConfig } from "@/lib/site-config"
 
 export default function GlobalError({
   error,
@@ -11,6 +13,10 @@ export default function GlobalError({
   error: Error & { digest?: string }
   reset: () => void
 }) {
+  useEffect(() => {
+    console.error("Global application error:", error)
+  }, [error])
+
   return (
     <html>
       <body>
@@ -28,11 +34,11 @@ export default function GlobalError({
                 Recarregar Página
               </Button>
 
-              <div className="mt-6 pt-6 border-t border-gray-200">
+              <div className="mt-6 pt-6 border-t border-gray-200/40">
                 <p className="text-sm text-gray-500">Suporte técnico:</p>
                 <div className="mt-2 space-y-1 text-sm">
-                  <p className="text-blue-600">(21) 99999-9999</p>
-                  <p className="text-blue-600">contato@jdinformatica.com.br</p>
+                  <p className="text-blue-600">{siteConfig.phones.primary}</p>
+                  <p className="text-blue-600">{siteConfig.email}</p>
                 </div>
               </div>
             </CardContent>
@@ -42,3 +48,4 @@ export default function GlobalError({
     </html>
   )
 }
+

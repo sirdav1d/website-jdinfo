@@ -1,17 +1,24 @@
 /** @format */
 
-import { Button } from '@/components/ui/button';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import BlogArticleLayout from '@/components/blog-article-layout';
+import { buildPageMetadata } from '@/lib/metadata';
+import { WhatsAppButtonsRow } from '@/components/whatsapp-button';
+
+export const metadata: Metadata = buildPageMetadata({
+	title: 'Onde Consertar MacBook em Niterói: Assistência Apple',
+	description:
+		'MacBook com problemas? Descubra a melhor assistência técnica especializada em produtos Apple em Niterói.',
+	path: '/blog/onde-consertar-macbook-niteroi',
+	image:
+		'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2026&auto=format&fit=crop',
+	type: 'article',
+});
 
 export default function MacBookRepairBlogPost() {
 	return (
-		<div className='min-h-screen flex flex-col bg-white'>
-			<Header />
 			<main className='flex-1'>
 				<BlogArticleLayout>
 					<div className='article-meta'>12 de Julho, 2025 • Apple</div>
@@ -107,7 +114,7 @@ export default function MacBookRepairBlogPost() {
 							dos reparos)
 						</li>
 						<li>
-							Duas unidades em Niterói para sua comodidade (Centro e Icaraí)
+							Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais
 						</li>
 					</ul>
 
@@ -277,24 +284,7 @@ export default function MacBookRepairBlogPost() {
 							descubra como podemos ajudar a recuperar seu MacBook com rapidez e
 							qualidade.
 						</p>
-						<div className='flex flex-col sm:flex-row gap-4'>
-							<a href='https://wa.me/5521971386634'>
-								<Button
-									size='lg'
-									className='bg-jdred hover:bg-jdred/90 w-full sm:w-auto'>
-									<span className='mr-2'>Falar com Centro</span>
-									<ArrowRight className='h-4 w-4' />
-								</Button>
-							</a>
-							<a href='https://wa.me/5521996643987'>
-								<Button
-									size='lg'
-									className='bg-jdred hover:bg-jdred/90 w-full sm:w-auto'>
-									<span className='mr-2'>Falar com Icaraí</span>
-									<ArrowRight className='h-4 w-4' />
-								</Button>
-							</a>
-						</div>
+						<WhatsAppButtonsRow />
 					</div>
 
 					<div className='related-articles'>
@@ -352,7 +342,5 @@ export default function MacBookRepairBlogPost() {
 					</div>
 				</BlogArticleLayout>
 			</main>
-			<Footer />
-		</div>
 	);
 }

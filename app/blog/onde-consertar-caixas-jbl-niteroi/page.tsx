@@ -1,15 +1,21 @@
-import { Button } from "@/components/ui/button"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar Caixas JBL em Niterói: Solução Rápida",
+  description:
+    "Caixa JBL com problemas? Descubra onde encontrar o melhor serviço de reparo em Niterói para caixas de som JBL e outros equipamentos de áudio.",
+  path: "/blog/onde-consertar-caixas-jbl-niteroi",
+  image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop",
+  type: "article",
+})
 
 export default function JBLRepairBlogPost() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <BlogArticleLayout>
           <div className="article-meta">20 de Setembro, 2025 • Áudio</div>
@@ -69,7 +75,7 @@ export default function JBLRepairBlogPost() {
           <h2>JDINFO: A melhor opção para consertar caixas JBL em Niterói</h2>
           <p>
             A JDINFO se destaca como a principal assistência técnica especializada em equipamentos de áudio em Niterói,
-            com mais de 18 anos de experiência no mercado. Nossa equipe é especializada em reparos de caixas JBL,
+            com mais de 20 anos de experiência no mercado. Nossa equipe é especializada em reparos de caixas JBL,
             oferecendo diagnóstico preciso e soluções eficientes para qualquer problema.
           </p>
 
@@ -80,7 +86,7 @@ export default function JBLRepairBlogPost() {
             <li>Uso de peças de alta qualidade</li>
             <li>Garantia de 90 dias em todos os serviços</li>
             <li>Prazo de entrega rápido (média de 2 a 5 dias úteis para a maioria dos reparos)</li>
-            <li>Duas unidades em Niterói para sua comodidade (Centro e Icaraí)</li>
+            <li>Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais</li>
           </ul>
 
           <h2>Modelos de caixas JBL que consertamos</h2>
@@ -226,20 +232,7 @@ export default function JBLRepairBlogPost() {
               Entre em contato conosco hoje mesmo para um diagnóstico gratuito e descubra como podemos ajudar a
               recuperar seu equipamento com rapidez e qualidade.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/5521971386634">
-                <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Centro</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </a>
-              <a href="https://wa.me/5521996643987">
-                <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Icaraí</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </a>
-            </div>
+            <WhatsAppButtonsRow />
           </div>
 
           <div className="related-articles">
@@ -285,7 +278,5 @@ export default function JBLRepairBlogPost() {
           </div>
         </BlogArticleLayout>
       </main>
-      <Footer />
-    </div>
   )
 }

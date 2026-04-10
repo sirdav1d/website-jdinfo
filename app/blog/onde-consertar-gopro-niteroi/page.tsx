@@ -3,14 +3,22 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
 
-export const metadata: Metadata = {
-  title: "Onde Consertar GoPro em Niterói: Reparo Profissional | JDINFO",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar GoPro em Niterói: Reparo Profissional",
   description:
     "Sua GoPro parou de funcionar? Conheça a assistência técnica especializada em Niterói. Reparo profissional com garantia para todas as versões de GoPro.",
-  keywords:
-    "conserto gopro niterói, reparo gopro, assistência técnica gopro, gopro com defeito, consertar câmera de ação",
-}
+  path: "/blog/onde-consertar-gopro-niteroi",
+  image: "/images/gopro-underwater.png",
+  keywords: [
+    "conserto gopro niterói",
+    "reparo gopro",
+    "assistência técnica gopro",
+    "consertar câmera de ação",
+  ],
+  type: "article",
+})
 
 export default function GoproRepairPage() {
   return (
@@ -21,6 +29,7 @@ export default function GoproRepairPage() {
       category="Câmeras"
       mainImage="/images/gopro-underwater.png"
       mainImageAlt="GoPro sendo usada em ambiente aquático, mostrando a câmera em ação na água"
+      excerpt="Sua GoPro parou de funcionar? Conheça a assistência técnica especializada em Niterói. Reparo profissional com garantia para todas as versões de GoPro."
     >
       <p>
         As câmeras GoPro revolucionaram a forma como registramos nossas aventuras, permitindo capturar momentos

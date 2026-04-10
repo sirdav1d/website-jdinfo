@@ -1,10 +1,34 @@
 /** @format */
 
 import Script from 'next/script';
+import { siteConfig, toAbsoluteUrl } from '@/lib/site-config';
+
+type BreadcrumbItem = {
+	name: string;
+	url: string;
+};
+
+type FAQItem = {
+	question: string;
+	answer: string;
+};
+
+type SEOData = {
+	title?: string;
+	description?: string;
+	image?: string;
+	publishedDate?: string;
+	modifiedDate?: string;
+	url?: string;
+	faqs?: FAQItem[];
+	name?: string;
+	serviceType?: string;
+	breadcrumbs?: BreadcrumbItem[];
+};
 
 interface SEOSchemaProps {
 	type?: 'organization' | 'article' | 'faq' | 'service' | 'breadcrumb';
-	data?: any;
+	data?: SEOData;
 }
 
 export default function SEOSchema({
@@ -12,28 +36,23 @@ export default function SEOSchema({
 	data,
 }: SEOSchemaProps) {
 	const getSchema = () => {
-		const baseUrl = 'https://jdinfoblog.jdinformatica.com.br';
+		const baseUrl = siteConfig.url;
 
 		switch (type) {
 			case 'organization':
 				return {
 					'@context': 'https://schema.org',
 					'@type': 'Organization',
-					name: 'JDINFO - Assistência Técnica Especializada',
-					description:
-						'Assistência técnica especializada em Niterói para smartphones, tablets, notebooks, videogames e eletrônicos em geral.',
+					name: siteConfig.name,
+					description: siteConfig.description,
 					url: baseUrl,
-					logo: `${baseUrl}/images/logo-full.png`,
-					image: `${baseUrl}/images/store-image.png`,
-					telephone: '+55-21-99999-9999',
-					email: 'contato@jdinformatica.com.br',
+					logo: toAbsoluteUrl(siteConfig.ogImage),
+					image: toAbsoluteUrl(siteConfig.ogImage),
+					telephone: '+55-21-99664-3987',
+					email: siteConfig.email,
 					address: {
 						'@type': 'PostalAddress',
-						streetAddress: 'Rua da Conceição, 123',
-						addressLocality: 'Niterói',
-						addressRegion: 'RJ',
-						postalCode: '24020-000',
-						addressCountry: 'BR',
+						...siteConfig.address,
 					},
 					geo: {
 						'@type': 'GeoCoordinates',
@@ -51,10 +70,7 @@ export default function SEOSchema({
 						},
 						geoRadius: '50000',
 					},
-					sameAs: [
-						'https://www.facebook.com/jdinformatica',
-						'https://www.instagram.com/jdinformatica',
-					],
+					sameAs: [siteConfig.socials.facebook, siteConfig.socials.instagram],
 				};
 
 			case 'article':
@@ -65,17 +81,17 @@ export default function SEOSchema({
 					description:
 						data?.description ||
 						'Artigo sobre assistência técnica especializada',
-					image: data?.image || `${baseUrl}/images/logo-full.png`,
+					image: data?.image || toAbsoluteUrl(siteConfig.ogImage),
 					author: {
 						'@type': 'Organization',
-						name: 'JDINFO',
+						name: siteConfig.brandName,
 					},
 					publisher: {
 						'@type': 'Organization',
-						name: 'JDINFO',
+						name: siteConfig.brandName,
 						logo: {
 							'@type': 'ImageObject',
-							url: `${baseUrl}/images/logo-full.png`,
+							url: toAbsoluteUrl(siteConfig.ogImage),
 						},
 					},
 					datePublished: data?.publishedDate || '2025-01-01',
@@ -91,13 +107,26 @@ export default function SEOSchema({
 					'@context': 'https://schema.org',
 					'@type': 'FAQPage',
 					mainEntity:
-						data?.faqs?.map((faq: any) => ({
+						data?.faqs?.map((faq) => ({
 							'@type': 'Question',
 							name: faq.question,
 							acceptedAnswer: {
 								'@type': 'Answer',
 								text: faq.answer,
 							},
+						})) || [],
+				};
+
+			case 'breadcrumb':
+				return {
+					'@context': 'https://schema.org',
+					'@type': 'BreadcrumbList',
+					itemListElement:
+						data?.breadcrumbs?.map((breadcrumb, index) => ({
+							'@type': 'ListItem',
+							position: index + 1,
+							name: breadcrumb.name,
+							item: breadcrumb.url,
 						})) || [],
 				};
 

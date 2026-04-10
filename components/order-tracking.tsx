@@ -168,10 +168,10 @@ export default function OrderTracking() {
           <p>Precisa de ajuda? Entre em contato pelo WhatsApp:</p>
           <div className="flex justify-center space-x-4 mt-2">
             <a href="https://wa.me/5521971386634" className="text-jdblue hover:underline">
-              Centro: (21) 97138-6634
+              WhatsApp (21) 97138-6634
             </a>
             <a href="https://wa.me/5521996643987" className="text-jdblue hover:underline">
-              Icaraí: (21) 99664-3987
+              WhatsApp (21) 99664-3987
             </a>
           </div>
         </div>

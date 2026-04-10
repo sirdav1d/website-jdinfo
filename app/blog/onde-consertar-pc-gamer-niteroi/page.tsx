@@ -1,15 +1,21 @@
-import { Button } from "@/components/ui/button"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar PC Gamer em Niterói: Assistência Especializada",
+  description:
+    "Seu PC Gamer está com problemas? Descubra onde encontrar assistência técnica especializada em Niterói para reparo, manutenção e upgrades.",
+  path: "/blog/onde-consertar-pc-gamer-niteroi",
+  image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=2070&auto=format&fit=crop",
+  type: "article",
+})
 
 export default function PCGamerRepairBlogPost() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <BlogArticleLayout>
           <div className="article-meta">05 de Abril, 2025 • PC Gamer</div>
@@ -71,7 +77,7 @@ export default function PCGamerRepairBlogPost() {
           <h2>JDINFO: A melhor opção para consertar PC Gamer em Niterói</h2>
           <p>
             A JDINFO se destaca como a principal assistência técnica especializada em PCs Gamers em Niterói, com mais de
-            18 anos de experiência no mercado. Nossa equipe é formada por técnicos que também são gamers, entendendo na
+            20 anos de experiência no mercado. Nossa equipe é formada por técnicos que também são gamers, entendendo na
             prática as necessidades e exigências desse tipo de equipamento.
           </p>
 
@@ -83,7 +89,7 @@ export default function PCGamerRepairBlogPost() {
             <li>Garantia de 90 dias em todos os serviços</li>
             <li>Equipamentos de teste de última geração</li>
             <li>Conhecimento em overclock seguro e otimização</li>
-            <li>Duas unidades em Niterói para sua comodidade (Centro e Icaraí)</li>
+            <li>Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais</li>
           </ul>
 
           <h2>Serviços para PC Gamer oferecidos pela JDINFO</h2>
@@ -192,20 +198,7 @@ export default function PCGamerRepairBlogPost() {
               Entre em contato conosco hoje mesmo para um diagnóstico gratuito e descubra como podemos ajudar a
               recuperar seu PC Gamer com rapidez e qualidade.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/5521971386634">
-                <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Centro</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </a>
-              <a href="https://wa.me/5521996643987">
-                <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Icaraí</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </a>
-            </div>
+            <WhatsAppButtonsRow />
           </div>
 
           <div className="related-articles">
@@ -276,7 +269,5 @@ export default function PCGamerRepairBlogPost() {
           </div>
         </BlogArticleLayout>
       </main>
-      <Footer />
-    </div>
   )
 }

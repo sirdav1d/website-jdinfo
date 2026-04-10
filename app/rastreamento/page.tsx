@@ -1,11 +1,17 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import type { Metadata } from "next"
 import OrderTracking from "@/components/order-tracking"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Rastreamento de Ordem de Serviço",
+  description:
+    "Acompanhe o status do reparo do seu equipamento na JDINFO em Niterói com a página de rastreamento da ordem de serviço.",
+  path: "/rastreamento",
+  keywords: ["rastreamento de ordem de serviço", "status do reparo", "ordem de serviço jdinfo"],
+})
 
 export default function TrackingPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <section className="py-12 md:py-16 bg-jdblue text-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -93,7 +99,5 @@ export default function TrackingPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
   )
 }

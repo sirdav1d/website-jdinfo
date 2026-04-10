@@ -1,10 +1,18 @@
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import { Check, Gamepad2 } from "lucide-react"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Conserto de Video Games em Niterói",
+  description:
+    "Serviço especializado de conserto de video games em Niterói para PlayStation, Xbox e Nintendo com diagnóstico e garantia.",
+  path: "/servicos/conserto-video-games-niteroi",
+  keywords: ["conserto de video game niterói", "conserto playstation niterói", "reparo xbox niterói"],
+})
 
 export default function VideoGamesPage() {
   const brands = [
@@ -32,8 +40,6 @@ export default function VideoGamesPage() {
   ]
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <section className="py-12 md:py-16 bg-blue-50">
           <div className="container mx-auto px-4 md:px-6">
@@ -233,7 +239,7 @@ export default function VideoGamesPage() {
                   <Button size="lg" variant="secondary">
                     Agendar Diagnóstico Gratuito
                   </Button>
-                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-blue-700">
+                  <Button size="lg" variant="outline" className="text-white border-white/40 hover:bg-blue-700">
                     (21) 99999-9999
                   </Button>
                 </div>
@@ -260,7 +266,7 @@ export default function VideoGamesPage() {
                       Todos os nossos serviços incluem garantia de 90 dias para sua tranquilidade.
                     </p>
                   </div>
-                  <Link href="/faq" className="text-sm text-blue-100 hover:text-white underline inline-block mt-2">
+                  <Link href="/#faq" className="text-sm text-blue-100 hover:text-white underline inline-block mt-2">
                     Ver todas as perguntas frequentes
                   </Link>
                 </div>
@@ -269,7 +275,6 @@ export default function VideoGamesPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
   )
 }
+

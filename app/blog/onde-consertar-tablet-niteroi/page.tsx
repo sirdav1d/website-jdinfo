@@ -1,15 +1,21 @@
-import { Button } from "@/components/ui/button"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 import BlogArticleLayout from "@/components/blog-article-layout"
+import { buildPageMetadata } from "@/lib/metadata"
+import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Onde Consertar Tablet em Niterói: Assistência Técnica Especializada",
+  description:
+    "Tablet com problemas? Conheça a melhor assistência técnica para tablets em Niterói com diagnóstico, reparo e suporte especializado.",
+  path: "/blog/onde-consertar-tablet-niteroi",
+  image: "/images/tablet-repair.png",
+  type: "article",
+})
 
 export default function TabletRepairBlogPost() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <BlogArticleLayout>
           <div className="article-meta">05 de Abril, 2025 • Tablets</div>
@@ -109,7 +115,7 @@ export default function TabletRepairBlogPost() {
             <li>Uso de peças de alta qualidade</li>
             <li>Garantia de 90 dias em todos os serviços</li>
             <li>Prazo de entrega rápido (média de 2 a 5 dias úteis)</li>
-            <li>Duas unidades em Niterói para sua comodidade (Centro e Icaraí)</li>
+            <li>Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais</li>
             <li>Atendimento a todas as marcas: Apple (iPad), Samsung, Lenovo, Motorola, Amazon, etc.</li>
           </ul>
 
@@ -246,20 +252,7 @@ export default function TabletRepairBlogPost() {
               Entre em contato conosco hoje mesmo para um diagnóstico gratuito e descubra como podemos ajudar a
               recuperar seu tablet com rapidez e qualidade.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/5521971386634">
-                <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Centro</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </a>
-              <a href="https://wa.me/5521996643987">
-                <Button size="lg" className="bg-jdred hover:bg-jdred/90 w-full sm:w-auto">
-                  <span className="mr-2">Falar com Icaraí</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </a>
-            </div>
+            <WhatsAppButtonsRow />
           </div>
 
           <div className="related-articles">
@@ -330,7 +323,5 @@ export default function TabletRepairBlogPost() {
           </div>
         </BlogArticleLayout>
       </main>
-      <Footer />
-    </div>
   )
 }

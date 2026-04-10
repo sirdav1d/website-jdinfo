@@ -1,12 +1,18 @@
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { buildPageMetadata } from "@/lib/metadata"
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Política de Privacidade",
+  description:
+    "Saiba como a JDINFO coleta, utiliza e protege seus dados pessoais em conformidade com a LGPD.",
+  path: "/politica-de-privacidade",
+  keywords: ["política de privacidade jdinfo", "lgpd jdinfo", "privacidade assistência técnica"],
+})
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Header />
       <main className="flex-1">
         <section className="py-12 md:py-16 bg-jdblue text-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -117,7 +123,7 @@ export default function PrivacyPolicyPage() {
               <ul>
                 <li>E-mail: contato@jdinfo.com.br</li>
                 <li>Telefone: (21) 97138-6634 / (21) 99664-3987</li>
-                <li>Endereço: Av. Ernani do Amaral Peixoto, 436 - loja 07 e 09 - Centro, Niterói - RJ, 24020-077</li>
+                <li>Endereço: R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ, 24220-031</li>
               </ul>
             </div>
 
@@ -129,7 +135,5 @@ export default function PrivacyPolicyPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
   )
 }

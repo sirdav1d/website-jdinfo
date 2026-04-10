@@ -64,7 +64,7 @@ export default function BlogPage() {
         "Seu console Nintendo apresentou problemas? Descubra onde encontrar o melhor serviço de reparo em Niterói.",
       date: "25 de Maio, 2025",
       category: "Consoles",
-      image: "https://images.unsplash.com/photo-1642009189725-3b4d3b3e1a35?q=80&w=2070&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop",
     },
     {
       id: "onde-consertar-xbox-niteroi",
@@ -137,10 +137,11 @@ export default function BlogPage() {
       </div>
 
       <div className="mt-12 text-center">
-        <Button variant="outline" size="lg" className="hover:text-jdred hover:border-jdred">
+        <Button variant="outline" size="lg" className="hover:text-jdred hover:border-jdred/40">
           <Link href="/">Voltar para a página inicial</Link>
         </Button>
       </div>
     </div>
   )
 }
+

@@ -1,6 +1,8 @@
 // Base de conhecimento do chatbot
 // Esta é a fonte de informações que o chatbot usará para responder às perguntas
 
+import { siteConfig } from '@/lib/site-config'
+
 export type ServiceInfo = {
   id: string
   name: string
@@ -244,19 +246,6 @@ export const services: ServiceInfo[] = [
 // Informações sobre localizações
 export const locations: LocationInfo[] = [
   {
-    id: "centro",
-    name: "Unidade Centro",
-    address: "Av. Ernani do Amaral Peixoto, 436 - loja 07 e 09 - Centro, Niterói - RJ, 24020-077",
-    whatsapp: "5521971386634",
-    phone: "(21) 97138-6634",
-    hours: {
-      weekdays: "9h às 18h",
-      saturday: "9h às 13h",
-      sunday: "Fechado",
-    },
-    mapUrl: "https://maps.google.com/?q=JDINFO+Centro+Niteroi",
-  },
-  {
     id: "icarai",
     name: "Unidade Icaraí",
     address: "R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ, 24220-031",
@@ -267,7 +256,7 @@ export const locations: LocationInfo[] = [
       saturday: "9h às 13h",
       sunday: "Fechado",
     },
-    mapUrl: "https://maps.google.com/?q=JDINFO+Icarai+Niteroi",
+    mapUrl: siteConfig.maps.directionsUrl,
   },
 ]
 
@@ -337,10 +326,10 @@ export const faqItems: FAQItem[] = [
     category: "serviços",
   },
   {
-    question: "Qual a diferença entre as unidades do Centro e de Icaraí?",
+    question: "Qual é o endereço da JDINFO em Niterói?",
     answer:
-      "Ambas as unidades oferecem os mesmos serviços e padrão de qualidade. A principal diferença está na localização, permitindo que você escolha a mais conveniente. A unidade do Centro é nossa sede original, enquanto a de Icaraí é nossa nova filial, inaugurada para melhor atender os clientes dessa região.",
-    keywords: ["diferença", "unidades", "lojas", "centro", "icaraí", "filial"],
+      "Nosso endereço em Niterói fica em Icaraí: R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ, 24220-031. Também atendemos pelos nossos canais digitais e WhatsApp.",
+    keywords: ["endereço", "localização", "onde fica", "icarai", "niterói", "loja"],
     category: "localização",
   },
   {
@@ -366,7 +355,7 @@ export const companyInfo = {
   foundedYear: 2005,
   experience: "18 anos",
   email: "contato@jdinfo.com.br",
-  website: "https://jdinfo.com.br",
+  website: "https://jdinfoblog.jdinformatica.com.br",
   specialties: [
     "Conserto de PlayStation, Xbox e Nintendo",
     "Reparo de produtos Apple (iPhone, iPad, MacBook)",
@@ -375,12 +364,12 @@ export const companyInfo = {
     "Reparo de tablets de todas as marcas",
   ],
   differentials: [
-    "Mais de 18 anos de experiência em Niterói",
+    "Mais de 20 anos de experiência em Niterói",
     "Técnicos certificados e especializados",
     "Garantia de 90 dias em todos os serviços",
     "Diagnóstico gratuito",
     "Peças originais ou homologadas",
-    "Duas unidades para melhor atendimento",
+    "Endereço em Icaraí com suporte por múltiplos canais",
   ],
 }
 
@@ -392,7 +381,7 @@ export const defaultResponses = {
     "Desculpe, não entendi completamente sua pergunta. Poderia reformular ou escolher uma das opções abaixo?",
   contactSuggestion: "Para um atendimento mais personalizado, você pode falar diretamente com nossa equipe:",
   serviceOptions: "Oferecemos diversos serviços especializados. Em qual você tem interesse?",
-  locationOptions: "Temos duas unidades em Niterói para melhor atendê-lo. Qual é mais conveniente para você?",
+  locationOptions: "Nosso endereço em Niterói fica em Icaraí. Se preferir, também podemos seguir pelos nossos canais digitais.",
   diagnosticOffer: "Oferecemos diagnóstico gratuito para todos os equipamentos. Gostaria de agendar um horário?",
   priceInquiry:
     "Os preços variam conforme o modelo e o problema específico. Para um orçamento preciso, recomendamos trazer seu equipamento para um diagnóstico gratuito. Posso te ajudar a agendar um horário?",
