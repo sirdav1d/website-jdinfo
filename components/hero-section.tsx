@@ -1,9 +1,5 @@
 /** @format */
 
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
-
-import { Button } from '@/components/ui/button';
 import { HeroVideoDialog } from '@/components/ui/hero-video-dialog';
 import { WhatsAppButton } from '@/components/whatsapp-button';
 
@@ -12,7 +8,7 @@ const HERO_VIDEO_SRC = '/video/hero-video.mp4';
 const heroStats = [
 	{ value: '20+', label: 'anos de mercado' },
 	{ value: '1.136', label: 'avaliações verificadas' },
-	{ value: '100%', label: 'foco em atendimento com garantia' },
+	{ value: '100%', label: 'foco em atendimento consultivo' },
 	{ value: '+27 mil', label: 'clientes atendidos' },
 ];
 
@@ -30,16 +26,6 @@ export default function HeroSection() {
 					</h1>
 
 					<div className='flex flex-col gap-3 sm:flex-row sm:flex-wrap'>
-						<Button
-							asChild
-							size='lg'
-							variant='accent'
-							className='h-auto rounded-full px-7 py-4 text-base shadow-[0_18px_40px_rgba(254,0,0,0.22)] hover:shadow-[0_24px_52px_rgba(254,0,0,0.3)]'>
-							<Link href='#diagnostico'>
-								Solicitar diagnóstico gratuito
-								<ArrowRight className='h-4 w-4' />
-							</Link>
-						</Button>
 						<WhatsAppButton
 							href='https://wa.me/5521971386634'
 							className='h-auto rounded-full px-7 py-4 text-base shadow-[0_18px_40px_rgba(37,211,102,0.22)] hover:shadow-[0_24px_52px_rgba(37,211,102,0.3)]'>
