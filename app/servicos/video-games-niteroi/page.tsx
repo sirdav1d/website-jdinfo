@@ -7,11 +7,11 @@ import { Check, Gamepad2 } from "lucide-react"
 import { buildPageMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Conserto de Video Games em Niterói",
+  title: "Atendimento de Video Games em Niterói",
   description:
-    "Serviço especializado de conserto de video games em Niterói para PlayStation, Xbox e Nintendo com diagnóstico e garantia.",
-  path: "/servicos/conserto-video-games-niteroi",
-  keywords: ["conserto de video game niterói", "conserto playstation niterói", "reparo xbox niterói"],
+    "Serviço especializado de atendimento de video games em Niterói para PlayStation, Xbox e Nintendo com diagnóstico e garantia.",
+  path: "/servicos/video-games-niteroi",
+  keywords: ["atendimento de video game niterói", "atendimento playstation niterói", "atendimento xbox niterói"],
 })
 
 export default function VideoGamesPage() {
@@ -28,15 +28,15 @@ export default function VideoGamesPage() {
   ]
 
   const services = [
-    "Reparo de placa-mãe",
+    "Atendimento de placa-mãe",
     "Substituição de leitor de disco",
-    "Reparo de fonte de alimentação",
-    "Limpeza e manutenção preventiva",
+    "Atendimento de fonte de alimentação",
+    "Limpeza e revisao preventiva",
     "Troca de HD/SSD",
-    "Reparo de controles",
+    "Atendimento de controles",
     "Atualização de firmware",
     "Desbloqueio (quando permitido por lei)",
-    "Reparo de conectores HDMI",
+    "Atendimento de conectores HDMI",
   ]
 
   return (
@@ -46,13 +46,13 @@ export default function VideoGamesPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-800 mb-4">
-                  Assistência Técnica Especializada
+                  Atendimento Especializado
                 </div>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                  Conserto de Video Games em Niterói com Garantia e Rapidez
+                  Atendimento de Video Games em Niterói com Garantia e Rapidez
                 </h1>
                 <p className="text-gray-600 mb-6">
-                  Seu console parou de funcionar? A JDINFO oferece serviços especializados de reparo para todas as
+                  Seu console parou de funcionar? A JDINFO oferece serviços especializados de atendimento para todas as
                   marcas e modelos de video games, com diagnóstico preciso e soluções eficientes.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
@@ -68,7 +68,7 @@ export default function VideoGamesPage() {
                 <div className="aspect-[4/3] overflow-hidden rounded-xl bg-gray-100">
                   <Image
                     src="/placeholder.svg?height=600&width=800"
-                    alt="Técnico da JDINFO consertando um PlayStation 5"
+                    alt="PlayStation 5 sobre bancada da JDINFO"
                     width={800}
                     height={600}
                     className="object-cover w-full h-full"
@@ -108,7 +108,7 @@ export default function VideoGamesPage() {
               <Gamepad2 className="h-12 w-12 text-blue-500 mx-auto mb-4" />
               <h2 className="text-3xl font-bold mb-4">Marcas e Modelos Atendidos</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Nossa equipe é especializada no reparo de todos os principais consoles do mercado, desde os mais
+                Nossa equipe é especializada no atendimento de todos os principais consoles do mercado, desde os mais
                 recentes até modelos mais antigos.
               </p>
             </div>
@@ -133,7 +133,7 @@ export default function VideoGamesPage() {
                 <h2 className="text-3xl font-bold mb-4">Serviços Oferecidos</h2>
                 <p className="text-gray-600 mb-6">
                   Na JDINFO, oferecemos uma ampla gama de serviços para garantir que seu console volte a funcionar
-                  perfeitamente. Todos os reparos incluem garantia.
+                  perfeitamente. Todos os servicos incluem garantia.
                 </p>
                 <ul className="space-y-3">
                   {services.map((service, index) => (
@@ -154,7 +154,7 @@ export default function VideoGamesPage() {
                     <h3 className="text-xl font-semibold mb-2">Diagnóstico Preciso</h3>
                     <p className="text-gray-600">
                       Utilizamos equipamentos de última geração para identificar com precisão o problema do seu console,
-                      evitando reparos desnecessários e garantindo uma solução eficaz.
+                      evitando servicos desnecessários e garantindo uma solução eficaz.
                     </p>
                   </CardContent>
                 </Card>
@@ -163,7 +163,7 @@ export default function VideoGamesPage() {
                     <h3 className="text-xl font-semibold mb-2">Peças Originais</h3>
                     <p className="text-gray-600">
                       Trabalhamos apenas com peças originais ou homologadas pelos fabricantes, garantindo a qualidade e
-                      durabilidade do reparo.
+                      durabilidade do atendimento.
                     </p>
                   </CardContent>
                 </Card>
@@ -187,7 +187,7 @@ export default function VideoGamesPage() {
               <h2 className="text-3xl font-bold mb-4">Como Funciona Nosso Processo</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Nosso processo é simples e transparente, garantindo que você esteja sempre informado sobre o status do
-                reparo do seu console.
+                atendimento do seu console.
               </p>
             </div>
 
@@ -212,8 +212,8 @@ export default function VideoGamesPage() {
                 <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-blue-600">3</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Reparo</h3>
-                <p className="text-gray-600">Após aprovação, realizamos o reparo com peças de qualidade.</p>
+                <h3 className="text-lg font-semibold mb-2">Atendimento</h3>
+                <p className="text-gray-600">Após aprovação, realizamos o atendimento com peças de qualidade.</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -230,7 +230,7 @@ export default function VideoGamesPage() {
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-4">Pronto para consertar seu video game?</h2>
+                <h2 className="text-3xl font-bold mb-4">Pronto para atender seu video game?</h2>
                 <p className="mb-6 text-blue-100">
                   Entre em contato conosco hoje mesmo para um diagnóstico gratuito e descubra como podemos ajudar a
                   recuperar seu console com rapidez e qualidade.
@@ -248,7 +248,7 @@ export default function VideoGamesPage() {
                 <h3 className="text-xl font-semibold mb-4">Perguntas Frequentes</h3>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium mb-1">Quanto tempo demora o conserto?</h4>
+                    <h4 className="font-medium mb-1">Quanto tempo demora o atendimento?</h4>
                     <p className="text-blue-100 text-sm">
                       O tempo médio é de 2 a 5 dias úteis, dependendo da complexidade do problema e disponibilidade de
                       peças.

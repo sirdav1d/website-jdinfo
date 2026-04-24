@@ -35,7 +35,7 @@ export default function GlobalError({
               </Button>
 
               <div className="mt-6 pt-6 border-t border-gray-200/40">
-                <p className="text-sm text-gray-500">Suporte técnico:</p>
+                <p className="text-sm text-gray-500">Contato especializado:</p>
                 <div className="mt-2 space-y-1 text-sm">
                   <p className="text-blue-600">{siteConfig.phones.primary}</p>
                   <p className="text-blue-600">{siteConfig.email}</p>

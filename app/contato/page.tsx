@@ -13,7 +13,7 @@ export const metadata: Metadata = buildPageMetadata({
 	description:
 		'Entre em contato com a JDINFO para solicitar orçamento, tirar dúvidas e falar com a equipe técnica em Niterói.',
 	path: '/contato',
-	keywords: ['contato jdinfo', 'whatsapp assistência técnica', 'endereço jdinfo'],
+	keywords: ['contato jdinfo', 'whatsapp atendimento especializado', 'endereço jdinfo'],
 });
 
 export default function ContactPage() {
@@ -179,16 +179,16 @@ export default function ContactPage() {
 											className='w-full px-3 py-2 border border-gray-300/40 rounded-md shadow-sm focus:outline-none focus:ring-jdred focus:border-jdred/40'>
 											<option value=''>Selecione o serviço</option>
 											<option value='playstation'>
-												Conserto de PlayStation (PS4/PS5)
+												Atendimento PlayStation (PS4/PS5)
 											</option>
-											<option value='xbox'>Conserto de Xbox</option>
-											<option value='nintendo'>Conserto de Nintendo</option>
-											<option value='apple'>Conserto de Linha APPLE</option>
-											<option value='notebook'>Conserto de Notebook</option>
-											<option value='pc-gamer'>Conserto de PC Gamer</option>
-											<option value='gopro'>Conserto de GoPro</option>
-											<option value='jbl'>Conserto de Caixas JBL</option>
-											<option value='smartphone'>Conserto de Smartphone</option>
+											<option value='xbox'>Atendimento Xbox</option>
+											<option value='nintendo'>Atendimento Nintendo</option>
+											<option value='apple'>Atendimento linha Apple</option>
+											<option value='notebook'>Atendimento Notebook</option>
+											<option value='pc-gamer'>Atendimento PC Gamer</option>
+											<option value='gopro'>Atendimento GoPro</option>
+											<option value='jbl'>Atendimento caixas JBL</option>
+											<option value='smartphone'>Atendimento Smartphone</option>
 											<option value='outro'>Outro</option>
 										</select>
 									</div>
@@ -277,7 +277,7 @@ export default function ContactPage() {
 					<div className='container mx-auto max-w-6xl'>
 						<div className='text-center'>
 							<h2 className='text-3xl font-bold mb-4'>
-								Precisa de assistência técnica?
+								Precisa de atendimento especializado?
 							</h2>
 							<p className='text-gray-200 mb-8 max-w-2xl mx-auto'>
 								Entre em contato conosco hoje mesmo para um diagnóstico gratuito

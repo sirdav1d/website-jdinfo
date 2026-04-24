@@ -8,7 +8,7 @@ export const metadata: Metadata = buildPageMetadata({
   description:
     "Saiba como a JDINFO coleta, utiliza e protege seus dados pessoais em conformidade com a LGPD.",
   path: "/politica-de-privacidade",
-  keywords: ["política de privacidade jdinfo", "lgpd jdinfo", "privacidade assistência técnica"],
+  keywords: ["política de privacidade jdinfo", "lgpd jdinfo", "privacidade atendimento especializado"],
 })
 
 export default function PrivacyPolicyPage() {
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
               <h2>2. Como Utilizamos Suas Informações</h2>
               <p>As informações pessoais que coletamos nos permitem:</p>
               <ul>
-                <li>Fornecer e melhorar nossos serviços de assistência técnica;</li>
+                <li>Fornecer e melhorar nossos serviços de atendimento especializado;</li>
                 <li>Processar transações e enviar notificações relacionadas;</li>
                 <li>Comunicar sobre produtos, serviços, promoções e eventos;</li>
                 <li>Personalizar sua experiência com nossos serviços;</li>

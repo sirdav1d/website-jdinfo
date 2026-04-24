@@ -8,10 +8,10 @@ import { buildPageMetadata } from '@/lib/metadata';
 import { WhatsAppButtonsRow } from '@/components/whatsapp-button';
 
 export const metadata: Metadata = buildPageMetadata({
-	title: 'Onde Consertar Nintendo em Niterói: Serviço Especializado',
+	title: 'Atendimento para Nintendo em Niterói: Serviço Especializado',
 	description:
-		'Problemas com seu Nintendo Switch? Veja onde encontrar o melhor serviço de reparo em Niterói com assistência técnica especializada.',
-	path: '/blog/onde-consertar-nintendo-niteroi',
+		'Problemas com seu Nintendo Switch? Veja onde encontrar o melhor serviço de atendimento em Niterói com atendimento especializado.',
+	path: '/blog/nintendo-niteroi',
 	image:
 		'https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop',
 	type: 'article',
@@ -22,16 +22,16 @@ export default function NintendoRepairBlogPost() {
 			<main className='flex-1'>
 				<BlogArticleLayout>
 					<div className='article-meta'>29 de Junho, 2025 • Consoles</div>
-					<h1>Onde Consertar Nintendo em Niterói: Serviço Especializado</h1>
+					<h1>Atendimento para Nintendo em Niterói: Serviço Especializado</h1>
 					<p className='article-excerpt'>
 						Problemas com seu Nintendo Switch? Veja onde encontrar o melhor
-						serviço de reparo em Niterói.
+						serviço de atendimento em Niterói.
 					</p>
 
 					<div className='image-container h-[400px]'>
 						<Image
 							src='https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop'
-							alt='Técnico consertando Nintendo Switch na JDINFO em Niterói'
+							alt='Nintendo Switch com controles coloridos'
 							fill
 							className='object-cover'
 							priority
@@ -39,7 +39,7 @@ export default function NintendoRepairBlogPost() {
 					</div>
 
 					<h2>
-						Problemas comuns com Nintendo Switch que exigem reparo profissional
+						Problemas comuns com Nintendo Switch que exigem atendimento profissional
 					</h2>
 					<p>
 						O Nintendo Switch é um console versátil e popular, mas como qualquer
@@ -60,16 +60,16 @@ export default function NintendoRepairBlogPost() {
 
 					<p>
 						Quando seu Nintendo Switch apresenta algum desses problemas, é
-						fundamental buscar uma assistência técnica especializada para evitar
-						danos maiores e garantir um reparo adequado.
+						fundamental buscar um atendimento especializado para evitar
+						danos maiores e garantir um atendimento adequado.
 					</p>
 
 					<h2>
-						Por que escolher uma assistência técnica especializada em Niterói?
+						Por que escolher um atendimento especializado em Niterói?
 					</h2>
 					<p>
 						O Nintendo Switch possui características específicas que exigem
-						conhecimento técnico especializado. Ao escolher onde consertar seu
+						conhecimento técnico especializado. Ao escolher onde atender seu
 						Nintendo em Niterói, considere:
 					</p>
 
@@ -82,16 +82,16 @@ export default function NintendoRepairBlogPost() {
 						<li>Prazo de entrega realista</li>
 					</ul>
 
-					<h2>JDINFO: A melhor opção para consertar Nintendo em Niterói</h2>
+					<h2>JDINFO: A melhor opção para atender Nintendo em Niterói</h2>
 					<p>
-						A JDINFO se destaca como a principal assistência técnica
+						A JDINFO se destaca como a principal equipe especializada
 						especializada em consoles em Niterói, com mais de 20 anos de
-						experiência no mercado. Nossa equipe é especializada em reparos de
+						experiência no mercado. Nossa equipe é especializada em servicos de
 						Nintendo Switch e outros produtos Nintendo, oferecendo diagnóstico
 						preciso e soluções eficientes para qualquer problema.
 					</p>
 
-					<h3>Diferenciais da JDINFO no conserto de Nintendo:</h3>
+					<h3>Diferenciais da JDINFO no atendimento de Nintendo:</h3>
 					<ul>
 						<li>Técnicos certificados e especializados em consoles Nintendo</li>
 						<li>Diagnóstico gratuito e detalhado</li>
@@ -99,31 +99,31 @@ export default function NintendoRepairBlogPost() {
 						<li>Garantia de 90 dias em todos os serviços</li>
 						<li>Prazo de entrega rápido (média de 2 a 5 dias úteis)</li>
 						<li>
-							Atendimento em Niterói com endereço em Icaraí e suporte pelos
+							Atendimento em Niterói com endereço em Icaraí e orientacao pelos
 							nossos canais digitais
 						</li>
 					</ul>
 
-					<h2>Serviços de reparo de Nintendo oferecidos pela JDINFO</h2>
+					<h2>Serviços de atendimento de Nintendo oferecidos pela JDINFO</h2>
 					<p>
 						Na JDINFO, oferecemos uma ampla gama de serviços para Nintendo
 						Switch e outros consoles Nintendo, incluindo:
 					</p>
 
 					<ul>
-						<li>Reparo de Joy-Cons com drift</li>
+						<li>Atendimento de Joy-Cons com drift</li>
 						<li>Substituição de tela LCD</li>
 						<li>Troca de bateria</li>
-						<li>Reparo do dock station</li>
+						<li>Atendimento do dock station</li>
 						<li>Substituição de botões</li>
-						<li>Reparo de placa-mãe</li>
+						<li>Atendimento de placa-mãe</li>
 						<li>Recuperação de dados</li>
-						<li>Limpeza e manutenção preventiva</li>
-						<li>Reparo de danos causados por líquidos</li>
+						<li>Limpeza e revisao preventiva</li>
+						<li>Atendimento de danos causados por líquidos</li>
 						<li>Atualização de firmware</li>
 					</ul>
 
-					<h2>Como funciona o processo de reparo na JDINFO</h2>
+					<h2>Como funciona o processo de atendimento na JDINFO</h2>
 					<p>Nosso processo é simples e transparente:</p>
 
 					<ol>
@@ -136,7 +136,7 @@ export default function NintendoRepairBlogPost() {
 							sem compromisso.
 						</li>
 						<li>
-							<strong>Reparo:</strong> Após aprovação, realizamos o reparo com
+							<strong>Atendimento:</strong> Após aprovação, realizamos o atendimento com
 							peças de qualidade.
 						</li>
 						<li>
@@ -149,9 +149,9 @@ export default function NintendoRepairBlogPost() {
 						</li>
 					</ol>
 
-					<h2>Quanto custa consertar um Nintendo Switch em Niterói?</h2>
+					<h2>Quanto custa atender um Nintendo Switch em Niterói?</h2>
 					<p>
-						O custo para consertar um Nintendo Switch em Niterói varia de acordo
+						O custo para atender um Nintendo Switch em Niterói varia de acordo
 						com o problema apresentado. Na JDINFO, oferecemos preços justos e
 						competitivos, sempre com transparência e sem surpresas.
 					</p>
@@ -162,11 +162,11 @@ export default function NintendoRepairBlogPost() {
 					</p>
 
 					<ul>
-						<li>Reparo de Joy-Con com drift: a partir de R$ 120,00</li>
+						<li>Atendimento de Joy-Con com drift: a partir de R$ 120,00</li>
 						<li>Substituição de tela LCD: a partir de R$ 350,00</li>
 						<li>Troca de bateria: a partir de R$ 200,00</li>
-						<li>Reparo do dock station: a partir de R$ 150,00</li>
-						<li>Limpeza e manutenção preventiva: a partir de R$ 120,00</li>
+						<li>Atendimento do dock station: a partir de R$ 150,00</li>
+						<li>Limpeza e revisao preventiva: a partir de R$ 120,00</li>
 					</ul>
 
 					<p>
@@ -191,7 +191,7 @@ export default function NintendoRepairBlogPost() {
 
 					<h2>Dicas para cuidar do seu Nintendo Switch</h2>
 					<p>
-						Além de oferecer serviços de reparo de qualidade, a JDINFO também se
+						Além de oferecer serviços de atendimento de qualidade, a JDINFO também se
 						preocupa em orientar seus clientes sobre como cuidar melhor de seus
 						equipamentos. Algumas dicas importantes:
 					</p>
@@ -218,25 +218,25 @@ export default function NintendoRepairBlogPost() {
 					</ul>
 
 					<h2>
-						Conclusão: Por que escolher a JDINFO para consertar seu Nintendo em
+						Conclusão: Por que escolher a JDINFO para atender seu Nintendo em
 						Niterói
 					</h2>
 					<p>
-						Quando se trata de consertar Nintendo em Niterói, a JDINFO oferece a
+						Quando se trata de atender Nintendo em Niterói, a JDINFO oferece a
 						melhor combinação de experiência, qualidade e preço justo. Com
 						técnicos especializados, peças de qualidade e garantia em todos os
 						serviços, você pode confiar que seu console estará em boas mãos.
 					</p>
 
 					<p>
-						Não arrisque seu investimento com reparos amadores ou assistências
-						não especializadas. Escolha a JDINFO, referência em conserto de
+						Não arrisque seu investimento com intervencoes amadoras ou empresas
+						não especializadas. Escolha a JDINFO, referência em atendimento de
 						Nintendo em Niterói há mais de 18 anos.
 					</p>
 
 					<div className='cta-section'>
 						<h3 className='text-2xl font-bold mb-4 text-white!'>
-							Precisa consertar seu Nintendo?
+							Precisa atender seu Nintendo?
 						</h3>
 						<p className='mb-6 text-pretty text-white/80'>
 							Entre em contato conosco hoje mesmo para um diagnóstico gratuito e
@@ -250,15 +250,15 @@ export default function NintendoRepairBlogPost() {
 						<h3>Artigos relacionados</h3>
 						<div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
 							<Link
-								href='/blog/onde-consertar-playstation-niteroi'
+								href='/blog/playstation-niteroi'
 								className='group'>
 								<div className='border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md'>
 									<div className='p-4'>
 										<h4 className='font-medium text-jdblue group-hover:text-jdred transition-colors'>
-											Onde Consertar PlayStation em Niterói? Guia Completo 2023
+											Atendimento para PlayStation em Niterói? Guia Completo 2023
 										</h4>
 										<p className='text-sm text-gray-600 mt-2'>
-											Descubra os melhores lugares para consertar seu
+											Descubra os melhores lugares para atender seu
 											PlayStation em Niterói, com foco em qualidade, garantia e
 											preço justo.
 										</p>
@@ -266,32 +266,32 @@ export default function NintendoRepairBlogPost() {
 								</div>
 							</Link>
 							<Link
-								href='/blog/onde-consertar-xbox-niteroi'
+								href='/blog/xbox-niteroi'
 								className='group'>
 								<div className='border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md'>
 									<div className='p-4'>
 										<h4 className='font-medium text-jdblue group-hover:text-jdred transition-colors'>
-											Onde Consertar Xbox em Niterói: Reparo Profissional
+											Atendimento para Xbox em Niterói: Atendimento Profissional
 										</h4>
 										<p className='text-sm text-gray-600 mt-2'>
-											Xbox com defeito? Conheça a melhor assistência técnica
-											para conserto de Xbox em Niterói.
+											Xbox com defeito? Conheça a melhor atendimento especializado
+											para atendimento de Xbox em Niterói.
 										</p>
 									</div>
 								</div>
 							</Link>
 							<Link
-								href='/blog/onde-consertar-pc-gamer-niteroi'
+								href='/blog/pc-gamer-niteroi'
 								className='group'>
 								<div className='border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md'>
 									<div className='p-4'>
 										<h4 className='font-medium text-jdblue group-hover:text-jdred transition-colors'>
-											Onde Consertar PC Gamer em Niterói: Assistência
+											Atendimento para PC Gamer em Niterói: Atendimento
 											Especializada
 										</h4>
 										<p className='text-sm text-gray-600 mt-2'>
 											Seu PC Gamer está com problemas? Descubra onde encontrar
-											assistência técnica especializada em Niterói.
+											atendimento especializado em Niterói.
 										</p>
 									</div>
 								</div>

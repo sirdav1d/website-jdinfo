@@ -1,11 +1,11 @@
 /** @format */
 
 export const siteConfig = {
-	name: 'JDINFO - Assistência Técnica Especializada',
+	name: 'JD Info — Loja de Informática',
 	shortName: 'JDINFO',
 	brandName: 'JDINFO',
 	description:
-		'Assistência técnica especializada em conserto de PlayStation, Xbox, Nintendo, Apple, Notebooks, PC Gamer, GoPro, JBL e Smartphones em Niterói.',
+		'Loja de informática em Niterói com computadores, acessórios, componentes, upgrades, diagnóstico e atendimento presencial em Icaraí.',
 	url: 'https://jdinfoblog.jdinformatica.com.br',
 	locale: 'pt_BR',
 	themeColor: '#081122',
@@ -34,15 +34,15 @@ export const siteConfig = {
 		instagram: 'https://www.instagram.com/jdinformatica',
 	},
 	defaultKeywords: [
-		'assistência técnica',
-		'conserto',
-		'reparo',
+		'loja de informática',
+		'informática',
+		'computadores',
 		'Niterói',
 		'PlayStation',
 		'Xbox',
 		'Nintendo',
 		'Apple',
-		'MacBook',
+		'Notebook Apple',
 		'iPhone',
 		'notebook',
 		'PC Gamer',

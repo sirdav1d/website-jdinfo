@@ -9,35 +9,35 @@ import { buildPageMetadata } from "@/lib/metadata"
 import { toAbsoluteUrl } from "@/lib/site-config"
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Onde Consertar PlayStation em Niterói? Guia Completo 2025",
+  title: "Atendimento para PlayStation em Niterói? Guia Completo 2025",
   description:
-    "Descubra os melhores lugares para consertar seu PlayStation em Niterói. Guia completo com dicas, preços e onde encontrar assistência técnica especializada com garantia.",
-  path: "/blog/onde-consertar-playstation-niteroi",
+    "Descubra os melhores lugares para atender seu PlayStation em Niterói. Guia completo com dicas, preços e onde encontrar atendimento especializado com garantia.",
+  path: "/blog/playstation-niteroi",
   image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop",
   keywords: [
-    "conserto playstation niterói",
-    "assistência técnica playstation",
-    "reparo ps4 niterói",
-    "reparo ps5 niterói",
+    "atendimento playstation niterói",
+    "atendimento especializado playstation",
+    "atendimento ps4 niterói",
+    "atendimento ps5 niterói",
   ],
   type: "article",
 })
 
 const articleData = {
-  title: "Onde Consertar PlayStation em Niterói? Guia Completo 2025",
+  title: "Atendimento para PlayStation em Niterói? Guia Completo 2025",
   description:
-    "Descubra os melhores lugares para consertar seu PlayStation em Niterói. Guia completo com dicas, preços e onde encontrar assistência técnica especializada com garantia.",
+    "Descubra os melhores lugares para atender seu PlayStation em Niterói. Guia completo com dicas, preços e onde encontrar atendimento especializado com garantia.",
   image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop",
   datePublished: "2025-01-15T10:00:00.000Z",
   dateModified: "2025-01-15T10:00:00.000Z",
-  url: toAbsoluteUrl("/blog/onde-consertar-playstation-niteroi"),
+  url: toAbsoluteUrl("/blog/playstation-niteroi"),
 }
 
 const breadcrumbData = {
   breadcrumbs: [
     { name: "Início", url: toAbsoluteUrl("/") },
     { name: "Blog", url: toAbsoluteUrl("/blog") },
-    { name: "Conserto PlayStation Niterói", url: toAbsoluteUrl("/blog/onde-consertar-playstation-niteroi") },
+    { name: "Atendimento PlayStation Niterói", url: toAbsoluteUrl("/blog/playstation-niteroi") },
   ],
 }
 
@@ -61,7 +61,7 @@ export default function PlayStationRepairPage() {
               </span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-jdblue mb-4">
-              Onde Consertar PlayStation em Niterói? Guia Completo 2025
+              Atendimento para PlayStation em Niterói? Guia Completo 2025
             </h1>
             <div className="flex items-center text-gray-600 text-sm mb-6">
               <Clock className="mr-2 h-4 w-4" />
@@ -74,7 +74,7 @@ export default function PlayStationRepairPage() {
           <div className="mb-8">
             <Image
               src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop"
-              alt="Conserto de PlayStation em Niterói - Assistência Técnica Especializada"
+              alt="Console PlayStation com controle"
               width={800}
               height={400}
               className="w-full h-64 md:h-96 object-cover rounded-lg"
@@ -84,16 +84,16 @@ export default function PlayStationRepairPage() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-              Seu PlayStation apresentou problemas e você não sabe onde consertar em Niterói? Este guia completo vai te
-              ajudar a encontrar a melhor assistência técnica especializada, com dicas importantes sobre preços,
+              Seu PlayStation apresentou problemas e você não sabe onde atender em Niterói? Este guia completo vai te
+              ajudar a encontrar a melhor atendimento especializado, com dicas importantes sobre preços,
               garantia e qualidade do serviço.
             </p>
 
-            <h2>Por que Escolher uma Assistência Técnica Especializada?</h2>
+            <h2>Por que Escolher uma Atendimento Especializado?</h2>
             <p>
               Quando seu PlayStation para de funcionar, a primeira reação pode ser procurar qualquer lugar que faça
-              reparos. No entanto, consoles como PlayStation requerem conhecimento técnico específico e peças originais
-              para um reparo adequado.
+              servicos. No entanto, consoles como PlayStation requerem conhecimento técnico específico e peças originais
+              para um atendimento adequado.
             </p>
 
             <h3>Principais Problemas do PlayStation</h3>
@@ -118,9 +118,9 @@ export default function PlayStationRepairPage() {
               </li>
             </ul>
 
-            <h2>JDINFO: Referência em Conserto de PlayStation em Niterói</h2>
+            <h2>JDINFO: Referência em Atendimento PlayStation em Niterói</h2>
             <p>
-              A <strong>JDINFO</strong> é reconhecida como uma das principais assistências técnicas especializadas em
+              A <strong>JDINFO</strong> é reconhecida como uma das principais empresas técnicas especializadas em
               consoles em Niterói, com mais de 20 anos de experiência no mercado.
             </p>
 
@@ -142,7 +142,7 @@ export default function PlayStationRepairPage() {
                 <strong>Orçamento transparente:</strong> Preços justos e sem surpresas
               </li>
               <li>
-                <strong>Atendimento rápido:</strong> Maioria dos reparos em até 48 horas
+                <strong>Atendimento rápido:</strong> Maioria dos atendimento em até 48 horas
               </li>
             </ul>
 
@@ -173,11 +173,11 @@ export default function PlayStationRepairPage() {
               </div>
             </div>
 
-            <h2>Dicas Importantes Antes de Levar seu PlayStation para Conserto</h2>
+            <h2>Dicas Importantes Antes de Levar seu PlayStation para Atendimento</h2>
 
             <h3>1. Faça um Backup dos seus Dados</h3>
             <p>
-              Antes de levar seu console para reparo, sempre faça backup dos seus jogos salvos. Use um HD externo ou o
+              Antes de levar seu console para atendimento, sempre faça backup dos seus jogos salvos. Use um HD externo ou o
               armazenamento na nuvem do PlayStation Plus.
             </p>
 
@@ -189,41 +189,41 @@ export default function PlayStationRepairPage() {
 
             <h3>4. Verifique a Garantia</h3>
             <p>
-              Se seu PlayStation ainda está na garantia, verifique se o reparo em assistência não autorizada pode
+              Se seu PlayStation ainda está na garantia, verifique se o atendimento em atendimento não autorizada pode
               anulá-la.
             </p>
 
-            <h2>Preços Médios de Conserto em Niterói</h2>
-            <p>Os preços podem variar dependendo do problema e da assistência técnica escolhida:</p>
+            <h2>Preços Médios de Atendimento em Niterói</h2>
+            <p>Os preços podem variar dependendo do problema e da atendimento especializado escolhida:</p>
             <ul>
               <li>
-                <strong>Limpeza e manutenção:</strong> R$ 80 - R$ 120
+                <strong>Limpeza e revisao:</strong> R$ 80 - R$ 120
               </li>
               <li>
                 <strong>Troca de pasta térmica:</strong> R$ 100 - R$ 150
               </li>
               <li>
-                <strong>Reparo do leitor de disco:</strong> R$ 150 - R$ 250
+                <strong>Atendimento do leitor de disco:</strong> R$ 150 - R$ 250
               </li>
               <li>
                 <strong>Problemas na fonte:</strong> R$ 200 - R$ 350
               </li>
               <li>
-                <strong>Reparo da placa-mãe:</strong> R$ 300 - R$ 500
+                <strong>Atendimento da placa-mãe:</strong> R$ 300 - R$ 500
               </li>
             </ul>
 
             <div className="bg-yellow-50 p-6 rounded-lg my-8">
               <h3 className="text-yellow-800 mb-3">⚠️ Atenção</h3>
               <p className="text-yellow-700">
-                Desconfie de preços muito baixos. Reparos de qualidade requerem peças originais e mão de obra
+                Desconfie de preços muito baixos. Servicos de qualidade requerem peças originais e mão de obra
                 especializada. O barato pode sair caro!
               </p>
             </div>
 
             <h2>Como Evitar Problemas no seu PlayStation</h2>
 
-            <h3>Manutenção Preventiva</h3>
+            <h3>Revisao Preventiva</h3>
             <ul>
               <li>Mantenha o console em local ventilado</li>
               <li>Limpe regularmente as entradas de ar</li>
@@ -235,17 +235,17 @@ export default function PlayStationRepairPage() {
 
             <h2>Conclusão</h2>
             <p>
-              Encontrar uma assistência técnica confiável para seu PlayStation em Niterói é fundamental para garantir um
-              reparo de qualidade. A JDINFO se destaca pela experiência, qualidade do serviço e atendimento
+              Encontrar um atendimento especializado confiável para seu PlayStation em Niterói é fundamental para garantir um
+              atendimento de qualidade. A JDINFO se destaca pela experiência, qualidade do serviço e atendimento
               especializado.
             </p>
             <p>
-              Lembre-se sempre de pesquisar, comparar preços e verificar a reputação da assistência técnica antes de
-              deixar seu console. Um bom reparo pode fazer seu PlayStation funcionar como novo por muitos anos.
+              Lembre-se sempre de pesquisar, comparar preços e verificar a reputação da atendimento especializado antes de
+              deixar seu console. Um bom atendimento pode fazer seu PlayStation funcionar como novo por muitos anos.
             </p>
 
             <div className="bg-jdred/10 p-6 rounded-lg mt-8">
-              <h3 className="text-jdred mb-4">Precisa Consertar seu PlayStation?</h3>
+              <h3 className="text-jdred mb-4">Precisa Atender seu PlayStation?</h3>
               <p className="mb-4">
                 Entre em contato com a JDINFO e receba um diagnóstico gratuito. Nossa equipe especializada está pronta
                 para resolver qualquer problema do seu console.

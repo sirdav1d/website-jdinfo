@@ -55,14 +55,14 @@ export default function OrderTracking() {
         },
         {
           status: "repairing",
-          message: "Em reparo",
-          details: "Seu equipamento está sendo reparado por nossos técnicos.",
+          message: "Em atendimento",
+          details: "Seu equipamento está sendo atendido por nossos técnicos.",
           estimatedCompletion: "2 a 3 dias úteis",
         },
         {
           status: "testing",
           message: "Em teste",
-          details: "Reparo concluído, realizando testes finais.",
+          details: "Atendimento concluído, realizando testes finais.",
           estimatedCompletion: "1 dia útil",
         },
         {
@@ -148,7 +148,7 @@ export default function OrderTracking() {
                     <span>Recebido</span>
                     <span className="hidden sm:inline">Em diagnóstico</span>
                     <span className="hidden sm:inline">Aguardando</span>
-                    <span>Em reparo</span>
+                    <span>Em atendimento</span>
                     <span className="hidden sm:inline">Em teste</span>
                     <span>Concluído</span>
                   </div>

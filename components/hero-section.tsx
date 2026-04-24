@@ -12,7 +12,7 @@ const HERO_VIDEO_SRC = '/video/hero-video.mp4';
 const heroStats = [
 	{ value: '20+', label: 'anos de mercado' },
 	{ value: '1.136', label: 'avaliações verificadas' },
-	{ value: '100%', label: 'foco em reparo com garantia' },
+	{ value: '100%', label: 'foco em atendimento com garantia' },
 	{ value: '+27 mil', label: 'clientes atendidos' },
 ];
 
@@ -26,7 +26,7 @@ export default function HeroSection() {
 			<div className='container relative z-10 mx-auto max-w-5xl'>
 				<div className='space-y-8'>
 					<h1 className='max-w-4xl text-balance text-4xl font-semibold tracking-[-0.05em] text-foreground sm:text-5xl lg:text-[4.25rem] lg:leading-[0.98]'>
-						Assistência técnica para notebook, MacBook, consoles e PC Gamer
+						Loja de Informática em Niterói — Notebooks, PC Gamer e Consoles
 					</h1>
 
 					<div className='flex flex-col gap-3 sm:flex-row sm:flex-wrap'>
@@ -55,7 +55,7 @@ export default function HeroSection() {
 						thumbnailAlt='Hero Video'
 					/>
 
-					<div className='grid justify-self-center gap-3 border-t border-border/40 pt-6 sm:grid-cols-4'>
+					<div className='grid justify-self-center gap-3 pt-6 sm:grid-cols-4'>
 						{heroStats.map((item) => (
 							<div key={item.label}>
 								<div className='text-2xl font-semibold tracking-[-0.05em] text-jdblue md:text-3xl'>

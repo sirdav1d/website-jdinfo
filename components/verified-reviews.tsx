@@ -6,23 +6,23 @@ const reviews = [
 	{
 		date: '15 jan 2025',
 		rating: 5,
-		service: 'Conserto de PlayStation 5',
+		service: 'PlayStation 5',
 		review:
-			'Meu PS5 estava com problema no leitor. A equipe explicou a causa com clareza, alinhou o prazo e entregou o console funcionando sem enrolação.',
+			'Recebi uma explicação clara, prazo alinhado e comunicação objetiva do começo ao fim.',
 	},
 	{
 		date: '22 fev 2025',
 		rating: 5,
-		service: 'Reparo de MacBook Pro',
+		service: 'Notebook Apple Pro',
 		review:
-			'Levei em outra assistência e me passaram um cenário muito mais caro. Na JDINFO a leitura foi mais precisa e o reparo ficou viável.',
+			'A equipe foi transparente na avaliação, explicou as opções com calma e deixou tudo bem organizado.',
 	},
 	{
 		date: '07 mar 2025',
 		rating: 4,
-		service: 'Troca de tela de iPhone',
+		service: 'iPhone',
 		review:
-			'Atendimento ágil, serviço bem feito e comunicação boa durante o processo. A qualidade compensou o investimento.',
+			'Contato ágil, comunicação boa durante o processo e orientação clara antes da confirmação.',
 	},
 ];
 
@@ -84,7 +84,7 @@ export default function VerifiedReviews() {
 
 						<div className='mt-8 border-t border-white/40 pt-6'>
 							<div className='text-sm font-semibold uppercase tracking-[0.18em] text-white/55'>
-								Serviço
+								Categoria
 							</div>
 							<div className='mt-2 text-lg font-semibold text-white'>
 								{featuredReview.service}
@@ -134,4 +134,3 @@ export default function VerifiedReviews() {
 		</section>
 	);
 }
-

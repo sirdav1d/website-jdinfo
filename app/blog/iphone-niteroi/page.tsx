@@ -6,10 +6,10 @@ import { buildPageMetadata } from "@/lib/metadata"
 import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Onde Consertar iPhone em Niterói: Assistência Técnica Especializada",
+  title: "Atendimento para iPhone em Niterói: Atendimento Especializado",
   description:
-    "Problemas com seu iPhone? Conheça a melhor assistência técnica especializada em reparo de iPhones em Niterói.",
-  path: "/blog/onde-consertar-iphone-niteroi",
+    "Problemas com seu iPhone? Conheça a melhor atendimento especializado em atendimento de iPhones em Niterói.",
+  path: "/blog/iphone-niteroi",
   image: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=2329&auto=format&fit=crop",
   type: "article",
 })
@@ -19,23 +19,23 @@ export default function IPhoneRepairBlogPost() {
       <main className="flex-1">
         <BlogArticleLayout>
           <div className="article-meta">10 de Dezembro, 2024 • Apple</div>
-          <h1>Onde Consertar iPhone em Niterói: Assistência Técnica Especializada</h1>
+          <h1>Atendimento para iPhone em Niterói: Atendimento Especializado</h1>
           <p className="article-excerpt">
-            Problemas com seu iPhone? Conheça a melhor assistência técnica especializada em reparo de iPhones em
+            Problemas com seu iPhone? Conheça a melhor atendimento especializado em atendimento de iPhones em
             Niterói.
           </p>
 
           <div className="image-container h-[400px]">
             <Image
               src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=2070&auto=format&fit=crop"
-              alt="Técnico consertando iPhone na JDINFO em Niterói"
+              alt="iPhone sobre superfície clara"
               fill
               className="object-cover"
               priority
             />
           </div>
 
-          <h2>Problemas comuns com iPhone que exigem assistência técnica</h2>
+          <h2>Problemas comuns com iPhone que exigem atendimento especializado</h2>
           <p>
             O iPhone é um dos smartphones mais populares do mundo, conhecido por sua qualidade e durabilidade. No
             entanto, mesmo os melhores dispositivos podem apresentar problemas ao longo do tempo. Alguns dos problemas
@@ -53,58 +53,58 @@ export default function IPhoneRepairBlogPost() {
           </ul>
 
           <p>
-            Quando seu iPhone apresenta algum desses problemas, é importante buscar uma assistência técnica
-            especializada para garantir um reparo adequado e preservar a vida útil do seu dispositivo.
+            Quando seu iPhone apresenta algum desses problemas, é importante buscar um atendimento especializado
+            especializada para garantir um atendimento adequado e preservar a vida útil do seu dispositivo.
           </p>
 
-          <h2>Por que escolher uma assistência técnica especializada em Apple?</h2>
+          <h2>Por que escolher um atendimento especializado em Apple?</h2>
           <p>
             Dispositivos Apple, como o iPhone, possuem características específicas que exigem conhecimento técnico
-            especializado. Ao escolher onde consertar seu iPhone em Niterói, considere:
+            especializado. Ao escolher onde atender seu iPhone em Niterói, considere:
           </p>
 
           <ul>
             <li>Técnicos com certificação e treinamento específico para produtos Apple</li>
             <li>Uso de peças originais ou de qualidade equivalente</li>
             <li>Garantia nos serviços realizados</li>
-            <li>Experiência comprovada com reparos de iPhone</li>
-            <li>Equipamentos adequados para diagnóstico e reparo</li>
+            <li>Experiência comprovada com servicos de iPhone</li>
+            <li>Equipamentos adequados para diagnóstico e atendimento</li>
           </ul>
 
-          <h2>JDINFO: A melhor opção para consertar iPhone em Niterói</h2>
+          <h2>JDINFO: A melhor opção para atender iPhone em Niterói</h2>
           <p>
-            A JDINFO se destaca como a principal assistência técnica especializada em produtos Apple em Niterói, com
-            mais de 20 anos de experiência no mercado. Nossa equipe é especializada em reparos de iPhone, oferecendo
+            A JDINFO se destaca como a principal equipe especializada especializado em produtos Apple em Niterói, com
+            mais de 20 anos de experiência no mercado. Nossa equipe é especializada em servicos de iPhone, oferecendo
             diagnóstico preciso e soluções eficientes para qualquer problema.
           </p>
 
-          <h3>Diferenciais da JDINFO no conserto de iPhone:</h3>
+          <h3>Diferenciais da JDINFO no atendimento de iPhone:</h3>
           <ul>
             <li>Técnicos certificados e especializados em produtos Apple</li>
             <li>Diagnóstico gratuito e detalhado</li>
             <li>Uso de peças de alta qualidade</li>
             <li>Garantia de 90 dias em todos os serviços</li>
-            <li>Prazo de entrega rápido (média de 24 a 48 horas para a maioria dos reparos)</li>
-            <li>Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais</li>
+            <li>Prazo de entrega rápido (média de 24 a 48 horas para a maioria dos servicos)</li>
+            <li>Atendimento em Niterói com endereço em Icaraí e orientacao pelos nossos canais digitais</li>
           </ul>
 
-          <h2>Serviços de reparo de iPhone oferecidos pela JDINFO</h2>
+          <h2>Serviços de atendimento de iPhone oferecidos pela JDINFO</h2>
           <p>Na JDINFO, oferecemos uma ampla gama de serviços para iPhone, incluindo:</p>
 
           <ul>
             <li>Troca de tela (original ou premium)</li>
             <li>Substituição de bateria</li>
-            <li>Reparo de placa</li>
-            <li>Conserto de conector de carga</li>
-            <li>Reparo de câmeras (frontal e traseira)</li>
+            <li>Atendimento de placa</li>
+            <li>Atendimento de conector de carga</li>
+            <li>Atendimento de câmeras (frontal e traseira)</li>
             <li>Substituição de botões</li>
-            <li>Reparo de alto-falantes e microfones</li>
+            <li>Atendimento de alto-falantes e microfones</li>
             <li>Recuperação de dados</li>
             <li>Atualização de software</li>
             <li>Desbloqueio de iCloud (quando legalmente possível)</li>
           </ul>
 
-          <h2>Como funciona o processo de reparo na JDINFO</h2>
+          <h2>Como funciona o processo de atendimento na JDINFO</h2>
           <p>Nosso processo é simples e transparente:</p>
 
           <ol>
@@ -115,7 +115,7 @@ export default function IPhoneRepairBlogPost() {
               <strong>Orçamento:</strong> Apresentamos um orçamento detalhado sem compromisso.
             </li>
             <li>
-              <strong>Reparo:</strong> Após aprovação, realizamos o reparo com peças de qualidade.
+              <strong>Atendimento:</strong> Após aprovação, realizamos o atendimento com peças de qualidade.
             </li>
             <li>
               <strong>Testes:</strong> Realizamos testes completos para garantir o perfeito funcionamento.
@@ -138,7 +138,7 @@ export default function IPhoneRepairBlogPost() {
 
           <h2>Preços competitivos e formas de pagamento</h2>
           <p>
-            Na JDINFO, oferecemos preços justos e competitivos para todos os serviços de reparo de iPhone. Aceitamos
+            Na JDINFO, oferecemos preços justos e competitivos para todos os serviços de atendimento de iPhone. Aceitamos
             diversas formas de pagamento para sua comodidade:
           </p>
           <ul>
@@ -149,20 +149,20 @@ export default function IPhoneRepairBlogPost() {
             <li>Transferência bancária</li>
           </ul>
 
-          <h2>Conclusão: Por que escolher a JDINFO para consertar seu iPhone em Niterói</h2>
+          <h2>Conclusão: Por que escolher a JDINFO para atender seu iPhone em Niterói</h2>
           <p>
-            Quando se trata de consertar iPhone em Niterói, a JDINFO oferece a melhor combinação de experiência,
+            Quando se trata de atender iPhone em Niterói, a JDINFO oferece a melhor combinação de experiência,
             qualidade e preço justo. Com técnicos especializados, peças de qualidade e garantia em todos os serviços,
             você pode confiar que seu iPhone estará em boas mãos.
           </p>
 
           <p>
-            Não arrisque seu investimento com reparos amadores ou assistências não especializadas. Escolha a JDINFO,
-            referência em conserto de produtos Apple em Niterói há mais de 18 anos.
+            Não arrisque seu investimento com intervencoes amadoras ou empresas não especializadas. Escolha a JDINFO,
+            referência em atendimento de produtos Apple em Niterói há mais de 18 anos.
           </p>
 
           <div className="cta-section">
-            <h3 className="text-2xl font-bold mb-4">Precisa consertar seu iPhone?</h3>
+            <h3 className="text-2xl font-bold mb-4">Precisa atender seu iPhone?</h3>
             <p className="mb-6">
               Entre em contato conosco hoje mesmo para um diagnóstico gratuito e descubra como podemos ajudar a
               recuperar seu iPhone com rapidez e qualidade.
@@ -173,39 +173,39 @@ export default function IPhoneRepairBlogPost() {
           <div className="related-articles">
             <h3>Artigos relacionados</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link href="/blog/onde-consertar-macbook-niteroi" className="group">
+              <Link href="/blog/notebooks-apple-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar MacBook em Niterói: Assistência Apple
+                      Atendimento para Notebook Apple em Niterói: Atendimento Apple
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      MacBook com problemas? Descubra a melhor assistência técnica especializada em produtos Apple em
+                      Notebook Apple com problemas? Descubra a melhor atendimento especializado em produtos Apple em
                       Niterói.
                     </p>
                   </div>
                 </div>
               </Link>
-              <Link href="/blog/onde-consertar-celular-niteroi" className="group">
+              <Link href="/blog/onde-atender-celular-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar Celular em Niterói: Assistência Técnica Confiável
+                      Atendimento para Celular em Niterói: Atendimento Especializado Confiável
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Celular quebrado ou com defeito? Conheça a melhor assistência técnica para smartphones em Niterói.
+                      Celular quebrado ou com defeito? Conheça a melhor atendimento especializado para smartphones em Niterói.
                     </p>
                   </div>
                 </div>
               </Link>
-              <Link href="/blog/onde-consertar-ipad-niteroi" className="group">
+              <Link href="/blog/onde-atender-ipad-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar iPad em Niterói: Serviço Especializado
+                      Atendimento para iPad em Niterói: Serviço Especializado
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Problemas com seu iPad? Veja onde encontrar o melhor serviço de reparo em Niterói.
+                      Problemas com seu iPad? Veja onde encontrar o melhor serviço de atendimento em Niterói.
                     </p>
                   </div>
                 </div>

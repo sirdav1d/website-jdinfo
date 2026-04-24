@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test"
 
-test("homepage exposes the FAQ section and points navigation to the home anchor", async ({ page }) => {
+test("homepage exposes a generic FAQ section without restricted terms", async ({ page }) => {
   await page.goto("/")
 
   const faqSection = page.locator("#faq")
@@ -14,12 +14,13 @@ test("homepage exposes the FAQ section and points navigation to the home anchor"
   ).toBeVisible()
   await expect(
     faqSection.getByRole("button", {
-      name: /Quanto tempo demora para consertar meu equipamento\?/i,
+      name: /Como funciona o contato com a JD Info\?/i,
     }),
   ).toBeVisible()
+  await expect(
+    faqSection.getByText(/conserto|assist[eê]ncia|reparo|manuten[cç][aã]o|manutencao/i),
+  ).toHaveCount(0)
 
-  const faqLinks = page.locator('a[href="/#faq"]')
-  await expect(faqLinks).toHaveCount(1)
   await expect(page.locator("header").getByRole("link", { name: /FAQ/i })).toHaveCount(0)
 })
 

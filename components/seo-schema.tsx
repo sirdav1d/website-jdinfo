@@ -80,7 +80,7 @@ export default function SEOSchema({
 					headline: data?.title || 'Artigo JDINFO',
 					description:
 						data?.description ||
-						'Artigo sobre assistência técnica especializada',
+						'Artigo sobre atendimento especializado',
 					image: data?.image || toAbsoluteUrl(siteConfig.ogImage),
 					author: {
 						'@type': 'Organization',
@@ -134,10 +134,10 @@ export default function SEOSchema({
 				return {
 					'@context': 'https://schema.org',
 					'@type': 'Service',
-					name: data?.name || 'Assistência Técnica Especializada',
+					name: data?.name || 'Atendimento Especializado',
 					description:
 						data?.description ||
-						'Serviços de reparo e manutenção de eletrônicos',
+						'Serviços de atendimento e revisao de eletrônicos',
 					provider: {
 						'@type': 'Organization',
 						name: 'JDINFO',
@@ -146,7 +146,7 @@ export default function SEOSchema({
 						'@type': 'City',
 						name: 'Niterói',
 					},
-					serviceType: data?.serviceType || 'Assistência Técnica',
+					serviceType: data?.serviceType || 'Atendimento Especializado',
 				};
 
 			default:

@@ -5,36 +5,36 @@ import Link from 'next/link';
 
 const serviceLinks = [
 	{
-		href: '/blog/onde-consertar-playstation-niteroi',
-		label: 'Conserto de PlayStation (PS4/PS5)',
+		href: '/blog/playstation-niteroi',
+		label: 'PlayStation e consoles',
 	},
-	{ href: '/blog/onde-consertar-xbox-niteroi', label: 'Conserto de Xbox' },
+	{ href: '/blog/xbox-niteroi', label: 'Xbox e consoles' },
 	{
-		href: '/blog/onde-consertar-nintendo-niteroi',
-		label: 'Conserto de Nintendo',
-	},
-	{
-		href: '/blog/onde-consertar-iphone-niteroi',
-		label: 'Conserto de Linha Apple',
+		href: '/blog/nintendo-niteroi',
+		label: 'Nintendo Switch',
 	},
 	{
-		href: '/blog/onde-consertar-macbook-niteroi',
-		label: 'Conserto de MacBook',
+		href: '/blog/iphone-niteroi',
+		label: 'Linha Apple',
 	},
 	{
-		href: '/blog/onde-consertar-notebook-niteroi',
-		label: 'Conserto de Notebook',
+		href: '/blog/notebooks-apple-niteroi',
+		label: 'Notebook Apple',
 	},
 	{
-		href: '/blog/onde-consertar-pc-gamer-niteroi',
-		label: 'Conserto de PC Gamer',
+		href: '/blog/notebook-niteroi',
+		label: 'Notebooks',
 	},
-	{ href: '/blog/onde-consertar-gopro-niteroi', label: 'Conserto de GoPro' },
 	{
-		href: '/blog/onde-consertar-caixas-jbl-niteroi',
-		label: 'Conserto de Caixas JBL',
+		href: '/blog/pc-gamer-niteroi',
+		label: 'PC Gamer',
 	},
-	{ href: '/blog/onde-consertar-tablet-niteroi', label: 'Conserto de Tablets' },
+	{ href: '/blog/gopro-niteroi', label: 'Câmeras de ação' },
+	{
+		href: '/blog/caixas-jbl-niteroi',
+		label: 'Áudio portátil',
+	},
+	{ href: '/blog/tablet-niteroi', label: 'Tablets' },
 ];
 
 const companyLinks = [
@@ -60,12 +60,13 @@ export default function Footer() {
 									src='/logo.png'
 									alt='JDINFO Logo'
 									fill
+									sizes='120px'
 									className='object-cover size-full'
 								/>
 							</div>
 						</Link>
 						<p className='text-sm text-gray-300'>
-							Assistência técnica especializada em Niterói com mais de 20 anos
+							Atendimento especializado em Niterói com mais de 20 anos
 							de experiência no mercado.
 						</p>
 						<div className='flex space-x-4'>

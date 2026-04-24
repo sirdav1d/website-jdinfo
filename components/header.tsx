@@ -57,6 +57,7 @@ export default function Header() {
 							src='/logo.png'
 							alt='JDINFO Logo'
 							fill
+							sizes='128px'
 							className='object-contain'
 							priority
 						/>
