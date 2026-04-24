@@ -19,26 +19,26 @@ import { buildPageMetadata } from '@/lib/metadata';
 import { WhatsAppButtonsRow } from '@/components/whatsapp-button';
 
 export const metadata: Metadata = buildPageMetadata({
-	title: 'Serviços de Assistência Técnica',
+	title: 'Serviços de Atendimento Especializado',
 	description:
-		'Veja os serviços de assistência técnica da JDINFO em Niterói para consoles, linha Apple, notebooks, PC Gamer, GoPro, JBL e tablets.',
+		'Veja os serviços de atendimento especializado da JDINFO em Niterói para consoles, linha Apple, notebooks, PC Gamer, GoPro, JBL e tablets.',
 	path: '/servicos',
 	keywords: [
-		'serviços assistência técnica',
-		'conserto playstation niterói',
-		'conserto notebook niterói',
-		'conserto iphone niterói',
+		'serviços atendimento especializado',
+		'atendimento playstation niterói',
+		'atendimento notebook niterói',
+		'atendimento iphone niterói',
 	],
 });
 
 export default function ServicesPage() {
 	const services = [
 		{
-			title: 'Conserto de PlayStation',
+			title: 'Atendimento PlayStation',
 			description:
-				'Reparos em PlayStation 4, PlayStation 5 e controles com garantia e peças originais.',
+				'Atendimento em PlayStation 4, PlayStation 5 e controles com garantia e peças originais.',
 			icon: <Gamepad2 className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-playstation-niteroi',
+			url: '/blog/playstation-niteroi',
 			items: [
 				'PlayStation 4',
 				'PlayStation 5',
@@ -46,57 +46,61 @@ export default function ServicesPage() {
 				'Fonte de alimentação',
 				'Leitor de disco',
 			],
+			imageAlt: 'Console PlayStation com controle',
 			image:
 				'https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de Linha APPLE',
+			title: 'Atendimento linha Apple',
 			description:
-				'Especialistas em reparo de iPhone, iPad, MacBook, iMac e outros dispositivos Apple.',
+				'Especialistas em atendimento de iPhone, iPad, Notebook Apple, iMac e outros dispositivos Apple.',
 			icon: <Apple className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-iphone-niteroi',
-			items: ['MacBook', 'iMac', 'iPad', 'iPhone', 'Apple Watch'],
+			url: '/blog/iphone-niteroi',
+			items: ['Notebook Apple', 'iMac', 'iPad', 'iPhone', 'Apple Watch'],
+			imageAlt: 'Dispositivos da linha Apple sobre mesa',
 			image:
 				'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de Notebook',
+			title: 'Atendimento Notebook',
 			description:
 				'Soluções para problemas de hardware e software em notebooks e ultrabooks de todas as marcas.',
 			icon: <Laptop className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-notebook-niteroi',
+			url: '/blog/notebook-niteroi',
 			items: [
 				'Troca de tela',
-				'Reparo de placa-mãe',
+				'Atendimento de placa-mãe',
 				'Substituição de teclado',
 				'Upgrade de memória/SSD',
-				'Limpeza e manutenção',
+				'Limpeza e revisao',
 			],
+			imageAlt: 'Notebook aberto sobre bancada',
 			image:
 				'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=2070&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de PC Gamer',
+			title: 'Atendimento PC Gamer',
 			description:
-				'Manutenção especializada para computadores de alto desempenho, upgrades e placas de vídeo.',
+				'Revisao especializada para computadores de alto desempenho, upgrades e placas de vídeo.',
 			icon: <Cpu className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-pc-gamer-niteroi',
+			url: '/blog/pc-gamer-niteroi',
 			items: [
-				'Reparo de placa de vídeo',
+				'Atendimento de placa de vídeo',
 				'Upgrade de hardware',
 				'Montagem de PC',
 				'Otimização de desempenho',
 				'Water cooling',
 			],
+			imageAlt: 'Setup de PC Gamer iluminado',
 			image:
 				'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=2070&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de Xbox',
+			title: 'Atendimento Xbox',
 			description:
-				'Reparos em Xbox One, Xbox Series S/X e controles com técnicos especializados.',
+				'Atendimento em Xbox One, Xbox Series S/X e controles com técnicos especializados.',
 			icon: <Gamepad2 className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-xbox-niteroi',
+			url: '/blog/xbox-niteroi',
 			items: [
 				'Xbox One',
 				'Xbox Series S/X',
@@ -104,15 +108,16 @@ export default function ServicesPage() {
 				'Fonte de alimentação',
 				'Leitor de disco',
 			],
+			imageAlt: 'Controle Xbox sobre superfície escura',
 			image:
 				'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1932&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de Nintendo',
+			title: 'Atendimento Nintendo',
 			description:
-				'Assistência técnica para Nintendo Switch e outros consoles Nintendo.',
+				'Atendimento para Nintendo Switch e outros consoles Nintendo.',
 			icon: <Gamepad2 className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-nintendo-niteroi',
+			url: '/blog/nintendo-niteroi',
 			items: [
 				'Nintendo Switch',
 				'Joy-Cons',
@@ -120,31 +125,33 @@ export default function ServicesPage() {
 				'Tela LCD',
 				'Bateria',
 			],
+			imageAlt: 'Nintendo Switch com controles coloridos',
 			image:
 				'https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de GoPro',
+			title: 'Atendimento GoPro',
 			description:
-				'Reparos em câmeras de ação GoPro e acessórios com técnicos certificados.',
+				'Atendimento em câmeras de ação GoPro e acessórios com técnicos certificados.',
 			icon: <Camera className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-gopro-niteroi',
+			url: '/blog/gopro-niteroi',
 			items: [
-				'Reparo de lente',
+				'Atendimento de lente',
 				'Substituição de tela',
 				'Problemas de bateria',
 				'Recuperação de dados',
 				'Acessórios',
 			],
+			imageAlt: 'Câmera de ação com acessórios',
 			image:
 				'https://images.unsplash.com/photo-1521405617584-1d9867aecad3?q=80&w=2070&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de Caixas JBL',
+			title: 'Atendimento caixas JBL',
 			description:
-				'Reparos especializados em caixas de som JBL e outros equipamentos de áudio.',
+				'Servicos especializados em caixas de som JBL e outros equipamentos de áudio.',
 			icon: <Volume2 className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-caixas-jbl-niteroi',
+			url: '/blog/caixas-jbl-niteroi',
 			items: [
 				'JBL Flip',
 				'JBL Charge',
@@ -152,22 +159,24 @@ export default function ServicesPage() {
 				'JBL Boombox',
 				'Problemas de áudio/bateria',
 			],
+			imageAlt: 'Caixa de som portátil sobre mesa',
 			image:
 				'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop',
 		},
 		{
-			title: 'Conserto de Tablets',
+			title: 'Atendimento Tablets',
 			description:
-				'Reparos em tablets de todas as marcas, troca de tela, bateria e mais.',
+				'Atendimento em tablets de todas as marcas, troca de tela, bateria e mais.',
 			icon: <Tablet className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-tablet-niteroi',
+			url: '/blog/tablet-niteroi',
 			items: [
 				'Troca de tela',
 				'Substituição de bateria',
-				'Reparo de placa',
+				'Atendimento de placa',
 				'Recuperação de dados',
 				'Problemas de conectividade',
 			],
+			imageAlt: 'Tablet sobre mesa clara',
 			image:
 				'https://images.unsplash.com/photo-1585790050230-5ab129de2e95?q=80&w=2070&auto=format&fit=crop',
 		},
@@ -176,7 +185,7 @@ export default function ServicesPage() {
 			description:
 				'Melhore o desempenho do seu equipamento com upgrades de hardware profissionais.',
 			icon: <Wrench className='h-10 w-10 text-jdred' />,
-			url: '/blog/onde-consertar-notebook-niteroi',
+			url: '/blog/notebook-niteroi',
 			items: [
 				'Instalação de SSD/NVMe',
 				'Upgrade de memória RAM',
@@ -184,6 +193,7 @@ export default function ServicesPage() {
 				'Placa de vídeo',
 				'Fonte de alimentação',
 			],
+			imageAlt: 'Componentes de computador sobre bancada',
 			image:
 				'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=2070&auto=format&fit=crop',
 		},
@@ -195,11 +205,11 @@ export default function ServicesPage() {
 					<div className='container mx-auto px-4 md:px-6'>
 						<div className='text-center max-w-3xl mx-auto'>
 							<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-4'>
-								Serviços de Assistência Técnica Especializada em Niterói
+								Serviços de Atendimento Especializado em Niterói
 							</h1>
 							<p className='text-gray-200 mb-6'>
 								Conheça a JDINFO, com atendimento presencial em Icaraí e
-								soluções rápidas e confiáveis para conserto de eletrônicos com
+								soluções rápidas e confiáveis para atendimento de eletrônicos com
 								atendimento especializado e peças originais.
 							</p>
 							<WhatsAppButtonsRow
@@ -217,7 +227,7 @@ export default function ServicesPage() {
 								Nossos Serviços Especializados
 							</h2>
 							<p className='text-gray-600 max-w-2xl mx-auto'>
-								Oferecemos assistência técnica especializada para diversos
+								Oferecemos atendimento especializado para diversos
 								equipamentos eletrônicos, com diagnóstico preciso e soluções
 								eficientes.
 							</p>
@@ -231,7 +241,7 @@ export default function ServicesPage() {
 									<div className='relative h-48'>
 										<Image
 											src={service.image || '/placeholder.svg'}
-											alt={service.title}
+											alt={service.imageAlt}
 											fill
 											className='object-cover transition-transform duration-300 hover:scale-105'
 										/>
@@ -330,11 +340,11 @@ export default function ServicesPage() {
 										</div>
 										<div>
 											<h3 className='text-lg font-semibold mb-1 text-jdblue'>
-												Reparo Especializado
+												Atendimento Especializado
 											</h3>
 											<p className='text-gray-600'>
 												Após aprovação do orçamento, nossos técnicos
-												especializados realizam o reparo utilizando peças de
+												especializados realizam o atendimento utilizando peças de
 												qualidade.
 											</p>
 										</div>
@@ -375,7 +385,7 @@ export default function ServicesPage() {
 							<div className='relative h-[500px] rounded-xl overflow-hidden'>
 								<Image
 									src='/images/image-servicos.png'
-									alt='Técnico da JDINFO realizando reparo em equipamento eletrônico'
+									alt='Bancada da JDINFO com equipamento eletrônico'
 									fill
 									className='object-cover'
 								/>
@@ -389,7 +399,7 @@ export default function ServicesPage() {
 						<div className='grid md:grid-cols-2 gap-8 items-center'>
 							<div>
 								<h2 className='text-3xl font-bold mb-4'>
-									Precisa de assistência técnica?
+									Precisa de atendimento especializado?
 								</h2>
 								<p className='mb-6 text-gray-200'>
 									Entre em contato conosco hoje mesmo para um diagnóstico
@@ -495,7 +505,7 @@ export default function ServicesPage() {
 											/>
 										</svg>
 										<span>
-											Endereço em Icaraí com suporte por múltiplos canais
+											Endereço em Icaraí com orientacao por múltiplos canais
 										</span>
 									</li>
 								</ul>

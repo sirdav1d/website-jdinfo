@@ -6,10 +6,10 @@ import { buildPageMetadata } from "@/lib/metadata"
 import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Onde Consertar Xbox em Niterói: Reparo Profissional",
+  title: "Atendimento para Xbox em Niterói: Atendimento Profissional",
   description:
-    "Xbox com defeito? Conheça a melhor assistência técnica para conserto de Xbox em Niterói com diagnóstico preciso e reparo profissional.",
-  path: "/blog/onde-consertar-xbox-niteroi",
+    "Xbox com defeito? Conheça a melhor atendimento especializado para atendimento de Xbox em Niterói com diagnóstico preciso e atendimento profissional.",
+  path: "/blog/xbox-niteroi",
   image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1932&auto=format&fit=crop",
   type: "article",
 })
@@ -19,22 +19,22 @@ export default function XboxRepairBlogPost() {
       <main className="flex-1">
         <BlogArticleLayout>
           <div className="article-meta">18 de Maio, 2025 • Consoles</div>
-          <h1>Onde Consertar Xbox em Niterói: Reparo Profissional</h1>
+          <h1>Atendimento para Xbox em Niterói: Atendimento Profissional</h1>
           <p className="article-excerpt">
-            Xbox com defeito? Conheça a melhor assistência técnica para conserto de Xbox em Niterói.
+            Xbox com defeito? Conheça a melhor atendimento especializado para atendimento de Xbox em Niterói.
           </p>
 
           <div className="image-container h-[400px]">
             <Image
               src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1932&auto=format&fit=crop"
-              alt="Técnico consertando Xbox na JDINFO em Niterói"
+              alt="Controle Xbox sobre superfície escura"
               fill
               className="object-cover"
               priority
             />
           </div>
 
-          <h2>Problemas comuns com Xbox que exigem reparo profissional</h2>
+          <h2>Problemas comuns com Xbox que exigem atendimento profissional</h2>
           <p>
             O Xbox é um dos consoles mais populares do mercado, mas como qualquer equipamento eletrônico, pode
             apresentar problemas ao longo do tempo. Alguns dos problemas mais comuns incluem:
@@ -51,14 +51,14 @@ export default function XboxRepairBlogPost() {
           </ul>
 
           <p>
-            Quando seu Xbox apresenta algum desses problemas, é fundamental buscar uma assistência técnica especializada
-            para evitar danos maiores ao tentar consertar por conta própria.
+            Quando seu Xbox apresenta algum desses problemas, é fundamental buscar um atendimento especializado
+            para evitar danos maiores ao tentar atender por conta própria.
           </p>
 
-          <h2>Por que escolher uma assistência técnica especializada em Niterói?</h2>
+          <h2>Por que escolher um atendimento especializado em Niterói?</h2>
           <p>
-            Niterói conta com diversas opções de assistência técnica, mas nem todas oferecem o mesmo nível de qualidade
-            e especialização. Ao escolher onde consertar seu Xbox em Niterói, considere:
+            Niterói conta com diversas opções de atendimento especializado, mas nem todas oferecem o mesmo nível de qualidade
+            e especialização. Ao escolher onde atender seu Xbox em Niterói, considere:
           </p>
 
           <ul>
@@ -69,40 +69,40 @@ export default function XboxRepairBlogPost() {
             <li>Transparência no orçamento</li>
           </ul>
 
-          <h2>JDINFO: A melhor opção para consertar Xbox em Niterói</h2>
+          <h2>JDINFO: A melhor opção para atender Xbox em Niterói</h2>
           <p>
-            A JDINFO se destaca como a principal assistência técnica especializada em consoles em Niterói, com mais de
-            20 anos de experiência no mercado. Nossa equipe é especializada em reparos de Xbox (Xbox 360, Xbox One e
+            A JDINFO se destaca como a principal equipe especializada especializado em consoles em Niterói, com mais de
+            20 anos de experiência no mercado. Nossa equipe é especializada em servicos de Xbox (Xbox 360, Xbox One e
             Xbox Series X/S), oferecendo diagnóstico preciso e soluções eficientes para qualquer problema.
           </p>
 
-          <h3>Diferenciais da JDINFO no conserto de Xbox:</h3>
+          <h3>Diferenciais da JDINFO no atendimento de Xbox:</h3>
           <ul>
             <li>Técnicos certificados e especializados em Xbox</li>
             <li>Diagnóstico gratuito e detalhado</li>
             <li>Uso exclusivo de peças originais ou homologadas</li>
             <li>Garantia de 90 dias em todos os serviços</li>
             <li>Prazo de entrega rápido (média de 2 a 5 dias úteis)</li>
-            <li>Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais</li>
+            <li>Atendimento em Niterói com endereço em Icaraí e orientacao pelos nossos canais digitais</li>
           </ul>
 
-          <h2>Serviços de reparo de Xbox oferecidos pela JDINFO</h2>
+          <h2>Serviços de atendimento de Xbox oferecidos pela JDINFO</h2>
           <p>Na JDINFO, oferecemos uma ampla gama de serviços para Xbox, incluindo:</p>
 
           <ul>
-            <li>Reparo de placa-mãe</li>
+            <li>Atendimento de placa-mãe</li>
             <li>Substituição de leitor de disco</li>
-            <li>Reparo de fonte de alimentação</li>
-            <li>Limpeza e manutenção preventiva</li>
+            <li>Atendimento de fonte de alimentação</li>
+            <li>Limpeza e revisao preventiva</li>
             <li>Troca de HD/SSD</li>
-            <li>Reparo de controles</li>
+            <li>Atendimento de controles</li>
             <li>Atualização de firmware</li>
-            <li>Reparo de conectores HDMI</li>
+            <li>Atendimento de conectores HDMI</li>
             <li>Solução para superaquecimento</li>
-            <li>Reparo de problemas de áudio e vídeo</li>
+            <li>Atendimento de problemas de áudio e vídeo</li>
           </ul>
 
-          <h2>Como funciona o processo de reparo na JDINFO</h2>
+          <h2>Como funciona o processo de atendimento na JDINFO</h2>
           <p>Nosso processo é simples e transparente:</p>
 
           <ol>
@@ -113,27 +113,27 @@ export default function XboxRepairBlogPost() {
               <strong>Orçamento:</strong> Apresentamos um orçamento detalhado sem compromisso.
             </li>
             <li>
-              <strong>Reparo:</strong> Após aprovação, realizamos o reparo com peças de qualidade.
+              <strong>Atendimento:</strong> Após aprovação, realizamos o atendimento com peças de qualidade.
             </li>
             <li>
               <strong>Entrega:</strong> Devolvemos seu console funcionando perfeitamente e com garantia.
             </li>
           </ol>
 
-          <h2>Quanto custa consertar um Xbox em Niterói?</h2>
+          <h2>Quanto custa atender um Xbox em Niterói?</h2>
           <p>
-            O custo para consertar um Xbox em Niterói varia de acordo com o problema apresentado e o modelo do console.
+            O custo para atender um Xbox em Niterói varia de acordo com o problema apresentado e o modelo do console.
             Na JDINFO, oferecemos preços justos e competitivos, sempre com transparência e sem surpresas.
           </p>
 
           <p>Alguns exemplos de preços médios (valores podem variar conforme o modelo):</p>
 
           <ul>
-            <li>Limpeza e manutenção preventiva: a partir de R$ 150,00</li>
-            <li>Reparo de leitor de disco: a partir de R$ 250,00</li>
-            <li>Reparo de fonte de alimentação: a partir de R$ 180,00</li>
-            <li>Reparo de controle com drift: a partir de R$ 120,00</li>
-            <li>Reparo de placa-mãe: a partir de R$ 300,00</li>
+            <li>Limpeza e revisao preventiva: a partir de R$ 150,00</li>
+            <li>Atendimento de leitor de disco: a partir de R$ 250,00</li>
+            <li>Atendimento de fonte de alimentação: a partir de R$ 180,00</li>
+            <li>Atendimento de controle com drift: a partir de R$ 120,00</li>
+            <li>Atendimento de placa-mãe: a partir de R$ 300,00</li>
           </ul>
 
           <p>
@@ -149,13 +149,13 @@ export default function XboxRepairBlogPost() {
           </blockquote>
 
           <blockquote>
-            "O controle do meu Xbox Series X estava com drift no analógico. A JDINFO fez o reparo em apenas um dia e por
+            "O controle do meu Xbox Series X estava com drift no analógico. A JDINFO fez o atendimento em apenas um dia e por
             um preço muito bom. Recomendo a todos!" - Carla Rodrigues
           </blockquote>
 
           <h2>Dicas para prolongar a vida útil do seu Xbox</h2>
           <p>
-            Além de oferecer serviços de reparo de qualidade, a JDINFO também se preocupa em orientar seus clientes
+            Além de oferecer serviços de atendimento de qualidade, a JDINFO também se preocupa em orientar seus clientes
             sobre como cuidar melhor de seus equipamentos. Algumas dicas importantes:
           </p>
 
@@ -164,25 +164,25 @@ export default function XboxRepairBlogPost() {
             <li>Não coloque objetos em cima do console que possam bloquear a ventilação</li>
             <li>Limpe regularmente a poeira externa com um pano macio</li>
             <li>Evite desligar o console puxando o cabo de energia</li>
-            <li>Realize uma manutenção preventiva anual</li>
+            <li>Realize uma revisao preventiva anual</li>
             <li>Evite mover o console enquanto estiver ligado ou com um disco inserido</li>
             <li>Utilize um estabilizador ou nobreak de qualidade</li>
           </ul>
 
-          <h2>Conclusão: Por que escolher a JDINFO para consertar seu Xbox em Niterói</h2>
+          <h2>Conclusão: Por que escolher a JDINFO para atender seu Xbox em Niterói</h2>
           <p>
-            Quando se trata de consertar Xbox em Niterói, a JDINFO oferece a melhor combinação de experiência, qualidade
+            Quando se trata de atender Xbox em Niterói, a JDINFO oferece a melhor combinação de experiência, qualidade
             e preço justo. Com técnicos especializados, peças originais e garantia em todos os serviços, você pode
             confiar que seu console estará em boas mãos.
           </p>
 
           <p>
-            Não arrisque seu investimento com reparos amadores ou assistências não especializadas. Escolha a JDINFO,
-            referência em conserto de Xbox em Niterói há mais de 18 anos.
+            Não arrisque seu investimento com intervencoes amadoras ou empresas não especializadas. Escolha a JDINFO,
+            referência em atendimento de Xbox em Niterói há mais de 18 anos.
           </p>
 
           <div className="cta-section">
-            <h3 className="text-2xl font-bold mb-4">Precisa consertar seu Xbox?</h3>
+            <h3 className="text-2xl font-bold mb-4">Precisa atender seu Xbox?</h3>
             <p className="mb-6">
               Entre em contato conosco hoje mesmo para um diagnóstico gratuito e descubra como podemos ajudar a
               recuperar seu console com rapidez e qualidade.
@@ -193,63 +193,63 @@ export default function XboxRepairBlogPost() {
           <div className="related-articles">
             <h3>Artigos relacionados</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link href="/blog/onde-consertar-playstation-niteroi" className="group">
+              <Link href="/blog/playstation-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="relative h-40 w-full">
                     <Image
                       src="https://images.unsplash.com/photo-1605901309584-818e25960a8f?q=80&w=1919&auto=format&fit=crop"
-                      alt="Conserto de PlayStation em Niterói"
+                      alt="Console PlayStation com controle"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar PlayStation em Niterói? Guia Completo 2025
+                      Atendimento para PlayStation em Niterói? Guia Completo 2025
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Descubra os melhores lugares para consertar seu PlayStation em Niterói, com foco em qualidade,
+                      Descubra os melhores lugares para atender seu PlayStation em Niterói, com foco em qualidade,
                       garantia e preço justo.
                     </p>
                   </div>
                 </div>
               </Link>
-              <Link href="/blog/onde-consertar-nintendo-niteroi" className="group">
+              <Link href="/blog/nintendo-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="relative h-40 w-full">
                     <Image
                       src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?q=80&w=2070&auto=format&fit=crop"
-                      alt="Conserto de Nintendo em Niterói"
+                      alt="Nintendo Switch com controles coloridos"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar Nintendo em Niterói: Serviço Especializado
+                      Atendimento para Nintendo em Niterói: Serviço Especializado
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Problemas com seu Nintendo Switch? Veja onde encontrar o melhor serviço de reparo em Niterói.
+                      Problemas com seu Nintendo Switch? Veja onde encontrar o melhor serviço de atendimento em Niterói.
                     </p>
                   </div>
                 </div>
               </Link>
-              <Link href="/blog/onde-consertar-pc-gamer-niteroi" className="group">
+              <Link href="/blog/pc-gamer-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="relative h-40 w-full">
                     <Image
                       src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=2070&auto=format&fit=crop"
-                      alt="Conserto de PC Gamer em Niterói"
+                      alt="Setup de PC Gamer iluminado"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar PC Gamer em Niterói: Assistência Especializada
+                      Atendimento para PC Gamer em Niterói: Atendimento Especializado
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Seu PC Gamer está com problemas? Descubra onde encontrar assistência técnica especializada em
+                      Seu PC Gamer está com problemas? Descubra onde encontrar atendimento especializado em
                       Niterói.
                     </p>
                   </div>

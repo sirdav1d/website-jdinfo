@@ -4,9 +4,9 @@ import { Clock3, MapPin, ShieldCheck } from 'lucide-react';
 
 const diagnosticHighlights = [
 	{
-		title: 'Diagnóstico sem ruído',
+		title: 'Avaliação sem ruído',
 		description:
-			'Avaliação técnica objetiva antes de qualquer avanço no reparo.',
+			'Avaliação objetiva antes de qualquer avanço.',
 		icon: ShieldCheck,
 	},
 	{
@@ -25,7 +25,7 @@ const diagnosticHighlights = [
 
 export default function DiagnosticHighlights() {
 	return (
-		<div className='mt-6 grid gap-3 md:grid-cols-3'>
+		<div className='grid gap-3 md:grid-cols-3'>
 			{diagnosticHighlights.map(({ title, description, icon: Icon }) => (
 				<div
 					key={title}

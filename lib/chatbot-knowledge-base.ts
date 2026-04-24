@@ -39,8 +39,8 @@ export type FAQItem = {
 export const services: ServiceInfo[] = [
   {
     id: "playstation",
-    name: "Conserto de PlayStation",
-    description: "Reparos em PlayStation 4, PlayStation 5 e controles com garantia e peças originais.",
+    name: "Atendimento PlayStation",
+    description: "Atendimento em PlayStation 4, PlayStation 5 e controles com garantia e peças originais.",
     commonProblems: [
       "Luz azul da morte (BLOD) no PS4",
       "Superaquecimento e desligamento repentino",
@@ -52,7 +52,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do console",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
@@ -62,8 +62,8 @@ export const services: ServiceInfo[] = [
   },
   {
     id: "xbox",
-    name: "Conserto de Xbox",
-    description: "Reparos em Xbox One, Xbox Series S/X e controles com técnicos especializados.",
+    name: "Atendimento Xbox",
+    description: "Atendimento em Xbox One, Xbox Series S/X e controles com técnicos especializados.",
     commonProblems: [
       "Luz vermelha da morte (RROD) nos modelos mais antigos",
       "Superaquecimento e desligamento repentino",
@@ -75,7 +75,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do console",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
@@ -85,8 +85,8 @@ export const services: ServiceInfo[] = [
   },
   {
     id: "nintendo",
-    name: "Conserto de Nintendo",
-    description: "Assistência técnica para Nintendo Switch e outros consoles Nintendo.",
+    name: "Atendimento Nintendo",
+    description: "Atendimento para Nintendo Switch e outros consoles Nintendo.",
     commonProblems: [
       "Joy-Cons com drift (movimento fantasma dos analógicos)",
       "Problemas na tela LCD (manchas, linhas ou pixels mortos)",
@@ -97,7 +97,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do console",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
@@ -107,8 +107,8 @@ export const services: ServiceInfo[] = [
   },
   {
     id: "apple",
-    name: "Conserto de Linha APPLE",
-    description: "Especialistas em reparo de iPhone, iPad, MacBook, iMac e outros dispositivos Apple.",
+    name: "Atendimento linha Apple",
+    description: "Especialistas em atendimento de iPhone, iPad, Notebook Apple, iMac e outros dispositivos Apple.",
     commonProblems: [
       "Tela quebrada ou trincada",
       "Bateria com duração reduzida",
@@ -120,17 +120,17 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do dispositivo",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
     priceRange: "A partir de R$ 150,00, dependendo do dispositivo e problema",
     warranty: "90 dias em todos os serviços",
-    deliveryTime: "24 a 48 horas para a maioria dos reparos",
+    deliveryTime: "24 a 48 horas para a maioria dos servicos",
   },
   {
     id: "notebook",
-    name: "Conserto de Notebook",
+    name: "Atendimento Notebook",
     description: "Soluções para problemas de hardware e software em notebooks e ultrabooks de todas as marcas.",
     commonProblems: [
       "Tela quebrada ou com falhas",
@@ -143,7 +143,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do notebook",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
@@ -153,8 +153,8 @@ export const services: ServiceInfo[] = [
   },
   {
     id: "pc-gamer",
-    name: "Conserto de PC Gamer",
-    description: "Manutenção especializada para computadores de alto desempenho, upgrades e placas de vídeo.",
+    name: "Atendimento PC Gamer",
+    description: "Revisao especializada para computadores de alto desempenho, upgrades e placas de vídeo.",
     commonProblems: [
       "Superaquecimento de componentes",
       "Falhas na placa de vídeo",
@@ -166,7 +166,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do PC",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de estresse e benchmark",
       "Entrega com garantia",
     ],
@@ -176,8 +176,8 @@ export const services: ServiceInfo[] = [
   },
   {
     id: "gopro",
-    name: "Conserto de GoPro",
-    description: "Reparos em câmeras de ação GoPro e acessórios com técnicos certificados.",
+    name: "Atendimento GoPro",
+    description: "Atendimento em câmeras de ação GoPro e acessórios com técnicos certificados.",
     commonProblems: [
       "Problemas de bateria (não carrega, baixa duração, superaquecimento)",
       "Falhas na tela LCD (tela quebrada, manchas, não liga)",
@@ -188,7 +188,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo da câmera",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
@@ -198,8 +198,8 @@ export const services: ServiceInfo[] = [
   },
   {
     id: "jbl",
-    name: "Conserto de Caixas JBL",
-    description: "Reparos especializados em caixas de som JBL e outros equipamentos de áudio.",
+    name: "Atendimento caixas JBL",
+    description: "Servicos especializados em caixas de som JBL e outros equipamentos de áudio.",
     commonProblems: [
       "Problemas de bateria (não carrega, baixa duração, superaquecimento)",
       "Falhas no som (distorção, chiado, volume baixo)",
@@ -210,7 +210,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do equipamento",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
@@ -220,8 +220,8 @@ export const services: ServiceInfo[] = [
   },
   {
     id: "tablet",
-    name: "Conserto de Tablets",
-    description: "Reparos em tablets de todas as marcas, troca de tela, bateria e mais.",
+    name: "Atendimento Tablets",
+    description: "Atendimento em tablets de todas as marcas, troca de tela, bateria e mais.",
     commonProblems: [
       "Tela quebrada ou trincada",
       "Problemas de bateria (não carrega, baixa duração, superaquecimento)",
@@ -233,7 +233,7 @@ export const services: ServiceInfo[] = [
     repairProcess: [
       "Diagnóstico completo do tablet",
       "Orçamento detalhado sem compromisso",
-      "Reparo com peças de qualidade",
+      "Atendimento com peças de qualidade",
       "Testes de funcionamento",
       "Entrega com garantia",
     ],
@@ -263,105 +263,77 @@ export const locations: LocationInfo[] = [
 // Perguntas frequentes
 export const faqItems: FAQItem[] = [
   {
-    question: "Quanto tempo demora para consertar um PlayStation?",
+    question: "Como funciona o contato com a JD Info?",
     answer:
-      "O tempo médio para conserto de PlayStation varia de 2 a 5 dias úteis, dependendo da complexidade do problema e da disponibilidade de peças. Em alguns casos mais simples, como limpeza ou troca de pasta térmica, o serviço pode ser realizado no mesmo dia.",
-    keywords: ["tempo", "prazo", "demora", "dias", "playstation", "ps4", "ps5", "console"],
-    category: "prazos",
+      "Você pode falar pelo WhatsApp, telefone ou ir até a unidade de Icaraí. A equipe entende o que você procura e indica o melhor próximo passo.",
+    keywords: ["contato", "whatsapp", "telefone", "falar", "jd info", "jdinfo"],
+    category: "contato",
   },
   {
-    question: "Vocês oferecem garantia nos serviços?",
+    question: "Onde fica a loja em Niterói?",
     answer:
-      "Sim, todos os nossos serviços incluem garantia de 90 dias. A garantia cobre problemas relacionados ao reparo realizado, dando a você tranquilidade e segurança.",
-    keywords: ["garantia", "segurança", "cobertura", "90 dias"],
-    category: "garantia",
+      "A loja fica na R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ. O local recebe clientes presencialmente e também atende pelos canais digitais.",
+    keywords: ["endereço", "localização", "onde fica", "icaraí", "niterói", "loja"],
+    category: "localização",
   },
   {
-    question: "O diagnóstico é realmente gratuito?",
+    question: "Preciso agendar horário?",
     answer:
-      "Sim, o diagnóstico inicial é totalmente gratuito e sem compromisso. Você só paga se aprovar o orçamento e decidir realizar o reparo.",
-    keywords: ["diagnóstico", "gratuito", "grátis", "sem custo", "orçamento", "avaliação"],
-    category: "preços",
+      "O agendamento ajuda a organizar a visita, mas você também pode consultar a equipe antes de ir. A disponibilidade é confirmada no primeiro contato.",
+    keywords: ["agendar", "horário", "agendamento", "marcar", "visita"],
+    category: "agenda",
   },
   {
-    question: "Vocês usam peças originais?",
+    question: "Quais produtos posso levar até a loja?",
     answer:
-      "Sim, trabalhamos apenas com peças originais ou homologadas pelos fabricantes, garantindo a qualidade e durabilidade do reparo. Em casos específicos onde a peça original não está disponível, oferecemos alternativas de qualidade equivalente, sempre com a aprovação prévia do cliente.",
-    keywords: ["peças", "originais", "genuínas", "qualidade", "homologadas"],
-    category: "qualidade",
+      "A JD Info recebe notebooks, computadores, consoles, acessórios e itens de tecnologia. A equipe confirma as opções disponíveis para cada caso.",
+    keywords: ["produtos", "notebooks", "computadores", "consoles", "acessórios", "tecnologia"],
+    category: "produtos",
+  },
+  {
+    question: "Como recebo uma estimativa?",
+    answer:
+      "Depois do primeiro contato, a equipe orienta quais dados são necessários e informa uma estimativa quando aplicável.",
+    keywords: ["estimativa", "valor", "preço", "custo", "quanto custa", "informação"],
+    category: "estimativa",
   },
   {
     question: "Quais formas de pagamento vocês aceitam?",
     answer:
-      "Aceitamos diversas formas de pagamento para sua comodidade: cartões de crédito (parcelamento em até 12x), cartões de débito, dinheiro, PIX e transferência bancária.",
+      "Aceitamos dinheiro, PIX, transferência bancária, cartão de débito e cartão de crédito. As condições são informadas antes da confirmação.",
     keywords: ["pagamento", "cartão", "crédito", "débito", "dinheiro", "pix", "transferência", "parcelamento"],
     category: "pagamento",
   },
   {
-    question: "É possível agendar um horário para levar meu equipamento?",
+    question: "Vocês vendem itens de informática?",
     answer:
-      "Sim, você pode agendar um horário para atendimento através do nosso WhatsApp ou telefone. Isso ajuda a evitar filas e garante um atendimento mais personalizado.",
-    keywords: ["agendar", "horário", "agendamento", "marcar", "atendimento"],
-    category: "atendimento",
+      "Sim. A loja trabalha com itens de informática e tecnologia. Consulte a disponibilidade pelo WhatsApp ou diretamente na unidade.",
+    keywords: ["venda", "informática", "tecnologia", "loja", "itens", "produtos"],
+    category: "loja",
   },
   {
-    question: "Vocês fazem atendimento a domicílio?",
+    question: "Existe garantia?",
     answer:
-      "Para alguns serviços específicos, como instalação de equipamentos ou diagnóstico de computadores de mesa, oferecemos atendimento a domicílio em Niterói e região. Entre em contato para verificar a disponibilidade e valores.",
-    keywords: ["domicílio", "casa", "residência", "visita", "técnico em casa"],
-    category: "atendimento",
-  },
-  {
-    question: "Meu equipamento tem conserto?",
-    answer:
-      "Na maioria dos casos, sim. Nossos técnicos são especializados em encontrar soluções mesmo para problemas complexos. Recomendamos trazer seu equipamento para um diagnóstico gratuito, onde poderemos avaliar com precisão e apresentar as opções disponíveis.",
-    keywords: ["tem conserto", "pode consertar", "tem jeito", "recuperar", "salvar"],
-    category: "serviços",
-  },
-  {
-    question: "Vocês recuperam dados de HDs e SSDs com problema?",
-    answer:
-      "Sim, oferecemos serviço de recuperação de dados para diversos tipos de mídia, incluindo HDs, SSDs, cartões de memória e pendrives. A taxa de sucesso varia conforme o tipo e a gravidade do dano, mas conseguimos recuperar dados em muitos casos considerados perdidos.",
-    keywords: ["recuperação", "dados", "arquivos", "hd", "ssd", "pendrive", "memória"],
-    category: "serviços",
-  },
-  {
-    question: "Qual é o endereço da JDINFO em Niterói?",
-    answer:
-      "Nosso endereço em Niterói fica em Icaraí: R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ, 24220-031. Também atendemos pelos nossos canais digitais e WhatsApp.",
-    keywords: ["endereço", "localização", "onde fica", "icarai", "niterói", "loja"],
-    category: "localização",
-  },
-  {
-    question: "Vocês consertam equipamentos fora da garantia do fabricante?",
-    answer:
-      "Sim, somos especializados em consertar equipamentos que já estão fora da garantia do fabricante. Inclusive, muitos clientes nos procuram após receberem orçamentos muito altos das assistências autorizadas.",
-    keywords: ["fora da garantia", "garantia expirada", "sem garantia", "fabricante"],
-    category: "serviços",
-  },
-  {
-    question: "É possível fazer upgrade no meu equipamento durante o conserto?",
-    answer:
-      "Sim, oferecemos serviços de upgrade junto com o reparo. Por exemplo, ao consertar um notebook, podemos também instalar mais memória RAM ou substituir o HD por um SSD para melhorar o desempenho.",
-    keywords: ["upgrade", "melhorar", "atualizar", "performance", "desempenho", "ssd", "ram"],
-    category: "serviços",
+      "As condições variam conforme o item e são apresentadas com clareza antes de qualquer confirmação.",
+    keywords: ["garantia", "condições", "confirmação", "item"],
+    category: "garantia",
   },
 ]
 
 // Informações sobre a empresa
 export const companyInfo = {
   name: "JDINFO",
-  fullName: "JDINFO - Assistência Técnica Especializada",
+  fullName: "JDINFO - Atendimento Especializado",
   foundedYear: 2005,
   experience: "18 anos",
   email: "contato@jdinfo.com.br",
   website: "https://jdinfoblog.jdinformatica.com.br",
   specialties: [
-    "Conserto de PlayStation, Xbox e Nintendo",
-    "Reparo de produtos Apple (iPhone, iPad, MacBook)",
-    "Manutenção de notebooks e PCs Gamer",
-    "Conserto de GoPro e caixas JBL",
-    "Reparo de tablets de todas as marcas",
+    "Atendimento PlayStation, Xbox e Nintendo",
+    "Atendimento de produtos Apple (iPhone, iPad, Notebook Apple)",
+    "Revisao de notebooks e PCs Gamer",
+    "Atendimento GoPro e caixas JBL",
+    "Atendimento de tablets de todas as marcas",
   ],
   differentials: [
     "Mais de 20 anos de experiência em Niterói",
@@ -369,7 +341,7 @@ export const companyInfo = {
     "Garantia de 90 dias em todos os serviços",
     "Diagnóstico gratuito",
     "Peças originais ou homologadas",
-    "Endereço em Icaraí com suporte por múltiplos canais",
+    "Endereço em Icaraí com orientacao por múltiplos canais",
   ],
 }
 
@@ -387,7 +359,7 @@ export const defaultResponses = {
     "Os preços variam conforme o modelo e o problema específico. Para um orçamento preciso, recomendamos trazer seu equipamento para um diagnóstico gratuito. Posso te ajudar a agendar um horário?",
   warrantyInfo: "Todos os nossos serviços incluem garantia de 90 dias, dando a você tranquilidade e segurança.",
   fallback:
-    "Estou aqui para ajudar com informações sobre nossos serviços de assistência técnica. Se sua pergunta for sobre outro assunto, talvez seja melhor falar diretamente com nossa equipe.",
+    "Estou aqui para ajudar com informações sobre nossos serviços de atendimento especializado. Se sua pergunta for sobre outro assunto, talvez seja melhor falar diretamente com nossa equipe.",
 }
 
 // Intenções que o chatbot pode reconhecer
@@ -417,14 +389,14 @@ export const intentKeywords = {
   [intents.SERVICE_INQUIRY]: [
     "serviço",
     "serviços",
-    "conserto",
-    "reparo",
-    "consertar",
-    "reparar",
+    "atendimento",
+    "atendimento",
+    "atender",
+    "avaliar",
     "arrumar",
     "fix",
     "problema",
-    "assistência",
+    "atendimento",
   ],
   [intents.PRICE_INQUIRY]: ["preço", "valor", "custo", "quanto custa", "orçamento", "pagamento", "parcela", "parcelar"],
   [intents.WARRANTY_INQUIRY]: ["garantia", "garante", "seguro", "cobertura", "cobre", "assegurar"],
@@ -475,11 +447,11 @@ export const quickSuggestions = {
   initial: [
     "Quais serviços vocês oferecem?",
     "Onde ficam as lojas?",
-    "Quanto custa o conserto?",
+    "Quanto custa o atendimento?",
     "Vocês dão garantia?",
   ],
   afterServiceInquiry: [
-    "Quanto tempo demora o conserto?",
+    "Quanto tempo demora o atendimento?",
     "Vocês usam peças originais?",
     "Qual o preço do serviço?",
     "Quero falar com um atendente",

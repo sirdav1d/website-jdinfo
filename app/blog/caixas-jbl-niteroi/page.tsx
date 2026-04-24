@@ -6,10 +6,10 @@ import { buildPageMetadata } from "@/lib/metadata"
 import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Onde Consertar Caixas JBL em Niterói: Solução Rápida",
+  title: "Atendimento para Caixas JBL em Niterói: Solução Rápida",
   description:
-    "Caixa JBL com problemas? Descubra onde encontrar o melhor serviço de reparo em Niterói para caixas de som JBL e outros equipamentos de áudio.",
-  path: "/blog/onde-consertar-caixas-jbl-niteroi",
+    "Caixa JBL com problemas? Descubra onde encontrar o melhor serviço de atendimento em Niterói para caixas de som JBL e outros equipamentos de áudio.",
+  path: "/blog/caixas-jbl-niteroi",
   image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop",
   type: "article",
 })
@@ -19,22 +19,22 @@ export default function JBLRepairBlogPost() {
       <main className="flex-1">
         <BlogArticleLayout>
           <div className="article-meta">20 de Setembro, 2025 • Áudio</div>
-          <h1>Onde Consertar Caixas JBL em Niterói: Solução Rápida</h1>
+          <h1>Atendimento para Caixas JBL em Niterói: Solução Rápida</h1>
           <p className="article-excerpt">
-            Caixa JBL com problemas? Descubra onde encontrar o melhor serviço de reparo em Niterói.
+            Caixa JBL com problemas? Descubra onde encontrar o melhor serviço de atendimento em Niterói.
           </p>
 
           <div className="image-container h-[400px]">
             <Image
               src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=2069&auto=format&fit=crop"
-              alt="Técnico consertando caixa JBL na JDINFO em Niterói"
+              alt="Caixa de som portátil sobre mesa"
               fill
               className="object-cover"
               priority
             />
           </div>
 
-          <h2>Problemas comuns com caixas JBL que exigem assistência técnica</h2>
+          <h2>Problemas comuns com caixas JBL que exigem atendimento especializado</h2>
           <p>
             As caixas de som JBL são conhecidas por sua qualidade sonora e durabilidade, mas mesmo os melhores
             equipamentos podem apresentar problemas ao longo do tempo. Alguns dos problemas mais comuns incluem:
@@ -53,14 +53,14 @@ export default function JBLRepairBlogPost() {
           </ul>
 
           <p>
-            Quando sua caixa JBL apresenta algum desses problemas, é fundamental buscar uma assistência técnica
-            especializada para garantir um reparo adequado e preservar a vida útil do seu equipamento.
+            Quando sua caixa JBL apresenta algum desses problemas, é fundamental buscar um atendimento especializado
+            especializada para garantir um atendimento adequado e preservar a vida útil do seu equipamento.
           </p>
 
-          <h2>Por que escolher uma assistência técnica especializada em Niterói?</h2>
+          <h2>Por que escolher um atendimento especializado em Niterói?</h2>
           <p>
             As caixas de som JBL possuem características específicas que exigem conhecimento técnico especializado. Ao
-            escolher onde consertar sua caixa JBL em Niterói, considere:
+            escolher onde atender sua caixa JBL em Niterói, considere:
           </p>
 
           <ul>
@@ -72,25 +72,25 @@ export default function JBLRepairBlogPost() {
             <li>Conhecimento atualizado sobre os diferentes modelos e suas particularidades</li>
           </ul>
 
-          <h2>JDINFO: A melhor opção para consertar caixas JBL em Niterói</h2>
+          <h2>JDINFO: A melhor opção para atender caixas JBL em Niterói</h2>
           <p>
-            A JDINFO se destaca como a principal assistência técnica especializada em equipamentos de áudio em Niterói,
-            com mais de 20 anos de experiência no mercado. Nossa equipe é especializada em reparos de caixas JBL,
+            A JDINFO se destaca como a principal equipe especializada especializado em equipamentos de áudio em Niterói,
+            com mais de 20 anos de experiência no mercado. Nossa equipe é especializada em servicos de caixas JBL,
             oferecendo diagnóstico preciso e soluções eficientes para qualquer problema.
           </p>
 
-          <h3>Diferenciais da JDINFO no conserto de caixas JBL:</h3>
+          <h3>Diferenciais da JDINFO no atendimento de caixas JBL:</h3>
           <ul>
             <li>Técnicos certificados e especializados em equipamentos de áudio</li>
             <li>Diagnóstico gratuito e detalhado</li>
             <li>Uso de peças de alta qualidade</li>
             <li>Garantia de 90 dias em todos os serviços</li>
-            <li>Prazo de entrega rápido (média de 2 a 5 dias úteis para a maioria dos reparos)</li>
-            <li>Atendimento em Niterói com endereço em Icaraí e suporte pelos nossos canais digitais</li>
+            <li>Prazo de entrega rápido (média de 2 a 5 dias úteis para a maioria dos servicos)</li>
+            <li>Atendimento em Niterói com endereço em Icaraí e orientacao pelos nossos canais digitais</li>
           </ul>
 
-          <h2>Modelos de caixas JBL que consertamos</h2>
-          <p>Na JDINFO, temos experiência no reparo de diversos modelos de caixas JBL, incluindo:</p>
+          <h2>Modelos de caixas JBL que atendemos</h2>
+          <p>Na JDINFO, temos experiência no atendimento de diversos modelos de caixas JBL, incluindo:</p>
 
           <ul>
             <li>JBL Flip (todas as gerações)</li>
@@ -105,24 +105,24 @@ export default function JBLRepairBlogPost() {
             <li>E outros modelos da marca</li>
           </ul>
 
-          <h2>Serviços de reparo de caixas JBL oferecidos pela JDINFO</h2>
+          <h2>Serviços de atendimento de caixas JBL oferecidos pela JDINFO</h2>
           <p>Na JDINFO, oferecemos uma ampla gama de serviços para caixas JBL, incluindo:</p>
 
           <ul>
             <li>Substituição de bateria</li>
-            <li>Reparo de problemas de som</li>
+            <li>Atendimento de problemas de som</li>
             <li>Solução para falhas de conectividade Bluetooth</li>
             <li>Substituição de botões</li>
-            <li>Reparo de danos causados por água</li>
-            <li>Conserto de portas de carregamento</li>
+            <li>Atendimento de danos causados por água</li>
+            <li>Atendimento de portas de carregamento</li>
             <li>Substituição de alto-falantes</li>
-            <li>Reparo de microfone</li>
+            <li>Atendimento de microfone</li>
             <li>Atualização de firmware</li>
-            <li>Limpeza interna e manutenção preventiva</li>
+            <li>Limpeza interna e revisao preventiva</li>
             <li>Substituição de carcaça</li>
           </ul>
 
-          <h2>Como funciona o processo de reparo na JDINFO</h2>
+          <h2>Como funciona o processo de atendimento na JDINFO</h2>
           <p>Nosso processo é simples e transparente:</p>
 
           <ol>
@@ -134,7 +134,7 @@ export default function JBLRepairBlogPost() {
               <strong>Orçamento:</strong> Apresentamos um orçamento detalhado sem compromisso.
             </li>
             <li>
-              <strong>Reparo:</strong> Após aprovação, realizamos o reparo com peças de qualidade.
+              <strong>Atendimento:</strong> Após aprovação, realizamos o atendimento com peças de qualidade.
             </li>
             <li>
               <strong>Testes:</strong> Realizamos testes completos para garantir o perfeito funcionamento.
@@ -144,9 +144,9 @@ export default function JBLRepairBlogPost() {
             </li>
           </ol>
 
-          <h2>Quanto custa consertar uma caixa JBL em Niterói?</h2>
+          <h2>Quanto custa atender uma caixa JBL em Niterói?</h2>
           <p>
-            O custo para consertar uma caixa JBL em Niterói varia de acordo com o problema apresentado e o modelo do
+            O custo para atender uma caixa JBL em Niterói varia de acordo com o problema apresentado e o modelo do
             equipamento. Na JDINFO, oferecemos preços justos e competitivos, sempre com transparência e sem surpresas.
           </p>
 
@@ -154,10 +154,10 @@ export default function JBLRepairBlogPost() {
 
           <ul>
             <li>Substituição de bateria: a partir de R$ 150,00</li>
-            <li>Reparo de problemas de som: a partir de R$ 120,00</li>
-            <li>Conserto de porta de carregamento: a partir de R$ 100,00</li>
+            <li>Atendimento de problemas de som: a partir de R$ 120,00</li>
+            <li>Atendimento de porta de carregamento: a partir de R$ 100,00</li>
             <li>Substituição de alto-falante: a partir de R$ 180,00</li>
-            <li>Limpeza e manutenção preventiva: a partir de R$ 80,00</li>
+            <li>Limpeza e revisao preventiva: a partir de R$ 80,00</li>
           </ul>
 
           <p>
@@ -168,7 +168,7 @@ export default function JBLRepairBlogPost() {
           <h2>Depoimentos de clientes satisfeitos</h2>
           <blockquote>
             "Minha JBL Charge 4 parou de carregar completamente. Levei na JDINFO e eles identificaram um problema na
-            porta USB-C. Fizeram o reparo em apenas 2 dias e por um preço muito justo. A caixa está funcionando
+            porta USB-C. Fizeram o atendimento em apenas 2 dias e por um preço muito justo. A caixa está funcionando
             perfeitamente!" - Bruno Santos
           </blockquote>
 
@@ -199,7 +199,7 @@ export default function JBLRepairBlogPost() {
 
           <h2>Dicas para cuidar da sua caixa JBL</h2>
           <p>
-            Além de oferecer serviços de reparo de qualidade, a JDINFO também se preocupa em orientar seus clientes
+            Além de oferecer serviços de atendimento de qualidade, a JDINFO também se preocupa em orientar seus clientes
             sobre como cuidar melhor de seus equipamentos. Algumas dicas importantes:
           </p>
 
@@ -214,20 +214,20 @@ export default function JBLRepairBlogPost() {
             <li>Mantenha o firmware atualizado</li>
           </ul>
 
-          <h2>Conclusão: Por que escolher a JDINFO para consertar sua caixa JBL em Niterói</h2>
+          <h2>Conclusão: Por que escolher a JDINFO para atender sua caixa JBL em Niterói</h2>
           <p>
-            Quando se trata de consertar caixas JBL em Niterói, a JDINFO oferece a melhor combinação de experiência,
+            Quando se trata de atender caixas JBL em Niterói, a JDINFO oferece a melhor combinação de experiência,
             qualidade e preço justo. Com técnicos especializados em equipamentos de áudio, peças de qualidade e garantia
             em todos os serviços, você pode confiar que sua caixa JBL estará em boas mãos.
           </p>
 
           <p>
-            Não arrisque seu investimento com reparos amadores ou assistências não especializadas. Escolha a JDINFO,
-            referência em conserto de equipamentos eletrônicos em Niterói há mais de 18 anos.
+            Não arrisque seu investimento com intervencoes amadoras ou empresas não especializadas. Escolha a JDINFO,
+            referência em atendimento de equipamentos eletrônicos em Niterói há mais de 18 anos.
           </p>
 
           <div className="cta-section">
-            <h3 className="text-2xl font-bold mb-4">Precisa consertar sua caixa JBL?</h3>
+            <h3 className="text-2xl font-bold mb-4">Precisa atender sua caixa JBL?</h3>
             <p className="mb-6">
               Entre em contato conosco hoje mesmo para um diagnóstico gratuito e descubra como podemos ajudar a
               recuperar seu equipamento com rapidez e qualidade.
@@ -238,38 +238,38 @@ export default function JBLRepairBlogPost() {
           <div className="related-articles">
             <h3>Artigos relacionados</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link href="/blog/onde-consertar-gopro-niteroi" className="group">
+              <Link href="/blog/gopro-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar GoPro em Niterói: Reparo Profissional
+                      Atendimento para GoPro em Niterói: Atendimento Profissional
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Sua GoPro parou de funcionar? Conheça a assistência técnica especializada em Niterói.
+                      Sua GoPro parou de funcionar? Conheça a atendimento especializado em Niterói.
                     </p>
                   </div>
                 </div>
               </Link>
-              <Link href="/blog/onde-consertar-celular-niteroi" className="group">
+              <Link href="/blog/onde-atender-celular-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar Celular em Niterói: Assistência Técnica Confiável
+                      Atendimento para Celular em Niterói: Atendimento Especializado Confiável
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Celular quebrado ou com defeito? Conheça a melhor assistência técnica para smartphones em Niterói.
+                      Celular quebrado ou com defeito? Conheça a melhor atendimento especializado para smartphones em Niterói.
                     </p>
                   </div>
                 </div>
               </Link>
-              <Link href="/blog/onde-consertar-notebook-niteroi" className="group">
+              <Link href="/blog/notebook-niteroi" className="group">
                 <div className="border rounded-lg overflow-hidden transition-all duration-300 group-hover:shadow-md">
                   <div className="p-4">
                     <h4 className="font-medium text-jdblue group-hover:text-jdred transition-colors">
-                      Onde Consertar Notebook em Niterói: Solução Rápida e Garantida
+                      Atendimento para Notebook em Niterói: Solução Rápida e Garantida
                     </h4>
                     <p className="text-sm text-gray-600 mt-2">
-                      Seu notebook apresentou problemas? Veja onde encontrar o melhor serviço de reparo em Niterói.
+                      Seu notebook apresentou problemas? Veja onde encontrar o melhor serviço de atendimento em Niterói.
                     </p>
                   </div>
                 </div>

@@ -5,9 +5,9 @@ import { buildPageMetadata } from "@/lib/metadata"
 export const metadata: Metadata = buildPageMetadata({
   title: "Rastreamento de Ordem de Serviço",
   description:
-    "Acompanhe o status do reparo do seu equipamento na JDINFO em Niterói com a página de rastreamento da ordem de serviço.",
+    "Acompanhe o status do atendimento do seu equipamento na JDINFO em Niterói com a página de rastreamento da ordem de serviço.",
   path: "/rastreamento",
-  keywords: ["rastreamento de ordem de serviço", "status do reparo", "ordem de serviço jdinfo"],
+  keywords: ["rastreamento de ordem de serviço", "status do atendimento", "ordem de serviço jdinfo"],
 })
 
 export default function TrackingPage() {
@@ -17,7 +17,7 @@ export default function TrackingPage() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Rastreamento de Ordem de Serviço</h1>
-              <p className="text-gray-200 mb-6">Acompanhe o status do reparo do seu equipamento em tempo real.</p>
+              <p className="text-gray-200 mb-6">Acompanhe o status do atendimento do seu equipamento em tempo real.</p>
             </div>
           </div>
         </section>
@@ -27,7 +27,7 @@ export default function TrackingPage() {
             <OrderTracking />
 
             <div className="mt-12 bg-gray-50 p-8 rounded-xl">
-              <h2 className="text-2xl font-bold mb-4 text-jdblue">Como funciona o processo de reparo?</h2>
+              <h2 className="text-2xl font-bold mb-4 text-jdblue">Como funciona o processo de atendimento?</h2>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="w-10 h-10 rounded-full bg-jdred text-white flex items-center justify-center mr-4 flex-shrink-0">
@@ -68,8 +68,8 @@ export default function TrackingPage() {
                     4
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-jdblue">Reparo</h3>
-                    <p className="text-gray-600">Após aprovação, realizamos o reparo com peças de qualidade.</p>
+                    <h3 className="text-lg font-semibold mb-1 text-jdblue">Atendimento</h3>
+                    <p className="text-gray-600">Após aprovação, realizamos o atendimento com peças de qualidade.</p>
                   </div>
                 </div>
 
@@ -80,7 +80,7 @@ export default function TrackingPage() {
                   <div>
                     <h3 className="text-lg font-semibold mb-1 text-jdblue">Teste</h3>
                     <p className="text-gray-600">
-                      Realizamos testes rigorosos para garantir que o reparo foi bem-sucedido.
+                      Realizamos testes rigorosos para garantir que o atendimento foi bem-sucedido.
                     </p>
                   </div>
                 </div>

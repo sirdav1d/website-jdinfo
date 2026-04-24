@@ -75,7 +75,7 @@ export function extractEntities(text: string): Record<string, string> {
     "switch",
     "iphone",
     "ipad",
-    "macbook",
+    "notebook apple",
     "imac",
     "apple",
     "notebook",

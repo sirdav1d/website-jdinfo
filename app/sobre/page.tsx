@@ -7,9 +7,9 @@ import { WhatsAppButtonsRow } from "@/components/whatsapp-button"
 export const metadata: Metadata = buildPageMetadata({
   title: "Sobre a JDINFO",
   description:
-    "Conheça a história, a missão e os diferenciais da JDINFO, assistência técnica especializada com atendimento em Niterói e base presencial em Icaraí.",
+    "Conheça a história, a missão e os diferenciais da JDINFO, atendimento especializado com atendimento em Niterói e base presencial em Icaraí.",
   path: "/sobre",
-  keywords: ["sobre a jdinfo", "assistência técnica niterói", "história jdinfo"],
+  keywords: ["sobre a jdinfo", "atendimento especializado niterói", "história jdinfo"],
 })
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Sobre a JDINFO</h1>
               <p className="text-gray-200 mb-6">
-                Conheça nossa história, missão e valores que nos tornaram referência em assistência técnica em Niterói.
+                Conheça nossa história, missão e valores que nos tornaram referência em atendimento especializado em Niterói.
               </p>
             </div>
           </div>
@@ -33,12 +33,12 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold mb-6 text-jdblue">Nossa História</h2>
                 <p className="text-gray-600 mb-4">
                   Fundada em 2005, a JDINFO nasceu da paixão por tecnologia e do desejo de oferecer serviços de
-                  assistência técnica de qualidade em Niterói. O que começou como uma operação local,
-                  rapidamente se transformou em referência no mercado de reparos eletrônicos.
+                  atendimento especializado de qualidade em Niterói. O que começou como uma operação local,
+                  rapidamente se transformou em referência no mercado de servicos eletrônicos.
                 </p>
                 <p className="text-gray-600 mb-4">
                   Ao longo dos anos, acompanhamos a evolução da tecnologia e expandimos nossos serviços para atender às
-                  necessidades crescentes dos nossos clientes. Da manutenção de computadores básicos, passamos a
+                  necessidades crescentes dos nossos clientes. Da revisao de computadores básicos, passamos a
                   oferecer serviços especializados em consoles de videogame, smartphones, produtos Apple e equipamentos
                   de áudio.
                 </p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
                   nossa capacidade de atendimento e aproximando nossos serviços de ainda mais clientes em Niterói.
                 </p>
                 <p className="text-gray-600">
-                  Hoje, com mais de 20 anos de experiência, a JDINFO se consolida como a principal assistência técnica
+                  Hoje, com mais de 20 anos de experiência, a JDINFO se consolida como a principal equipe especializada
                   especializada da região, combinando conhecimento técnico, atendimento personalizado e compromisso com
                   a qualidade.
                 </p>
@@ -85,7 +85,7 @@ export default function AboutPage() {
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-xl font-semibold mb-4 text-jdblue">Visão</h3>
                 <p className="text-gray-600">
-                  Ser reconhecida como a melhor e mais confiável assistência técnica da região, expandindo nossa atuação
+                  Ser reconhecida como a melhor e mais confiável atendimento especializado da região, expandindo nossa atuação
                   e mantendo a excelência em todos os serviços prestados, sempre acompanhando as inovações tecnológicas.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-jdblue">Por que escolher a JDINFO?</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Diferenciais que nos tornam a melhor opção em assistência técnica em Niterói.
+                Diferenciais que nos tornam a melhor opção em atendimento especializado em Niterói.
               </p>
             </div>
 
@@ -174,7 +174,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-2 text-jdblue">Peças de Qualidade</h3>
                 <p className="text-gray-600">
                   Utilizamos apenas peças originais ou homologadas, garantindo a durabilidade e o desempenho dos
-                  reparos.
+                  servicos.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center p-6">

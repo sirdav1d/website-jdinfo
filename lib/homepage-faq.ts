@@ -5,53 +5,53 @@ export type HomepageFaqItem = {
 
 export const homepageFaqItems: HomepageFaqItem[] = [
   {
-    question: "Quanto tempo demora para consertar meu equipamento?",
+    question: "Como funciona o contato com a JD Info?",
     answer:
-      "O tempo de reparo varia conforme a complexidade do problema. Reparos simples, como limpeza e manutenção, costumam ficar prontos em até 24 horas. Casos mais complexos podem levar de 2 a 5 dias úteis, sempre com prazo estimado informado após o diagnóstico.",
+      "Você pode chamar pelo WhatsApp, ligar ou visitar a unidade de Icaraí. O retorno segue pelo canal escolhido.",
   },
   {
-    question: "Vocês oferecem garantia nos serviços?",
+    question: "Onde fica a loja em Niterói?",
     answer:
-      "Sim. Todos os nossos serviços contam com garantia de 90 dias para o mesmo defeito reparado. Se o problema reaparecer nesse período, o reparo é reavaliado sem custo.",
+      "A loja fica na R. Gen. Pereira da Silva, 146 - Loja 107 - Icaraí, Niterói - RJ. O local recebe clientes presencialmente e também atende pelos canais digitais.",
   },
   {
-    question: "O diagnóstico é gratuito?",
+    question: "Preciso agendar horário?",
     answer:
-      "Sim. Avaliamos o equipamento e apresentamos um orçamento detalhado sem custo. Você só paga se aprovar o serviço.",
+      "Não é obrigatório, mas ajuda a organizar a chegada. Pelo WhatsApp, a equipe informa os horários mais adequados.",
   },
   {
-    question: "Vocês usam peças originais?",
+    question: "Quais produtos posso levar até a loja?",
     answer:
-      "Sempre que possível, utilizamos peças originais ou de primeira linha. Quando a peça original não está disponível, indicamos alternativas compatíveis de alta qualidade com transparência antes da execução.",
+      "A JD Info recebe notebooks, computadores, consoles, acessórios e itens de tecnologia. A equipe confirma as opções disponíveis para cada caso.",
   },
   {
-    question: "Posso acompanhar o andamento do meu reparo?",
+    question: "Como recebo uma estimativa?",
     answer:
-      "Sim. Você pode acompanhar o status do reparo e também receber atualizações pelo WhatsApp ao longo do atendimento.",
+      "A estimativa é alinhada pelo canal combinado, de acordo com as informações do item e as condições aplicáveis.",
   },
   {
     question: "Quais formas de pagamento vocês aceitam?",
     answer:
-      "Aceitamos dinheiro, PIX, transferência bancária, cartão de débito e cartão de crédito com parcelamento em até 12 vezes, conforme o serviço.",
+      "Aceitamos dinheiro, PIX, transferência bancária, cartão de débito e cartão de crédito. As condições são informadas antes da confirmação.",
   },
   {
-    question: "Vocês fazem atendimento domiciliar?",
+    question: "Vocês vendem itens de informática?",
     answer:
-      "Para alguns equipamentos de maior porte, como PCs e TVs, oferecemos atendimento domiciliar em Niterói e região. A disponibilidade é confirmada no contato com a equipe.",
+      "Sim. A loja trabalha com itens de informática e tecnologia. Consulte a disponibilidade pelo WhatsApp ou diretamente na unidade.",
   },
   {
-    question: "E se meu equipamento não tiver conserto?",
+    question: "Existe garantia?",
     answer:
-      "Se não houver viabilidade técnica ou econômica para o reparo, você não paga pelo diagnóstico. Também orientamos sobre descarte adequado e possibilidades de aproveitamento de peças.",
+      "As condições variam conforme o item e são apresentadas com clareza antes de qualquer confirmação.",
   },
   {
-    question: "Vocês trabalham com equipamentos muito antigos?",
+    question: "Posso levar mais de um item?",
     answer:
-      "Sim. Nossa experiência permite atender equipamentos de diferentes gerações, inclusive modelos descontinuados, sempre dependendo da disponibilidade de peças e do estado do aparelho.",
+      "Sim. Informe a quantidade e os tipos de item no primeiro contato para a equipe organizar melhor sua visita.",
   },
   {
-    question: "Como posso solicitar um orçamento?",
+    question: "Que informações ajudam no primeiro contato?",
     answer:
-      "Você pode solicitar um orçamento levando o equipamento até uma das unidades, falando pelo WhatsApp para uma triagem inicial ou combinando um atendimento presencial quando aplicável.",
+      "Modelo, tempo de uso, fotos e uma descrição simples do que você procura ajudam a equipe a responder com mais precisão.",
   },
 ]

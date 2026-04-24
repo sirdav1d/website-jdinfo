@@ -36,8 +36,7 @@ export default function FAQSection() {
 			<div className='container mx-auto max-w-6xl'>
 				<div className='mb-12 max-w-3xl text-left'>
 					<h2 className='mb-4 text-balance text-3xl font-semibold tracking-[-0.04em] text-jdblue md:text-4xl'>
-						Perguntas frequentes para esclarecer prazos, garantia, diagnóstico e
-						atendimento.
+						Perguntas frequentes sobre loja, canais, prazos e pagamento.
 					</h2>
 				</div>
 
@@ -66,8 +65,7 @@ export default function FAQSection() {
 					<div className='flex h-full flex-col rounded-4xl bg-primary p-8 text-primary-foreground shadow-[0_30px_80px_rgba(8,17,34,0.2)] md:p-10'>
 						<div>
 							<h3 className='max-w-md text-balance text-3xl leading-[1.06] font-semibold tracking-[-0.05em] text-white md:text-[2.5rem]'>
-								Fale com a equipe e tire suas dúvidas presencialmente, ou pelo
-								whatsapp.
+								Fale com a equipe e tire suas dúvidas.
 							</h3>
 						</div>
 

@@ -6,16 +6,16 @@ import BlogArticleLayout from "@/components/blog-article-layout"
 import { buildPageMetadata } from "@/lib/metadata"
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Onde Consertar GoPro em Niterói: Reparo Profissional",
+  title: "Atendimento para GoPro em Niterói: Atendimento Profissional",
   description:
-    "Sua GoPro parou de funcionar? Conheça a assistência técnica especializada em Niterói. Reparo profissional com garantia para todas as versões de GoPro.",
-  path: "/blog/onde-consertar-gopro-niteroi",
+    "Sua GoPro parou de funcionar? Conheça a atendimento especializado em Niterói. Atendimento profissional com garantia para todas as versões de GoPro.",
+  path: "/blog/gopro-niteroi",
   image: "/images/gopro-underwater.png",
   keywords: [
-    "conserto gopro niterói",
-    "reparo gopro",
-    "assistência técnica gopro",
-    "consertar câmera de ação",
+    "atendimento gopro niterói",
+    "atendimento gopro",
+    "atendimento especializado gopro",
+    "atender câmera de ação",
   ],
   type: "article",
 })
@@ -23,25 +23,25 @@ export const metadata: Metadata = buildPageMetadata({
 export default function GoproRepairPage() {
   return (
     <BlogArticleLayout
-      title="Onde Consertar GoPro em Niterói: Reparo Profissional"
+      title="Atendimento para GoPro em Niterói: Atendimento Profissional"
       date="08 de Agosto, 2025"
       author="Equipe JDINFO"
       category="Câmeras"
       mainImage="/images/gopro-underwater.png"
       mainImageAlt="GoPro sendo usada em ambiente aquático, mostrando a câmera em ação na água"
-      excerpt="Sua GoPro parou de funcionar? Conheça a assistência técnica especializada em Niterói. Reparo profissional com garantia para todas as versões de GoPro."
+      excerpt="Sua GoPro parou de funcionar? Conheça a atendimento especializado em Niterói. Atendimento profissional com garantia para todas as versões de GoPro."
     >
       <p>
         As câmeras GoPro revolucionaram a forma como registramos nossas aventuras, permitindo capturar momentos
         incríveis em condições extremas. No entanto, mesmo sendo projetadas para resistir a ambientes hostis, essas
-        câmeras podem apresentar problemas técnicos que exigem reparos profissionais. Se você está em Niterói e precisa
-        de assistência técnica para sua GoPro, este guia completo vai ajudá-lo a encontrar a melhor solução.
+        câmeras podem apresentar problemas técnicos que exigem servicos profissionais. Se você está em Niterói e precisa
+        de atendimento especializado para sua GoPro, este guia completo vai ajudá-lo a encontrar a melhor solução.
       </p>
 
       <h2>Problemas Comuns em Câmeras GoPro</h2>
 
       <p>
-        Antes de buscar assistência técnica, é importante entender os problemas mais frequentes que as câmeras GoPro
+        Antes de buscar atendimento especializado, é importante entender os problemas mais frequentes que as câmeras GoPro
         podem apresentar:
       </p>
 
@@ -67,10 +67,10 @@ export default function GoproRepairPage() {
         </li>
       </ul>
 
-      <h2>Por Que Escolher uma Assistência Técnica Especializada?</h2>
+      <h2>Por Que Escolher uma Atendimento Especializado?</h2>
 
       <p>
-        Quando se trata de reparar uma GoPro, é fundamental contar com profissionais especializados. Eis os motivos:
+        Quando se trata de avaliar uma GoPro, é fundamental contar com profissionais especializados. Eis os motivos:
       </p>
 
       <ul>
@@ -79,21 +79,21 @@ export default function GoproRepairPage() {
           GoPro.
         </li>
         <li>
-          <strong>Peças originais:</strong> Assistências autorizadas utilizam componentes genuínos, garantindo a
-          qualidade do reparo.
+          <strong>Peças originais:</strong> Empresas autorizadas utilizam componentes genuínos, garantindo a
+          qualidade do atendimento.
         </li>
         <li>
-          <strong>Garantia de serviço:</strong> Empresas sérias oferecem garantia para os reparos realizados.
+          <strong>Garantia de serviço:</strong> Empresas sérias oferecem garantia para os servicos realizados.
         </li>
         <li>
-          <strong>Diagnóstico preciso:</strong> Identificação correta do problema, evitando reparos desnecessários.
+          <strong>Diagnóstico preciso:</strong> Identificação correta do problema, evitando servicos desnecessários.
         </li>
       </ul>
 
-      <h2>JDINFO: Assistência Técnica Especializada em GoPro em Niterói</h2>
+      <h2>JDINFO: Atendimento Especializado em GoPro em Niterói</h2>
 
       <p>
-        A JDINFO se destaca como referência em reparo de câmeras GoPro em Niterói. Com técnicos certificados e anos de
+        A JDINFO se destaca como referência em atendimento de câmeras GoPro em Niterói. Com técnicos certificados e anos de
         experiência, oferecemos soluções para todos os modelos, desde as primeiras versões até as mais recentes como a
         GoPro Hero 12 Black e GoPro Max.
       </p>
@@ -101,14 +101,14 @@ export default function GoproRepairPage() {
       <h3>Serviços Oferecidos para GoPro:</h3>
 
       <ul>
-        <li>Reparo de danos causados por água</li>
+        <li>Atendimento de danos causados por água</li>
         <li>Substituição de bateria</li>
-        <li>Reparo e substituição de lentes</li>
-        <li>Conserto de problemas no display</li>
+        <li>Atendimento e substituição de lentes</li>
+        <li>Atendimento de problemas no display</li>
         <li>Recuperação de dados de cartões SD</li>
         <li>Atualização de firmware</li>
-        <li>Reparo de problemas de conectividade</li>
-        <li>Limpeza interna e manutenção preventiva</li>
+        <li>Atendimento de problemas de conectividade</li>
+        <li>Limpeza interna e revisao preventiva</li>
       </ul>
 
       <div className="my-8">
@@ -124,9 +124,9 @@ export default function GoproRepairPage() {
         </p>
       </div>
 
-      <h2>Processo de Reparo de GoPro na JDINFO</h2>
+      <h2>Processo de Atendimento de GoPro na JDINFO</h2>
 
-      <p>Nosso processo de assistência técnica para GoPro segue um protocolo rigoroso:</p>
+      <p>Nosso processo de atendimento especializado para GoPro segue um protocolo rigoroso:</p>
 
       <ol>
         <li>
@@ -136,20 +136,20 @@ export default function GoproRepairPage() {
           <strong>Orçamento detalhado:</strong> Apresentação dos custos sem compromisso e com total transparência.
         </li>
         <li>
-          <strong>Reparo especializado:</strong> Utilização de ferramentas específicas e peças de qualidade.
+          <strong>Atendimento especializado:</strong> Utilização de ferramentas específicas e peças de qualidade.
         </li>
         <li>
-          <strong>Testes rigorosos:</strong> Verificação de todas as funcionalidades após o reparo.
+          <strong>Testes rigorosos:</strong> Verificação de todas as funcionalidades após o atendimento.
         </li>
         <li>
-          <strong>Garantia de serviço:</strong> Todos os reparos incluem garantia de 90 dias.
+          <strong>Garantia de serviço:</strong> Todos os servicos incluem garantia de 90 dias.
         </li>
       </ol>
 
-      <h2>Quanto Custa Consertar uma GoPro em Niterói?</h2>
+      <h2>Quanto Custa Atender uma GoPro em Niterói?</h2>
 
       <p>
-        O custo para consertar uma GoPro varia conforme o modelo e o tipo de problema. Na JDINFO, trabalhamos com preços
+        O custo para atender uma GoPro varia conforme o modelo e o tipo de problema. Na JDINFO, trabalhamos com preços
         justos e competitivos:
       </p>
 
@@ -158,14 +158,14 @@ export default function GoproRepairPage() {
           <strong>Diagnóstico técnico:</strong> A partir de R$ 50 (valor descontado em caso de aprovação do orçamento)
         </li>
         <li>
-          <strong>Reparos simples:</strong> Entre R$ 150 e R$ 300 (problemas de software, limpeza interna)
+          <strong>Servicos simples:</strong> Entre R$ 150 e R$ 300 (problemas de software, limpeza interna)
         </li>
         <li>
-          <strong>Reparos intermediários:</strong> Entre R$ 300 e R$ 500 (substituição de bateria, reparo de
+          <strong>Servicos intermediários:</strong> Entre R$ 300 e R$ 500 (substituição de bateria, atendimento de
           conectividade)
         </li>
         <li>
-          <strong>Reparos complexos:</strong> A partir de R$ 500 (danos por água, substituição de display ou lente)
+          <strong>Servicos complexos:</strong> A partir de R$ 500 (danos por água, substituição de display ou lente)
         </li>
       </ul>
 
@@ -180,7 +180,7 @@ export default function GoproRepairPage() {
 
       <h2>Prevenção de Problemas em Câmeras GoPro</h2>
 
-      <p>Para prolongar a vida útil da sua GoPro e evitar reparos frequentes, siga estas recomendações:</p>
+      <p>Para prolongar a vida útil da sua GoPro e evitar servicos frequentes, siga estas recomendações:</p>
 
       <ul>
         <li>Mantenha o firmware sempre atualizado</li>
@@ -191,20 +191,20 @@ export default function GoproRepairPage() {
         <li>Use sempre acessórios originais ou de qualidade comprovada</li>
       </ul>
 
-      <h2>Perguntas Frequentes sobre Reparo de GoPro</h2>
+      <h2>Perguntas Frequentes sobre Atendimento de GoPro</h2>
 
       <div className="space-y-4 mt-4">
         <div>
-          <h3 className="font-semibold">Vale a pena consertar uma GoPro antiga?</h3>
+          <h3 className="font-semibold">Vale a pena atender uma GoPro antiga?</h3>
           <p>
-            Depende do modelo e do custo do reparo. Para modelos muito antigos, quando o reparo ultrapassa 50% do valor
+            Depende do modelo e do custo do atendimento. Para modelos muito antigos, quando o atendimento ultrapassa 50% do valor
             de um modelo novo, pode ser mais vantajoso considerar a substituição. Na JDINFO, oferecemos uma avaliação
-            honesta sobre a viabilidade do reparo.
+            honesta sobre a viabilidade do atendimento.
           </p>
         </div>
 
         <div>
-          <h3 className="font-semibold">Quanto tempo leva para consertar uma GoPro?</h3>
+          <h3 className="font-semibold">Quanto tempo leva para atender uma GoPro?</h3>
           <p>
             O tempo médio varia de 2 a 5 dias úteis, dependendo da complexidade do problema e da disponibilidade de
             peças. Oferecemos também serviço expresso para casos urgentes.
@@ -220,9 +220,9 @@ export default function GoproRepairPage() {
         </div>
 
         <div>
-          <h3 className="font-semibold">A JDINFO é assistência autorizada GoPro?</h3>
+          <h3 className="font-semibold">A JDINFO é atendimento autorizada GoPro?</h3>
           <p>
-            A JDINFO é uma assistência técnica especializada com técnicos certificados, oferecendo reparos de qualidade
+            A JDINFO é um atendimento especializado com técnicos certificados, oferecendo servicos de qualidade
             com peças compatíveis que não comprometem o funcionamento do equipamento.
           </p>
         </div>
@@ -231,7 +231,7 @@ export default function GoproRepairPage() {
       <h2>Conclusão</h2>
 
       <p>
-        Quando sua GoPro apresentar problemas, contar com uma assistência técnica especializada como a JDINFO em Niterói
+        Quando sua GoPro apresentar problemas, contar com um atendimento especializado como a JDINFO em Niterói
         é a melhor decisão. Com profissionais qualificados, peças de qualidade e preços justos, garantimos que sua
         câmera de ação voltará a registrar suas aventuras com a mesma qualidade de quando saiu da fábrica.
       </p>
